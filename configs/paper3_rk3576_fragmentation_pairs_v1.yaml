@@ -1,0 +1,315 @@
+# Frozen preregistration only. ACCESS_REQUIRED: do not execute from this file
+# until the orchestrator authorizes this exact experiment ID and clears every
+# access gate in docs/paper3_rk3576_fragmentation_pairs_v1.md.
+schema_version: 1
+experiment_id: paper3_rk3576_fragmentation_pairs_v1
+status: AUTHORIZED_FOR_ACCESS
+publication_decision: GO_REQUIRED_FOR_FULL_PAPER
+preregistered_on: 2026-08-05
+sealed_before_physical_access: true
+
+research_question: >-
+  At fixed selected-output count, six active rows, model, input, and device,
+  does within-row fragmentation cause an RK3576 static row-span organization to
+  pay additional padding, tensor-traffic, service-time, and deadline taxes,
+  while fixed-shape independent tiles remain a negative control?
+
+causal_objection_resolved: >-
+  The existing fifteen masks confound density, active rows, source content,
+  position, and horizontal runs. These frozen synthetic pairs change geometry
+  while holding selected count, active rows, input pixels, checkpoint,
+  dispatch mode, device, and repeat block fixed.
+
+authorization_boundary:
+  physical_rk3576_authorized: true
+  mask_generation_from_sealed_traces_authorized: false
+  sealed_trace_evaluation_authorized: false
+  model_or_routing_retuning_authorized: false
+  result_files_authorized: true
+  required_next_state: authorized_physical_capture
+
+workload:
+  checkpoint_path: experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth
+  checkpoint_sha256: fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb
+  rknn_catalog_path: results/models/sparse_refinement_rknn_v2/catalog.json
+  rknn_catalog_file_sha256: b7771078b67541754309341c574e789fe7c54f2d863e6dd68aceb187c77b8d48
+  rknn_toolkit_compiler_version: 2.3.2
+  nominal_precision: INT8
+  input_resolution: [640, 360]
+  output_resolution: [1280, 720]
+  scale: 2
+  grid_columns: 10
+  grid_rows: 6
+  macro_tile_lr: [64, 60]
+  halo_pixels: 3
+  deadline_ms: 33.3333333333
+  npu_core: both
+
+input_fixture:
+  id: synthetic_coordinate_rgb_v1
+  origin: synthetic_and_independent_of_all_sealed_traces
+  dtype: uint8
+  layout: HWC_RGB
+  width: 640
+  height: 360
+  byte_length: 691200
+  raw_bytes_sha256: 1ac106cdfffeb3a232f2ff3e5a8ffbdd854ec8f9271be34c9f55d6e6cc93f18b
+  formula:
+    red: (3*x + 5*y + 17) mod 256
+    green: (7*x + 11*y + 29) mod 256
+    blue: (13*x + 2*y + 47) mod 256
+  quality_claim_authorized: false
+
+mask_contract:
+  representation: six left-to-right row strings; bit index is row*10+column
+  source: synthetic_preregistered_not_trace_derived
+  mask_count: 6
+  density_pair_count: 3
+  mode_stratified_pair_cells: 6
+  canonical_rows_sha256: b605fd865109eb943e8a7dfb60ed77b469d9c7190bac91ee8a81d66cb86992c0
+  invariants:
+    active_rows_per_mask: 6
+    pair_members_have_identical_selected_count: true
+    compact_runs_per_row: 1
+    fragmented_runs_per_row_are_maximal_given_density_and_full_span: true
+  masks:
+    - id: p20_compact
+      pair_id: density_20
+      geometry: compact
+      density_percent: 20
+      selected_tiles: 12
+      selected_per_row: 2
+      horizontal_runs: 6
+      row_span_coverage_tiles: 12
+      mask_hex: "0x0C0300C0300C030"
+      rows: ["0000110000", "0000110000", "0000110000", "0000110000", "0000110000", "0000110000"]
+    - id: p20_fragmented
+      pair_id: density_20
+      geometry: maximally_fragmented
+      density_percent: 20
+      selected_tiles: 12
+      selected_per_row: 2
+      horizontal_runs: 12
+      row_span_coverage_tiles: 60
+      mask_hex: "0x806018060180601"
+      rows: ["1000000001", "1000000001", "1000000001", "1000000001", "1000000001", "1000000001"]
+    - id: p40_compact
+      pair_id: density_40
+      geometry: compact
+      density_percent: 40
+      selected_tiles: 24
+      selected_per_row: 4
+      horizontal_runs: 6
+      row_span_coverage_tiles: 24
+      mask_hex: "0x1E0781E0781E078"
+      rows: ["0001111000", "0001111000", "0001111000", "0001111000", "0001111000", "0001111000"]
+    - id: p40_fragmented
+      pair_id: density_40
+      geometry: maximally_fragmented
+      density_percent: 40
+      selected_tiles: 24
+      selected_per_row: 4
+      horizontal_runs: 24
+      row_span_coverage_tiles: 60
+      mask_hex: "0x926499264992649"
+      rows: ["1001001001", "1001001001", "1001001001", "1001001001", "1001001001", "1001001001"]
+    - id: p60_compact
+      pair_id: density_60
+      geometry: compact
+      density_percent: 60
+      selected_tiles: 36
+      selected_per_row: 6
+      horizontal_runs: 6
+      row_span_coverage_tiles: 36
+      mask_hex: "0x3F0FC3F0FC3F0FC"
+      rows: ["0011111100", "0011111100", "0011111100", "0011111100", "0011111100", "0011111100"]
+    - id: p60_fragmented
+      pair_id: density_60
+      geometry: maximally_fragmented
+      density_percent: 60
+      selected_tiles: 36
+      selected_per_row: 6
+      horizontal_runs: 30
+      row_span_coverage_tiles: 60
+      mask_hex: "0xD5755D5755D5755"
+      rows: ["1010101011", "1010101011", "1010101011", "1010101011", "1010101011", "1010101011"]
+
+execution_design:
+  dispatch_modes: [exact, row_spans]
+  repetitions_per_mask_mode: 5
+  warmup_iterations_per_shape: 2
+  measured_samples: 60
+  pairing_key: [repeat_index, pair_id, dispatch_mode]
+  blocks: 5
+  samples_per_block: 12
+  block_order: deterministic_randomized_complete_blocks
+  randomization_seed: 357603
+  pair_members_adjacent_with_orientation_determined_by_seed: true
+  warmups_excluded_from_sample_count: true
+  outlier_removal_authorized: false
+  replacement_samples_authorized: false
+
+hypotheses:
+  H1_structural_padding:
+    statement: >-
+      In row-span mode, fragmented masks execute more static-shape coverage,
+      MACs, and tensor bytes per committed pixel than compact masks at every
+      density.
+    primary: true
+  H2_physical_service:
+    statement: >-
+      In row-span mode, fragmentation yields a positive paired service-time
+      penalty at all densities and at least a five-percent median paired penalty
+      at two of three densities.
+    primary: true
+  H3_exact_negative_control:
+    statement: >-
+      In exact mode, fixed selected count yields identical executed MACs and
+      tensor bytes, and compact/fragmented median paired service differs by no
+      more than five percent at every density.
+    primary: true
+  H4_mode_interaction:
+    statement: >-
+      The row-span compact-to-fragmented service penalty exceeds the exact-mode
+      penalty by at least five percentage points at two of three densities and
+      is positive at all three.
+    primary: false
+
+metrics_per_sample:
+  - repeat_index
+  - execution_order
+  - mask_id
+  - pair_id
+  - geometry
+  - density_percent
+  - selected_tiles
+  - active_rows
+  - horizontal_runs
+  - row_span_coverage_tiles
+  - dispatch_mode
+  - npu_calls
+  - executed_gmac
+  - input_tensor_bytes
+  - output_tensor_bytes
+  - tensor_bytes_per_committed_hr_pixel
+  - extraction_ms
+  - planning_ms
+  - npu_inference_ms
+  - reconstruction_ms
+  - service_ms
+  - deadline_overrun_ms
+  - strict_deadline_success
+  - committed_hr_pixels
+  - selected_output_checksum
+  - thermal_start_c
+  - thermal_end_c
+
+analysis:
+  paired_statistic: median_of_five_within_block_fractional_differences
+  fractional_difference: (fragmented - compact) / compact
+  report_every_repeat: true
+  confidence_interval: none_claimed_at_n5
+  regression_authorized: false
+  p_value_claim_authorized: false
+  deadline_result_role: descriptive_only
+
+frozen_gates:
+  integrity:
+    observed_measured_samples_must_equal: 60
+    all_checkpoint_catalog_input_and_mask_hashes_match: true
+    all_timings_positive_and_finite: true
+    all_selected_counts_and_committed_pixels_match_within_pair: true
+    unselected_output_commit_forbidden: true
+    max_cross_mode_mean_abs_float: 0.001
+    max_cross_mode_psnr_delta_db: 0.02
+  structural_padding:
+    row_span_fragmented_executed_gmac_gt_compact_at_all_densities: true
+    row_span_fragmented_tensor_bytes_per_pixel_gt_compact_at_all_densities: true
+    exact_mode_executed_gmac_and_tensor_bytes_equal_within_pair: true
+  physical_service:
+    row_span_positive_paired_service_delta_at_density_count: 3
+    row_span_minimum_density_pairs_with_median_penalty_ge_5_percent: 2
+  exact_negative_control:
+    max_absolute_median_paired_service_delta_percent_each_density: 5.0
+  mode_interaction:
+    positive_interaction_at_density_count: 3
+    minimum_density_pairs_with_interaction_ge_percentage_points: 2
+    minimum_interaction_percentage_points: 5.0
+
+device_runtime_controls:
+  required_device_tree_compatible_contains: rockchip,rk3576
+  required_machine: aarch64
+  expected_os: Debian GNU/Linux 12 (bookworm)
+  expected_kernel_release: 6.1.84-13-rk2410-nocsf
+  expected_python: 3.11.2
+  board_identity: 928996c84e65dc3f119cd65f232d2ad6b4d4acd12a0d76ed7b4ecdec016b199c
+  rknn_runtime_library_sha256: cf6ea624489225ddc9d334b370c64083b0fd9d6a5c9166eed47d999cc85a806b
+  accepted_repository_commit: 6adca329ef335b6d4b4bcc17412e373eb98c9f9d
+  accepted_repository_commit_role: accepted_implementation_baseline
+  repository_authorization_policy:
+    require_clean_checkout: true
+    baseline_must_be_ancestor_of_authorized_checkout: true
+    authorization_metadata_paths:
+      - configs/paper3_rk3576_fragmentation_pairs_v1.yaml
+      - docs/paper3_rk3576_fragmentation_pairs_v1.md
+      - results/preflight/paper3_rk3576_fragmentation_pairs_v1.json
+    contract_authorization_fields:
+      - status
+      - authorization_boundary.physical_rk3576_authorized
+      - authorization_boundary.result_files_authorized
+      - authorization_boundary.required_next_state
+      - device_runtime_controls.board_identity
+      - device_runtime_controls.rknn_runtime_library_sha256
+      - device_runtime_controls.accepted_repository_commit
+      - expected_outputs_after_future_authorization.current_phase_outputs_must_not_exist
+    executable_baseline_paths:
+      - scripts/rk3576/run_paper3_rk3576_fragmentation_pairs_v1.sh
+      - src/deployment/benchmark_rk3576_fragmentation_pairs.py
+      - src/deployment/prepare_paper3_rk3576_fragmentation_pairs.py
+      - src/report/paper3_rk3576_fragmentation_pairs_v1.py
+      - src/report/paper3_rk3576_fragmentation_pairs_manifest.py
+      - tests/test_paper3_rk3576_fragmentation_pairs_contract.py
+      - tests/test_benchmark_rk3576_fragmentation_pairs.py
+      - tests/test_paper3_rk3576_fragmentation_pairs_analysis.py
+      - tests/test_paper3_rk3576_fragmentation_pairs_manifest.py
+      - src/deployment/benchmark_rk3576_sparse.py
+      - src/deployment/board_probe.py
+      - src/runtime/sparse_refinement.py
+  exclusive_board_session: true
+  ac_power_required: true
+  cpu_governor_and_npu_frequency_must_be_recorded_and_unchanged: true
+  other_user_workloads_forbidden: true
+  start_temperature_max_c: 65.0
+  abort_temperature_c: 85.0
+  cooldown_to_c_before_each_block: 65.0
+
+stop_and_failure_rules:
+  - stop_before_first_sample_if_any_access_or_hash_gate_is_unresolved
+  - stop_on_board_runtime_or_checkpoint_catalog_mismatch
+  - stop_on_thermal_abort_and_do_not_replace_samples
+  - stop_on_missing_metric_nonfinite_timing_or_commit_contract_failure
+  - stop_on_cross_mode_numerical_integrity_failure
+  - do_not_delete_failed_records_or_rerun_under_the_same_experiment_id
+  - diagnose_offline_and_preregister_a_new_experiment_id_for_any_retry
+  - do_not_retune_masks_thresholds_order_warmups_or_repetitions_after_access
+
+expected_outputs_after_future_authorization:
+  raw_capture: results/rk3576/paper3_fragmentation_pairs_v1/paper3_rk3576_fragmentation_pairs_v1_raw.json
+  analysis_json: results/tables/paper3_rk3576_fragmentation_pairs_v1.json
+  analysis_markdown: results/tables/paper3_rk3576_fragmentation_pairs_v1.md
+  latex_candidate: docs/paper/generated/paper3_rk3576_fragmentation_pairs_v1.tex
+  evidence_manifest: results/manifests/paper3_rk3576_fragmentation_pairs_v1.json
+  current_phase_outputs_must_not_exist: false
+
+claim_boundary:
+  causal_claim_if_all_primary_gates_pass: >-
+    For this one RK3576, one model, one synthetic input, and three frozen
+    density pairs, within-row fragmentation causes additional static row-span
+    padding and traffic and has the reported physical service effect.
+  selector_generalization_claimed: false
+  natural_mask_prevalence_claimed: false
+  model_family_generalization_claimed: false
+  physical_energy_claimed: false
+  rk3576_720p_realtime_claimed: false
+  platform_superiority_claimed: false
+  cross_platform_bit_identity_claimed: false

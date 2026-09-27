@@ -1,0 +1,78 @@
+schema_version: 22
+experiment_id: paper3_shared_v2_fp16_rk3576_fragmentation_v22
+status: FROZEN_OFFLINE_PREPARATION_AUTHORIZED_NO_TARGET_OUTPUT_OPENED
+frozen_on: 2026-08-24
+
+research_question: >-
+  Does the within-backend compact-versus-fragmented service-time and tensor-
+  traffic effect observed on RK3576 transfer to a structurally different,
+  pre-existing shared-feature neural-upscaling graph compiled as RKNN FP16?
+
+candidate_selection:
+  checkpoint_path: experiments/exp082_progressive_espcn_v2_direct_deep/checkpoints/best_model.pth
+  checkpoint_sha256: f78730284e8199ca93348a5486f059eb7b2bd6e6b6389c96f135ff0daec7ef5a
+  training_config_path: configs/train_progressive_espcn_v2_direct_deep.yaml
+  training_config_sha256: 3a938e8b3ae1fb5d238402c1112dfce3cbad6e02d2d62e38f211051372ce8960
+  selection_rule: >-
+    Use the deepest pre-existing direct shared-feature checkpoint that passed
+    every recorded per-source monotonic validation check (8/8). Selection was
+    frozen before compiling or executing this graph on RK3576.
+  target_results_used_for_selection: false
+  alternate_candidate_after_target_output: forbidden
+
+graph:
+  architecture: shared_progressive_espcn_v2
+  exit_mode: direct
+  stage: C
+  feature_channels: 6
+  blocks_per_stage: [1, 1, 3]
+  convolutions: 7
+  residual_feature_additions: 4
+  lr_receptive_field_halo_pixels: 7
+  precision: fp16
+  target: rk3576
+  compiler: rknn-toolkit2-2.3.2
+
+workload:
+  anchor_mask_contract: configs/paper3_rk3576_fragmentation_pairs_v1.yaml
+  mask_rows_sha256: b605fd865109eb943e8a7dfb60ed77b469d9c7190bac91ee8a81d66cb86992c0
+  fixture: synthetic_coordinate_rgb_progressive_v1
+  fixture_sha256: 88854a9e2b5b670aa89ab09548b4d11b43a4f1c9c628b4f21a3f16177fe3a66f
+  dispatch_modes: [exact, row_spans]
+  density_percent: [20, 40, 60]
+  pair_members: [compact, maximally_fragmented]
+  warmups_per_graph: 2
+  qualification_repetitions_per_mask_mode: 2
+  measured_blocks: 10
+  measured_samples: 120
+  randomization_seed: 357622
+  replacement_samples: forbidden
+  outlier_removal: forbidden
+
+qualification_gates:
+  all_eleven_static_graphs_load: true
+  all_six_masks_both_modes_pass: true
+  selected_output_mae_max_each_mask_mode: 0.001
+  cross_mode_psnr_delta_db_max: 0.02
+  unselected_output_change_exactly_zero: true
+  repeated_selected_checksums_must_match: true
+  timing_forbidden_until_qualification_passes: true
+
+iteration_boundary:
+  offline_export_or_packaging_bug_fixes_before_target_output: allowed_and_recorded
+  target_graph_load_or_numerical_failure: terminal_for_this_candidate
+  performance_tuning_after_target_output: forbidden
+  compiler_precision_or_optimization_sweep: forbidden
+
+claims:
+  permitted: >-
+    Same-device, same-runtime topology-and-precision replication of the
+    within-backend fragmentation effect for this named graph.
+  prohibited:
+    - universal_graph_generality
+    - universal_npu_or_rknn_causality
+    - fp16_int8_raw_latency_comparison
+    - quality_superiority
+    - realtime_720p
+    - energy_efficiency
+

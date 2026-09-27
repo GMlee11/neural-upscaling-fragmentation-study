@@ -1,0 +1,251 @@
+{
+  "cells": [
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibration_break_even_requests": 9117.38411643921,
+      "calibration_service_ms": 27243.14254,
+      "device": "rk3576",
+      "graph": "width24",
+      "lower_mean_than_both_fixed": true,
+      "mean_decision_ms": 1.1923782875,
+      "observed_choice_mismatches": 60,
+      "oracle": "paired observed fixed-mode minimum; posthoc noise-sensitive reference, never deployed",
+      "policies": {
+        "always_exact": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 12.818492621875,
+          "mean_positive_oracle_regret_ms": 19.802276740625,
+          "mean_service_ms": 128.33180409375,
+          "mean_signed_oracle_gap_ms": 19.802276740625,
+          "n": 320,
+          "regressions_vs_best_fixed": 186,
+          "worst_regression_ms": 127.99270599999998
+        },
+        "always_span": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 0.0,
+          "mean_positive_oracle_regret_ms": 6.98378411875,
+          "mean_service_ms": 115.513311471875,
+          "mean_signed_oracle_gap_ms": 6.98378411875,
+          "n": 320,
+          "regressions_vs_best_fixed": 0,
+          "worst_regression_ms": 0.0
+        },
+        "calibrated": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": -2.988043740625,
+          "mean_positive_oracle_regret_ms": 8.54980773125,
+          "mean_service_ms": 112.52526773125,
+          "mean_signed_oracle_gap_ms": 3.995740378125,
+          "n": 320,
+          "regressions_vs_best_fixed": 132,
+          "worst_regression_ms": 63.444079
+        },
+        "geometry": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 0.2715920312500001,
+          "mean_positive_oracle_regret_ms": 10.68111670625,
+          "mean_service_ms": 115.784903503125,
+          "mean_signed_oracle_gap_ms": 7.25537615,
+          "n": 320,
+          "regressions_vs_best_fixed": 152,
+          "worst_regression_ms": 66.06693700000002
+        }
+      },
+      "reduction_percent": 2.586752732261967,
+      "requests": 1280,
+      "rule": "fixed RK3576 width24 donor; zero target fitting",
+      "session_reductions_percent": [
+        2.3831436883781287,
+        2.7873091550535234
+      ],
+      "warning": "paired fixed minimum is noisy, not ground truth; no per-request guarantee"
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibration_break_even_requests": 7466.616265511928,
+      "calibration_service_ms": 27243.14254,
+      "device": "rk3576",
+      "graph": "fp16",
+      "lower_mean_than_both_fixed": true,
+      "mean_decision_ms": 1.19407835,
+      "observed_choice_mismatches": 46,
+      "oracle": "paired observed fixed-mode minimum; posthoc noise-sensitive reference, never deployed",
+      "policies": {
+        "always_exact": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 22.727978321875,
+          "mean_positive_oracle_regret_ms": 28.019833109375,
+          "mean_service_ms": 157.089772534375,
+          "mean_signed_oracle_gap_ms": 28.019833109375,
+          "n": 320,
+          "regressions_vs_best_fixed": 210,
+          "worst_regression_ms": 140.54296800000003
+        },
+        "always_span": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 0.0,
+          "mean_positive_oracle_regret_ms": 5.2918547875,
+          "mean_service_ms": 134.3617942125,
+          "mean_signed_oracle_gap_ms": 5.2918547875,
+          "n": 320,
+          "regressions_vs_best_fixed": 0,
+          "worst_regression_ms": 0.0
+        },
+        "calibrated": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": -3.6486597906250013,
+          "mean_positive_oracle_regret_ms": 7.191014759374999,
+          "mean_service_ms": 130.713134421875,
+          "mean_signed_oracle_gap_ms": 1.6431949968749993,
+          "n": 320,
+          "regressions_vs_best_fixed": 125,
+          "worst_regression_ms": 54.533882999999975
+        },
+        "geometry": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 3.4163430656249987,
+          "mean_positive_oracle_regret_ms": 12.261429046875,
+          "mean_service_ms": 137.778137278125,
+          "mean_signed_oracle_gap_ms": 8.708197853124998,
+          "n": 320,
+          "regressions_vs_best_fixed": 158,
+          "worst_regression_ms": 98.16744300000002
+        }
+      },
+      "reduction_percent": 2.715548576892672,
+      "requests": 1280,
+      "rule": "fixed RK3576 width24 donor; zero target fitting",
+      "session_reductions_percent": [
+        3.160303625388198,
+        2.2688303666217275
+      ],
+      "warning": "paired fixed minimum is noisy, not ground truth; no per-request guarantee"
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibration_break_even_requests": 3810.7562148229117,
+      "calibration_service_ms": 27243.14254,
+      "device": "rk3566",
+      "graph": "width24",
+      "lower_mean_than_both_fixed": true,
+      "mean_decision_ms": 0.892771659375,
+      "observed_choice_mismatches": 14,
+      "oracle": "paired observed fixed-mode minimum; posthoc noise-sensitive reference, never deployed",
+      "policies": {
+        "always_exact": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 29.542754578125,
+          "mean_positive_oracle_regret_ms": 36.804598721875,
+          "mean_service_ms": 189.71079749375,
+          "mean_signed_oracle_gap_ms": 36.804598721875,
+          "n": 320,
+          "regressions_vs_best_fixed": 194,
+          "worst_regression_ms": 160.51020300000002
+        },
+        "always_span": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 0.0,
+          "mean_positive_oracle_regret_ms": 7.26184414375,
+          "mean_service_ms": 160.168042915625,
+          "mean_signed_oracle_gap_ms": 7.26184414375,
+          "n": 320,
+          "regressions_vs_best_fixed": 0,
+          "worst_regression_ms": 0.0
+        },
+        "calibrated": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": -7.149012165625,
+          "mean_positive_oracle_regret_ms": 1.6025961000000004,
+          "mean_service_ms": 153.01903075,
+          "mean_signed_oracle_gap_ms": 0.11283197812500016,
+          "n": 320,
+          "regressions_vs_best_fixed": 118,
+          "worst_regression_ms": 33.054866000000004
+        },
+        "geometry": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": -1.0208563656250007,
+          "mean_positive_oracle_regret_ms": 7.57747761875,
+          "mean_service_ms": 159.14718655,
+          "mean_signed_oracle_gap_ms": 6.240987778125,
+          "n": 320,
+          "regressions_vs_best_fixed": 137,
+          "worst_regression_ms": 71.37232400000002
+        }
+      },
+      "reduction_percent": 4.4634447892898415,
+      "requests": 1280,
+      "rule": "fixed RK3576 width24 donor; zero target fitting",
+      "session_reductions_percent": [
+        4.674703136521707,
+        4.251394551614514
+      ],
+      "warning": "paired fixed minimum is noisy, not ground truth; no per-request guarantee"
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibration_break_even_requests": 3758.069921262072,
+      "calibration_service_ms": 27243.14254,
+      "device": "rk3566",
+      "graph": "fp16",
+      "lower_mean_than_both_fixed": true,
+      "mean_decision_ms": 0.899493,
+      "observed_choice_mismatches": 22,
+      "oracle": "paired observed fixed-mode minimum; posthoc noise-sensitive reference, never deployed",
+      "policies": {
+        "always_exact": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 42.864783965625,
+          "mean_positive_oracle_regret_ms": 50.191929978125,
+          "mean_service_ms": 247.26321560625,
+          "mean_signed_oracle_gap_ms": 50.191929978125,
+          "n": 320,
+          "regressions_vs_best_fixed": 200,
+          "worst_regression_ms": 173.77433299999996
+        },
+        "always_span": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 0.0,
+          "mean_positive_oracle_regret_ms": 7.3271460125,
+          "mean_service_ms": 204.398431640625,
+          "mean_signed_oracle_gap_ms": 7.3271460125,
+          "n": 320,
+          "regressions_vs_best_fixed": 0,
+          "worst_regression_ms": 0.0
+        },
+        "calibrated": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": -7.249237803125001,
+          "mean_positive_oracle_regret_ms": 3.15137398125,
+          "mean_service_ms": 197.1491938375,
+          "mean_signed_oracle_gap_ms": 0.07790820937499957,
+          "n": 320,
+          "regressions_vs_best_fixed": 130,
+          "worst_regression_ms": 42.176491
+        },
+        "geometry": {
+          "deadline_successes": 0,
+          "mean_delta_best_fixed_ms": 3.067702643749997,
+          "mean_positive_oracle_regret_ms": 13.140924953124998,
+          "mean_service_ms": 207.466134284375,
+          "mean_signed_oracle_gap_ms": 10.394848656249998,
+          "n": 320,
+          "regressions_vs_best_fixed": 142,
+          "worst_regression_ms": 104.53007299999996
+        }
+      },
+      "reduction_percent": 3.5466210503369555,
+      "requests": 1280,
+      "rule": "fixed RK3576 width24 donor; zero target fitting",
+      "session_reductions_percent": [
+        3.8038902623246176,
+        3.2803671505841407
+      ],
+      "warning": "paired fixed minimum is noisy, not ground truth; no per-request guarantee"
+    }
+  ],
+  "samples": 5120,
+  "scope": "Zero target fitting on previously studied graph/device cells; fresh requests at method freeze, later cells reuse opened geometries. Compact replay does not re-audit tensors.",
+  "status": "COMPACT_TRANSFER_REPLAY_PASS"
+}

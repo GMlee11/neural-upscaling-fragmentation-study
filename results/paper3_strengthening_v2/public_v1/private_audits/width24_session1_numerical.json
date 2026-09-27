@@ -1,0 +1,109 @@
+{
+  "cell": "width24",
+  "confirmation": true,
+  "distinct_array_mask_checks": 98,
+  "fallback_array_sha256": "20dede3d02299be5e3b356e5b37a3e899e65be2ece5ac21c62a27b7bee81cd50",
+  "fallback_claim": "Cross-record consistency reconstructed from complementary corner outputs; NOT independently regenerated bicubic truth.",
+  "fixed_job_reconstruction_pairs": 96,
+  "fixed_job_reconstruction_pairs_byte_identical": true,
+  "full_reference_file_sha256": null,
+  "groups": {
+    "evaluation:affine_partition:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:affine_partition:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:exact:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0,
+      "tile_mae_max": 0.0
+    },
+    "evaluation:exact:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0,
+      "tile_mae_max": 0.0
+    },
+    "evaluation:frozen_choice:chosen": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008261516485884226,
+      "tile_mae_max": 0.0008723266241708593
+    },
+    "evaluation:grouped:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:grouped:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:lookup_partition:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008261516485884226,
+      "tile_mae_max": 0.0008723266241708593
+    },
+    "evaluation:lookup_partition:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:per_row:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:per_row:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:row_spans:selected": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "evaluation:row_spans:whole": {
+      "full_reference_mae_max": null,
+      "samples": 32,
+      "selected_mae_max": 0.0008426686682654421,
+      "tile_mae_max": 0.0008780181287420419
+    },
+    "qualification:single_job:selected": {
+      "full_reference_mae_max": null,
+      "samples": 24,
+      "selected_mae_max": 0.0008728155118281696,
+      "tile_mae_max": 0.0008728155118281696
+    },
+    "qualification:single_job:whole": {
+      "full_reference_mae_max": null,
+      "samples": 24,
+      "selected_mae_max": 0.0008728155118281696,
+      "tile_mae_max": 0.0008728155118281696
+    }
+  },
+  "independent_fp16_reference_used": false,
+  "journal_sha256": "fbbc0fe880e69345d5939b4adfc7f45610de04336193c23a955356579f99798b",
+  "maximum_tile_error_gate": "Descriptive; original aggregate MAE threshold is 0.001.",
+  "sample_count": 465,
+  "session": 1,
+  "source_manifest_sha256": "0364767473f4b073f6b453057f4a13f42c8009a67d8de529b3d166f8e3ef7a95",
+  "status": "retained_pixel_replay_passed"
+}

@@ -1,0 +1,2201 @@
+{
+  "all_primary_gates_pass": true,
+  "controls": {
+    "all_identity_rechecks_pass": true,
+    "identities": {
+      "affinity": [
+        0
+      ],
+      "architecture": "aarch64",
+      "compatible": [
+        "rockchip,rk3566-orangepi-3b",
+        "rockchip,rk3566",
+        ""
+      ],
+      "driver_version": "0.9.8",
+      "fixed": {
+        "/sys/class/devfreq/fde40000.npu/governor": "rknpu_ondemand",
+        "/sys/class/devfreq/fde40000.npu/max_freq": "900000000",
+        "/sys/class/devfreq/fde40000.npu/min_freq": "200000000",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "ondemand",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq": "1800000",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq": "408000"
+      },
+      "isolated": "",
+      "kernel": "6.1.115-vendor-rk35xx",
+      "login_service_executables": [
+        "46044b7912af7f7087837554b186ca3ddb640c0f6646cf5e625be5078d5db80d"
+      ],
+      "model": "Rockchip RK3566 OPi 3B",
+      "online": "0-3",
+      "opencv_threads": 1,
+      "runtime_sha256": "d31fc19c85b85f6091b2bd0f6af9d962d5264a4e410bfb536402ec92bac738e8",
+      "runtime_version": "2.3.2",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      }
+    },
+    "raw_process_records_excluded": true,
+    "snapshots": 67,
+    "temperature_max_c": 48.333,
+    "temperature_min_c": 41.875,
+    "whole_system_exclusive_visibility": false
+  },
+  "deadline_ms": 33.33,
+  "deadline_successes": 0,
+  "experiment_id": "paper3_width24_int8_rk3566_v32",
+  "integrity": {
+    "all_gates_pass": true,
+    "max_cross_mode_mae": 0.0008422387763857841,
+    "max_psnr_delta_db": 0.011456164703950833,
+    "selected_checksums_match_qualification": true,
+    "unselected_change": 0
+  },
+  "paired_observations": 30,
+  "pairs": [
+    {
+      "bicubic_ms": {
+        "compact": 42.022503,
+        "fragmented": 51.911112,
+        "penalty_percent": 23.531699194595816
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 118.604679,
+        "fragmented": 314.567363,
+        "penalty_percent": 165.22340067207637
+      },
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 0.834745,
+        "fragmented": 0.911453,
+        "penalty_percent": 9.189393167973453
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 230400,
+        "penalty_percent": 400.0
+      },
+      "executed_gmac": {
+        "compact": 0.447011136,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.191808,
+        "fragmented": 5.121055,
+        "penalty_percent": 22.168167053452834
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 159192,
+        "fragmented": 767448,
+        "penalty_percent": 382.089552238806
+      },
+      "npu_ms": {
+        "compact": 18.002728,
+        "fragmented": 83.655927,
+        "penalty_percent": 364.684724448428
+      },
+      "npu_output_bytes": {
+        "compact": 2547072,
+        "fragmented": 12279168,
+        "penalty_percent": 382.089552238806
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 28.514039999999998,
+        "fragmented": 147.745509,
+        "penalty_percent": 418.15003766565525
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.90817,
+        "fragmented": 41.536297,
+        "penalty_percent": -0.887352036607661
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 210.580346,
+        "fragmented": 196.80472,
+        "penalty_percent": -6.541743454063842
+      },
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.141577,
+        "fragmented": 1.149452,
+        "penalty_percent": 0.6898352016552413
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.93405312,
+        "fragmented": 0.93405312
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 16.341987,
+        "fragmented": 16.617025,
+        "penalty_percent": 1.6830144339241129
+      },
+      "npu_calls": {
+        "compact": 24,
+        "fragmented": 24,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 332640,
+        "fragmented": 332640,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 52.97218900000001,
+        "fragmented": 54.08314200000001,
+        "penalty_percent": 2.0972382319333676
+      },
+      "npu_output_bytes": {
+        "compact": 5322240,
+        "fragmented": 5322240,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 73.128863,
+        "fragmented": 72.007413,
+        "penalty_percent": -1.533525825500659
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.023842,
+        "fragmented": 41.956878,
+        "penalty_percent": 2.2743749841860286
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 267.615718,
+        "fragmented": 310.947215,
+        "penalty_percent": 16.191686095209107
+      },
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.671531,
+        "fragmented": 1.556616,
+        "penalty_percent": -6.874835106258878
+      },
+      "dispatched_core_pixels": {
+        "compact": 184320,
+        "fragmented": 230400,
+        "penalty_percent": 25.0
+      },
+      "executed_gmac": {
+        "compact": 1.727998272,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 5.028304,
+        "fragmented": 5.020429,
+        "penalty_percent": -0.156613442624
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 615384,
+        "fragmented": 767448,
+        "penalty_percent": 24.71042471042471
+      },
+      "npu_ms": {
+        "compact": 60.789977,
+        "fragmented": 77.934626,
+        "penalty_percent": 28.203085189520625
+      },
+      "npu_output_bytes": {
+        "compact": 9846144,
+        "fragmented": 12279168,
+        "penalty_percent": 24.71042471042471
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 134.067295,
+        "fragmented": 161.207887,
+        "penalty_percent": 20.24400656401697
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.028508,
+        "fragmented": 41.033759,
+        "penalty_percent": 0.0127984181145491
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 284.132705,
+        "fragmented": 286.868521,
+        "penalty_percent": 0.9628655736762158
+      },
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.884447,
+        "fragmented": 1.920905,
+        "penalty_percent": 1.9346789800933697
+      },
+      "dispatched_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 1.40107968,
+        "fragmented": 1.40107968
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 24.465438000000002,
+        "fragmented": 24.720937999999997,
+        "penalty_percent": 1.0443303733209037
+      },
+      "npu_calls": {
+        "compact": 36,
+        "fragmented": 36,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 498960,
+        "fragmented": 498960,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 80.441483,
+        "fragmented": 81.50197999999999,
+        "penalty_percent": 1.31834590866504
+      },
+      "npu_output_bytes": {
+        "compact": 7983360,
+        "fragmented": 7983360,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 108.19865899999999,
+        "fragmented": 109.505606,
+        "penalty_percent": 1.207914231173612
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 40.988551,
+        "fragmented": 41.020634,
+        "penalty_percent": 0.07827307679161452
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 149.043415,
+        "fragmented": 302.41922,
+        "penalty_percent": 102.90679732479289
+      },
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.217701,
+        "fragmented": 1.196701,
+        "penalty_percent": -1.7245612839276563
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 230400,
+        "penalty_percent": 150.0
+      },
+      "executed_gmac": {
+        "compact": 0.874006848,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.694637999999999,
+        "fragmented": 4.951594999999999,
+        "penalty_percent": 5.473414563593613
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 311256,
+        "fragmented": 767448,
+        "penalty_percent": 146.5648854961832
+      },
+      "npu_ms": {
+        "compact": 29.690033999999997,
+        "fragmented": 74.68110300000001,
+        "penalty_percent": 151.5359295311013
+      },
+      "npu_output_bytes": {
+        "compact": 4980096,
+        "fragmented": 12279168,
+        "penalty_percent": 146.5648854961832
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 47.074428999999995,
+        "fragmented": 155.55221,
+        "penalty_percent": 230.43886735195454
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.571588,
+        "fragmented": 41.788587,
+        "penalty_percent": 0.5219887197958406
+      },
+      "block_index": 1,
+      "compute_pipeline_ms": {
+        "compact": 123.833646,
+        "fragmented": 123.310107,
+        "penalty_percent": -0.42277605231780024
+      },
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 0.572538,
+        "fragmented": 0.563205,
+        "penalty_percent": -1.6301101411609422
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.46702656,
+        "fragmented": 0.46702656
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 8.205994,
+        "fragmented": 8.544908,
+        "penalty_percent": 4.13007857427143
+      },
+      "npu_calls": {
+        "compact": 12,
+        "fragmented": 12,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 166320,
+        "fragmented": 166320,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 26.424847000000003,
+        "fragmented": 25.660099000000002,
+        "penalty_percent": -2.894048922970115
+      },
+      "npu_output_bytes": {
+        "compact": 2661120,
+        "fragmented": 2661120,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 36.846618,
+        "fragmented": 36.521994,
+        "penalty_percent": -0.8810143715225099
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.709545,
+        "fragmented": 41.824461,
+        "penalty_percent": 0.27551487315433654
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 285.562149,
+        "fragmented": 285.168403,
+        "penalty_percent": -0.1378845205426594
+      },
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.926156,
+        "fragmented": 1.834864,
+        "penalty_percent": -4.73959533911064
+      },
+      "dispatched_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 1.40107968,
+        "fragmented": 1.40107968
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 25.367267999999996,
+        "fragmented": 24.588522000000005,
+        "penalty_percent": -3.0698851764407236
+      },
+      "npu_calls": {
+        "compact": 36,
+        "fragmented": 36,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 498960,
+        "fragmented": 498960,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 79.104493,
+        "fragmented": 81.36256600000003,
+        "penalty_percent": 2.8545445579178725
+      },
+      "npu_output_bytes": {
+        "compact": 7983360,
+        "fragmented": 7983360,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 109.599229,
+        "fragmented": 109.38281100000002,
+        "penalty_percent": -0.1974630679199176
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.363923,
+        "fragmented": 41.75942,
+        "penalty_percent": 0.9561399676718257
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 210.564883,
+        "fragmented": 213.005535,
+        "penalty_percent": 1.1590973600284527
+      },
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.14041,
+        "fragmented": 1.222951,
+        "penalty_percent": 7.237835515297128
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.93405312,
+        "fragmented": 0.93405312
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 16.337032,
+        "fragmented": 16.765487999999998,
+        "penalty_percent": 2.622606113521704
+      },
+      "npu_calls": {
+        "compact": 24,
+        "fragmented": 24,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 332640,
+        "fragmented": 332640,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 52.12023200000001,
+        "fragmented": 52.79543999999999,
+        "penalty_percent": 1.2954815703813127
+      },
+      "npu_output_bytes": {
+        "compact": 5322240,
+        "fragmented": 5322240,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 72.82290100000002,
+        "fragmented": 73.412068,
+        "penalty_percent": 0.8090408263191671
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.711296,
+        "fragmented": 41.53338,
+        "penalty_percent": -0.4265415296614044
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 102.995933,
+        "fragmented": 297.02283,
+        "penalty_percent": 188.38306654302556
+      },
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 0.946744,
+        "fragmented": 0.844079,
+        "penalty_percent": -10.844008517614055
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 230400,
+        "penalty_percent": 400.0
+      },
+      "executed_gmac": {
+        "compact": 0.447011136,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.149809,
+        "fragmented": 4.91397,
+        "penalty_percent": 18.414365576825336
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 159192,
+        "fragmented": 767448,
+        "penalty_percent": 382.089552238806
+      },
+      "npu_ms": {
+        "compact": 17.392272,
+        "fragmented": 76.861296,
+        "penalty_percent": 341.92786313369527
+      },
+      "npu_output_bytes": {
+        "compact": 2547072,
+        "fragmented": 12279168,
+        "penalty_percent": 382.089552238806
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 29.061496,
+        "fragmented": 147.891337,
+        "penalty_percent": 408.8909979032049
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.550005,
+        "fragmented": 41.466588,
+        "penalty_percent": -0.20076291206221802
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 255.89778,
+        "fragmented": 265.535557,
+        "penalty_percent": 3.7662604966717455
+      },
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.577324,
+        "fragmented": 1.59424,
+        "penalty_percent": 1.072449287527493
+      },
+      "dispatched_core_pixels": {
+        "compact": 184320,
+        "fragmented": 230400,
+        "penalty_percent": 25.0
+      },
+      "executed_gmac": {
+        "compact": 1.727998272,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.856513,
+        "fragmented": 5.088676,
+        "penalty_percent": 4.780446382002906
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 615384,
+        "fragmented": 767448,
+        "penalty_percent": 24.71042471042471
+      },
+      "npu_ms": {
+        "compact": 60.438517,
+        "fragmented": 48.755002,
+        "penalty_percent": -19.331240374412232
+      },
+      "npu_output_bytes": {
+        "compact": 9846144,
+        "fragmented": 12279168,
+        "penalty_percent": 24.71042471042471
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 137.74780900000002,
+        "fragmented": 158.897021,
+        "penalty_percent": 15.353574153763837
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.634295,
+        "fragmented": 42.546915,
+        "penalty_percent": 2.1919910016489936
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 144.651228,
+        "fragmented": 307.646431,
+        "penalty_percent": 112.6815204085236
+      },
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.316575,
+        "fragmented": 1.325034,
+        "penalty_percent": 0.6425004272449343
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 230400,
+        "penalty_percent": 150.0
+      },
+      "executed_gmac": {
+        "compact": 0.874006848,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.752388,
+        "fragmented": 5.149052,
+        "penalty_percent": 8.346624896788738
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 311256,
+        "fragmented": 767448,
+        "penalty_percent": 146.5648854961832
+      },
+      "npu_ms": {
+        "compact": 26.466552,
+        "fragmented": 80.229732,
+        "penalty_percent": 203.13632089287643
+      },
+      "npu_output_bytes": {
+        "compact": 4980096,
+        "fragmented": 12279168,
+        "penalty_percent": 146.5648854961832
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 46.866182,
+        "fragmented": 154.941168,
+        "penalty_percent": 230.6033506207098
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 42.043501,
+        "fragmented": 41.553796,
+        "penalty_percent": -1.1647579015838874
+      },
+      "block_index": 2,
+      "compute_pipeline_ms": {
+        "compact": 123.775018,
+        "fragmented": 124.941678,
+        "penalty_percent": 0.9425650012832097
+      },
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 0.579538,
+        "fragmented": 0.564372,
+        "penalty_percent": -2.616912092045735
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.46702656,
+        "fragmented": 0.46702656
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 8.239533999999999,
+        "fragmented": 8.404033000000002,
+        "penalty_percent": 1.9964599939754222
+      },
+      "npu_calls": {
+        "compact": 12,
+        "fragmented": 12,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 166320,
+        "fragmented": 166320,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 26.056179,
+        "fragmented": 26.815089999999998,
+        "penalty_percent": 2.9125951276278754
+      },
+      "npu_output_bytes": {
+        "compact": 2661120,
+        "fragmented": 2661120,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 36.622617999999996,
+        "fragmented": 37.156072,
+        "penalty_percent": 1.4566244281061669
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 40.894341,
+        "fragmented": 42.452707,
+        "penalty_percent": 3.8107130764131876
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 130.813476,
+        "fragmented": 258.377803,
+        "penalty_percent": 97.51619703156572
+      },
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.220035,
+        "fragmented": 1.221784,
+        "penalty_percent": 0.1433565430499945
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 230400,
+        "penalty_percent": 150.0
+      },
+      "executed_gmac": {
+        "compact": 0.874006848,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.741597,
+        "fragmented": 5.108512,
+        "penalty_percent": 7.738215626507284
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 311256,
+        "fragmented": 767448,
+        "penalty_percent": 146.5648854961832
+      },
+      "npu_ms": {
+        "compact": 26.620259,
+        "fragmented": 48.284548,
+        "penalty_percent": 81.38271306826879
+      },
+      "npu_output_bytes": {
+        "compact": 4980096,
+        "fragmented": 12279168,
+        "penalty_percent": 146.5648854961832
+      },
+      "post_temperature_gap_c": 0.5560000000000045,
+      "reconstruction_ms": {
+        "compact": 47.532925999999996,
+        "fragmented": 151.488729,
+        "penalty_percent": 218.70272198265263
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 42.262541,
+        "fragmented": 42.223167,
+        "penalty_percent": -0.09316524531736566
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 218.042583,
+        "fragmented": 212.115369,
+        "penalty_percent": -2.7183745112760933
+      },
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.162285,
+        "fragmented": 1.16841,
+        "penalty_percent": 0.5269791832467885
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.93405312,
+        "fragmented": 0.93405312
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 16.466236,
+        "fragmented": 16.441442000000002,
+        "penalty_percent": -0.15057478831225565
+      },
+      "npu_calls": {
+        "compact": 24,
+        "fragmented": 24,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 332640,
+        "fragmented": 332640,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 58.375279000000006,
+        "fragmented": 53.16410299999998,
+        "penalty_percent": -8.927025428006987
+      },
+      "npu_output_bytes": {
+        "compact": 5322240,
+        "fragmented": 5322240,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 72.49127899999999,
+        "fragmented": 72.45277999999999,
+        "penalty_percent": -0.05310845736354247
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 42.046417,
+        "fragmented": 41.897085,
+        "penalty_percent": -0.3551598701026086
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 274.656497,
+        "fragmented": 310.584368,
+        "penalty_percent": 13.081019889363834
+      },
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.706824,
+        "fragmented": 1.549033,
+        "penalty_percent": -9.24471415916344
+      },
+      "dispatched_core_pixels": {
+        "compact": 184320,
+        "fragmented": 230400,
+        "penalty_percent": 25.0
+      },
+      "executed_gmac": {
+        "compact": 1.727998272,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.865264,
+        "fragmented": 4.89093,
+        "penalty_percent": 0.5275356075230488
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 615384,
+        "fragmented": 767448,
+        "penalty_percent": 24.71042471042471
+      },
+      "npu_ms": {
+        "compact": 62.572922000000005,
+        "fragmented": 75.749469,
+        "penalty_percent": 21.05790584623809
+      },
+      "npu_output_bytes": {
+        "compact": 9846144,
+        "fragmented": 12279168,
+        "penalty_percent": 24.71042471042471
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 138.520139,
+        "fragmented": 161.453169,
+        "penalty_percent": 16.555737068672737
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.433337,
+        "fragmented": 41.766419,
+        "penalty_percent": 0.8038985611996384
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 138.140388,
+        "fragmented": 139.290716,
+        "penalty_percent": 0.832723880868209
+      },
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 0.580414,
+        "fragmented": 0.572246,
+        "penalty_percent": -1.4072713614764554
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.46702656,
+        "fragmented": 0.46702656
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 8.219409,
+        "fragmented": 8.289992,
+        "penalty_percent": 0.8587357071536308
+      },
+      "npu_calls": {
+        "compact": 12,
+        "fragmented": 12,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 166320,
+        "fragmented": 166320,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 26.181592999999996,
+        "fragmented": 26.712134,
+        "penalty_percent": 2.0263893033552356
+      },
+      "npu_output_bytes": {
+        "compact": 2661120,
+        "fragmented": 2661120,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": -0.5549999999999997,
+      "reconstruction_ms": {
+        "compact": 36.08916,
+        "fragmented": 36.192409,
+        "penalty_percent": 0.28609421776510774
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.608628,
+        "fragmented": 41.87346,
+        "penalty_percent": 0.6364833755152859
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 291.444144,
+        "fragmented": 289.72478,
+        "penalty_percent": -0.5899463191821704
+      },
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.914781,
+        "fragmented": 1.842739,
+        "penalty_percent": -3.7624146051167293
+      },
+      "dispatched_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 1.40107968,
+        "fragmented": 1.40107968
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 23.967565,
+        "fragmented": 24.231521,
+        "penalty_percent": 1.1013050345331297
+      },
+      "npu_calls": {
+        "compact": 36,
+        "fragmented": 36,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 498960,
+        "fragmented": 498960,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 88.14260300000002,
+        "fragmented": 86.214986,
+        "penalty_percent": -2.186929968473958
+      },
+      "npu_output_bytes": {
+        "compact": 7983360,
+        "fragmented": 7983360,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.5549999999999997,
+      "reconstruction_ms": {
+        "compact": 107.820064,
+        "fragmented": 107.56807599999999,
+        "penalty_percent": -0.23371160306490954
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.592878,
+        "fragmented": 42.094542,
+        "penalty_percent": 1.2061295686247009
+      },
+      "block_index": 3,
+      "compute_pipeline_ms": {
+        "compact": 103.068846,
+        "fragmented": 290.588982,
+        "penalty_percent": 181.93677651149795
+      },
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 0.850203,
+        "fragmented": 0.854578,
+        "penalty_percent": 0.5145829878276019
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 230400,
+        "penalty_percent": 400.0
+      },
+      "executed_gmac": {
+        "compact": 0.447011136,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.2580160000000005,
+        "fragmented": 5.118721,
+        "penalty_percent": 20.213756829471738
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 159192,
+        "fragmented": 767448,
+        "penalty_percent": 382.089552238806
+      },
+      "npu_ms": {
+        "compact": 17.585061,
+        "fragmented": 71.608406,
+        "penalty_percent": 307.2115871534367
+      },
+      "npu_output_bytes": {
+        "compact": 2547072,
+        "fragmented": 12279168,
+        "penalty_percent": 382.089552238806
+      },
+      "post_temperature_gap_c": 0.5549999999999997,
+      "reconstruction_ms": {
+        "compact": 28.889995,
+        "fragmented": 147.872663,
+        "penalty_percent": 411.8473125384757
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.389004,
+        "fragmented": 41.64596,
+        "penalty_percent": 0.6208315619288698
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 286.358089,
+        "fragmented": 272.146423,
+        "penalty_percent": -4.962900140041087
+      },
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.919447,
+        "fragmented": 1.959697,
+        "penalty_percent": 2.096958134295978
+      },
+      "dispatched_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 1.40107968,
+        "fragmented": 1.40107968
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 24.331273,
+        "fragmented": 24.410601999999994,
+        "penalty_percent": 0.32603719501233747
+      },
+      "npu_calls": {
+        "compact": 36,
+        "fragmented": 36,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 498960,
+        "fragmented": 498960,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 83.03787600000001,
+        "fragmented": 83.631712,
+        "penalty_percent": 0.7151387157349518
+      },
+      "npu_output_bytes": {
+        "compact": 7983360,
+        "fragmented": 7983360,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 108.946184,
+        "fragmented": 107.86819200000002,
+        "penalty_percent": -0.9894720130812297
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.550878,
+        "fragmented": 41.594044,
+        "penalty_percent": 0.10388709475645587
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 102.794971,
+        "fragmented": 293.596044,
+        "penalty_percent": 185.6132368576669
+      },
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 0.851078,
+        "fragmented": 0.854287,
+        "penalty_percent": 0.37705122209715414
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 230400,
+        "penalty_percent": 400.0
+      },
+      "executed_gmac": {
+        "compact": 0.447011136,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.271433,
+        "fragmented": 4.72147,
+        "penalty_percent": 10.535972354008596
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 159192,
+        "fragmented": 767448,
+        "penalty_percent": 382.089552238806
+      },
+      "npu_ms": {
+        "compact": 17.416187,
+        "fragmented": 76.25462999999999,
+        "penalty_percent": 337.8376851373954
+      },
+      "npu_output_bytes": {
+        "compact": 2547072,
+        "fragmented": 12279168,
+        "penalty_percent": 382.089552238806
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 28.95387,
+        "fragmented": 146.556377,
+        "penalty_percent": 406.17197977334297
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.52492,
+        "fragmented": 41.134672,
+        "penalty_percent": -0.9397922982151433
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 133.039166,
+        "fragmented": 269.161814,
+        "penalty_percent": 102.317724992353
+      },
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.230534,
+        "fragmented": 1.229368,
+        "penalty_percent": -0.094755610165993
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 230400,
+        "penalty_percent": 150.0
+      },
+      "executed_gmac": {
+        "compact": 0.874006848,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.583515,
+        "fragmented": 5.028304,
+        "penalty_percent": 9.704102637386374
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 311256,
+        "fragmented": 767448,
+        "penalty_percent": 146.5648854961832
+      },
+      "npu_ms": {
+        "compact": 29.044286,
+        "fragmented": 60.345183,
+        "penalty_percent": 107.76955233122274
+      },
+      "npu_output_bytes": {
+        "compact": 4980096,
+        "fragmented": 12279168,
+        "penalty_percent": 146.5648854961832
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 46.83847,
+        "fragmented": 151.60013800000002,
+        "penalty_percent": 223.66586269790625
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.648293,
+        "fragmented": 41.849834,
+        "penalty_percent": 0.48391178961403974
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 123.621889,
+        "fragmented": 124.292134,
+        "penalty_percent": 0.5421734010228629
+      },
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 0.583621,
+        "fragmented": 0.659746,
+        "penalty_percent": 13.043567657777928
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.46702656,
+        "fragmented": 0.46702656
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 8.079991,
+        "fragmented": 8.040037,
+        "penalty_percent": -0.49448074880281206
+      },
+      "npu_calls": {
+        "compact": 12,
+        "fragmented": 12,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 166320,
+        "fragmented": 166320,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 26.873714,
+        "fragmented": 27.429045,
+        "penalty_percent": 2.066446788858432
+      },
+      "npu_output_bytes": {
+        "compact": 2661120,
+        "fragmented": 2661120,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 36.126200000000004,
+        "fragmented": 35.98240800000001,
+        "penalty_percent": -0.3980269167529319
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.519086,
+        "fragmented": 41.555544,
+        "penalty_percent": 0.08781021817290512
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 195.210753,
+        "fragmented": 196.067373,
+        "penalty_percent": 0.4388180399058203
+      },
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.275451,
+        "fragmented": 1.254451,
+        "penalty_percent": -1.6464764228496358
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.93405312,
+        "fragmented": 0.93405312
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 16.472652,
+        "fragmented": 16.662524,
+        "penalty_percent": 1.1526498586869993
+      },
+      "npu_calls": {
+        "compact": 24,
+        "fragmented": 24,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 332640,
+        "fragmented": 332640,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 51.503361000000005,
+        "fragmented": 52.19460500000002,
+        "penalty_percent": 1.3421337687068844
+      },
+      "npu_output_bytes": {
+        "compact": 5322240,
+        "fragmented": 5322240,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 72.957645,
+        "fragmented": 72.959689,
+        "penalty_percent": 0.0028016255184743644
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.632835,
+        "fragmented": 41.814251,
+        "penalty_percent": 0.43575221336716247
+      },
+      "block_index": 4,
+      "compute_pipeline_ms": {
+        "compact": 262.099436,
+        "fragmented": 272.963372,
+        "penalty_percent": 4.144967332169294
+      },
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.579949,
+        "fragmented": 1.587241,
+        "penalty_percent": 0.4615338849545051
+      },
+      "dispatched_core_pixels": {
+        "compact": 184320,
+        "fragmented": 230400,
+        "penalty_percent": 25.0
+      },
+      "executed_gmac": {
+        "compact": 1.727998272,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.885679999999999,
+        "fragmented": 5.114051,
+        "penalty_percent": 4.674293035974543
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 615384,
+        "fragmented": 767448,
+        "penalty_percent": 24.71042471042471
+      },
+      "npu_ms": {
+        "compact": 55.726668,
+        "fragmented": 55.129047,
+        "penalty_percent": -1.072414736872473
+      },
+      "npu_output_bytes": {
+        "compact": 9846144,
+        "fragmented": 12279168,
+        "penalty_percent": 24.71042471042471
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 135.120193,
+        "fragmented": 159.509216,
+        "penalty_percent": 18.04987282692825
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.575961,
+        "fragmented": 41.415253,
+        "penalty_percent": -0.38654067430936745
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 271.627254,
+        "fragmented": 284.024179,
+        "penalty_percent": 4.5639474012427375
+      },
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.858197,
+        "fragmented": 1.970196,
+        "penalty_percent": 6.027294199700029
+      },
+      "dispatched_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 1.40107968,
+        "fragmented": 1.40107968
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 24.654725999999997,
+        "fragmented": 25.666808,
+        "penalty_percent": 4.105022298767397
+      },
+      "npu_calls": {
+        "compact": 36,
+        "fragmented": 36,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 498960,
+        "fragmented": 498960,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 80.594601,
+        "fragmented": 79.89227000000001,
+        "penalty_percent": -0.8714367852010171
+      },
+      "npu_output_bytes": {
+        "compact": 7983360,
+        "fragmented": 7983360,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": -0.5559999999999974,
+      "reconstruction_ms": {
+        "compact": 110.27151300000001,
+        "fragmented": 108.93218699999998,
+        "penalty_percent": -1.2145711649027868
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 45.549894,
+        "fragmented": 45.843893,
+        "penalty_percent": 0.6454438730417231
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 150.972473,
+        "fragmented": 307.387998,
+        "penalty_percent": 103.60532744270539
+      },
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.293242,
+        "fragmented": 1.204868,
+        "penalty_percent": -6.833523810702093
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 230400,
+        "penalty_percent": 150.0
+      },
+      "executed_gmac": {
+        "compact": 0.874006848,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": false,
+      "halo_extraction_ms": {
+        "compact": 4.907554,
+        "fragmented": 4.9486799999999995,
+        "penalty_percent": 0.8380142123754385
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 311256,
+        "fragmented": 767448,
+        "penalty_percent": 146.5648854961832
+      },
+      "npu_ms": {
+        "compact": 27.216127,
+        "fragmented": 75.620841,
+        "penalty_percent": 177.8530574905092
+      },
+      "npu_output_bytes": {
+        "compact": 4980096,
+        "fragmented": 12279168,
+        "penalty_percent": 146.5648854961832
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 47.302218,
+        "fragmented": 155.169532,
+        "penalty_percent": 228.03859641423153
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 45.597727,
+        "fragmented": 45.694269,
+        "penalty_percent": 0.21172546605228693
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 214.174803,
+        "fragmented": 215.664627,
+        "penalty_percent": 0.6956112386385613
+      },
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 1.154994,
+        "fragmented": 1.17716,
+        "penalty_percent": 1.9191441687142883
+      },
+      "dispatched_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.93405312,
+        "fragmented": 0.93405312
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 16.101358,
+        "fragmented": 16.471486,
+        "penalty_percent": 2.2987377834838374
+      },
+      "npu_calls": {
+        "compact": 24,
+        "fragmented": 24,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 332640,
+        "fragmented": 332640,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 52.60410400000001,
+        "fragmented": 53.28951600000001,
+        "penalty_percent": 1.3029629779456113
+      },
+      "npu_output_bytes": {
+        "compact": 5322240,
+        "fragmented": 5322240,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 72.594526,
+        "fragmented": 72.320652,
+        "penalty_percent": -0.3772653602008592
+      },
+      "selected_core_pixels": {
+        "compact": 92160,
+        "fragmented": 92160,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 45.404062,
+        "fragmented": 41.32192,
+        "penalty_percent": -8.990697792633629
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 271.573876,
+        "fragmented": 280.80682,
+        "penalty_percent": 3.3997909283439443
+      },
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 1.589866,
+        "fragmented": 1.591324,
+        "penalty_percent": 0.09170584187597944
+      },
+      "dispatched_core_pixels": {
+        "compact": 184320,
+        "fragmented": 230400,
+        "penalty_percent": 25.0
+      },
+      "executed_gmac": {
+        "compact": 1.727998272,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.814806,
+        "fragmented": 5.143802,
+        "penalty_percent": 6.833006355811637
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 615384,
+        "fragmented": 767448,
+        "penalty_percent": 24.71042471042471
+      },
+      "npu_ms": {
+        "compact": 59.586271,
+        "fragmented": 62.314795000000004,
+        "penalty_percent": 4.579115212630104
+      },
+      "npu_output_bytes": {
+        "compact": 9846144,
+        "fragmented": 12279168,
+        "penalty_percent": 24.71042471042471
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 135.45794,
+        "fragmented": 160.706497,
+        "penalty_percent": 18.63940718425218
+      },
+      "selected_core_pixels": {
+        "compact": 138240,
+        "fragmented": 138240,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 42.036499,
+        "fragmented": 41.478252,
+        "penalty_percent": -1.3280054554495642
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 139.604831,
+        "fragmented": 139.256,
+        "penalty_percent": -0.24987029281242418
+      },
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "dispatch_planning_ms": {
+        "compact": 0.565538,
+        "fragmented": 0.56758,
+        "penalty_percent": 0.36107211186516
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      },
+      "executed_gmac": {
+        "compact": 0.46702656,
+        "fragmented": 0.46702656
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 8.504655000000001,
+        "fragmented": 8.301074000000002,
+        "penalty_percent": -2.393759652801904
+      },
+      "npu_calls": {
+        "compact": 12,
+        "fragmented": 12,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 166320,
+        "fragmented": 166320,
+        "penalty_percent": 0.0
+      },
+      "npu_ms": {
+        "compact": 26.876337,
+        "fragmented": 27.215838,
+        "penalty_percent": 1.2631966923171192
+      },
+      "npu_output_bytes": {
+        "compact": 2661120,
+        "fragmented": 2661120,
+        "penalty_percent": 0.0
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 36.23003100000001,
+        "fragmented": 36.447323,
+        "penalty_percent": 0.5997565941911179
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    },
+    {
+      "bicubic_ms": {
+        "compact": 41.45346,
+        "fragmented": 41.371502,
+        "penalty_percent": -0.19771087865765655
+      },
+      "block_index": 5,
+      "compute_pipeline_ms": {
+        "compact": 117.216048,
+        "fragmented": 292.957579,
+        "penalty_percent": 149.92958216779326
+      },
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "dispatch_planning_ms": {
+        "compact": 0.846995,
+        "fragmented": 0.864787,
+        "penalty_percent": 2.1006027190243057
+      },
+      "dispatched_core_pixels": {
+        "compact": 46080,
+        "fragmented": 230400,
+        "penalty_percent": 400.0
+      },
+      "executed_gmac": {
+        "compact": 0.447011136,
+        "fragmented": 2.154993984
+      },
+      "fragmented_second": true,
+      "halo_extraction_ms": {
+        "compact": 4.251017,
+        "fragmented": 4.806929,
+        "penalty_percent": 13.077153067136644
+      },
+      "npu_calls": {
+        "compact": 6,
+        "fragmented": 6,
+        "penalty_percent": 0.0
+      },
+      "npu_input_bytes": {
+        "compact": 159192,
+        "fragmented": 767448,
+        "penalty_percent": 382.089552238806
+      },
+      "npu_ms": {
+        "compact": 17.359896,
+        "fragmented": 74.98005,
+        "penalty_percent": 331.9153179258678
+      },
+      "npu_output_bytes": {
+        "compact": 2547072,
+        "fragmented": 12279168,
+        "penalty_percent": 382.089552238806
+      },
+      "post_temperature_gap_c": 0.0,
+      "reconstruction_ms": {
+        "compact": 28.645870000000002,
+        "fragmented": 146.36270599999997,
+        "penalty_percent": 410.9382469444983
+      },
+      "selected_core_pixels": {
+        "compact": 46080,
+        "fragmented": 46080,
+        "penalty_percent": 0.0
+      }
+    }
+  ],
+  "primary_gates": {
+    "exact_median_abs_le5_all_densities": true,
+    "exact_structural_control": true,
+    "row_span_ge5_at_two_densities": true,
+    "row_span_positive_all_densities": true
+  },
+  "projection_sha256": "1d1953cb0a7242a0c2d05af72ee983d1c73831d9dc822e325d9b0839d20f232d",
+  "samples": 60,
+  "scope": "Within-backend paired ratios primary; cross-device absolute times descriptive only. Five repeats, one session, no CI/p-value. Post-sample temperatures observed, no per-sample wall-clock timestamps or manipulated thermal factor; no universal, energy, selector or real-time claim.",
+  "service_range_ms": [
+    102.794971,
+    314.567363
+  ],
+  "source_capture_sha256": "1b3236b61485e0e5a2d72c9c96233fd1deaa2a11882ee33c0d823eafa025c98d",
+  "status": "FROZEN_OFFLINE_ANALYSIS_COMPLETE",
+  "summaries": [
+    {
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "fragmented_second_count": 2,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 2.0263893033552356,
+      "median_output_byte_inflation_percent": 0.0,
+      "median_service_penalty_percent": 0.5421734010228629,
+      "paired_blocks": 5,
+      "positive_pairs": 3,
+      "range_percent": [
+        -0.42277605231780024,
+        0.9425650012832097
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        -0.42277605231780024,
+        0.9425650012832097,
+        0.832723880868209,
+        0.5421734010228629,
+        -0.24987029281242418
+      ]
+    },
+    {
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "fragmented_second_count": 3,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 382.089552238806,
+      "median_npu_penalty_percent": 337.8376851373954,
+      "median_output_byte_inflation_percent": 382.089552238806,
+      "median_service_penalty_percent": 181.93677651149795,
+      "paired_blocks": 5,
+      "positive_pairs": 5,
+      "range_percent": [
+        149.92958216779326,
+        188.38306654302556
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        165.22340067207637,
+        188.38306654302556,
+        181.93677651149795,
+        185.6132368576669,
+        149.92958216779326
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "fragmented_second_count": 2,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 1.3029629779456113,
+      "median_output_byte_inflation_percent": 0.0,
+      "median_service_penalty_percent": 0.4388180399058203,
+      "paired_blocks": 5,
+      "positive_pairs": 3,
+      "range_percent": [
+        -6.541743454063842,
+        1.1590973600284527
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        -6.541743454063842,
+        1.1590973600284527,
+        -2.7183745112760933,
+        0.4388180399058203,
+        0.6956112386385613
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "fragmented_second_count": 4,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 146.5648854961832,
+      "median_npu_penalty_percent": 151.5359295311013,
+      "median_output_byte_inflation_percent": 146.5648854961832,
+      "median_service_penalty_percent": 102.90679732479289,
+      "paired_blocks": 5,
+      "positive_pairs": 5,
+      "range_percent": [
+        97.51619703156572,
+        112.6815204085236
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        102.90679732479289,
+        112.6815204085236,
+        97.51619703156572,
+        102.317724992353,
+        103.60532744270539
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "fragmented_second_count": 2,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 0.7151387157349518,
+      "median_output_byte_inflation_percent": 0.0,
+      "median_service_penalty_percent": -0.1378845205426594,
+      "paired_blocks": 5,
+      "positive_pairs": 2,
+      "range_percent": [
+        -4.962900140041087,
+        4.5639474012427375
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        0.9628655736762158,
+        -0.1378845205426594,
+        -0.5899463191821704,
+        -4.962900140041087,
+        4.5639474012427375
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "fragmented_second_count": 1,
+      "launch_counts_equal": true,
+      "median_input_byte_inflation_percent": 24.71042471042471,
+      "median_npu_penalty_percent": 4.579115212630104,
+      "median_output_byte_inflation_percent": 24.71042471042471,
+      "median_service_penalty_percent": 4.144967332169294,
+      "paired_blocks": 5,
+      "positive_pairs": 5,
+      "range_percent": [
+        3.3997909283439443,
+        16.191686095209107
+      ],
+      "selected_counts_equal": true,
+      "service_penalties_percent": [
+        16.191686095209107,
+        3.7662604966717455,
+        13.081019889363834,
+        4.144967332169294,
+        3.3997909283439443
+      ]
+    }
+  ]
+}

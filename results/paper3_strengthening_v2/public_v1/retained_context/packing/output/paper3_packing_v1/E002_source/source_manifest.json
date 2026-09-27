@@ -1,0 +1,12 @@
+{
+  "files": {
+    "E002_headroom_plan.md": "4549a97baea4db4b5d6f5e61c206c4a30dabfc7650ffc73c1e44a8fb087a3181",
+    "headroom_rk3566.py": "57328fcbed235139c14cd47dd9c53d05c346211ad977b81c6f0a6ebfdcc79216",
+    "packing/__init__.py": "8ea358bcbc63ce3286675171bfaa44735ec83ce0d9303f7ca29679570f12ce17",
+    "packing/core.py": "1d4be5c761c5efb852a7a08dc4afdb156ff7fef8f7cf93b29e00f030b5821767",
+    "packing/jobs_service.py": "158fe3ab344df4af2748570edd759e7871e82d204fe7be20ca14ed1f0acaede5",
+    "packing/service.py": "c944af394ecee854083fe2a7dd531bf09a4b73828640c6bf7c3713d3b2e6804f",
+    "qualify_rk3566.py": "2a41abcb5949876cea70ba393bd239fa63919b8db3641aae7582ece030f5fd9c"
+  },
+  "purpose": "headroom_development_E002"
+}

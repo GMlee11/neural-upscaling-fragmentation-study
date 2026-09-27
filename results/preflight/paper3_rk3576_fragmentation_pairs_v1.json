@@ -1,0 +1,887 @@
+{
+  "authorized_for_samples": false,
+  "board_probe": {
+    "cpu_governors": null,
+    "identity": null,
+    "npu_frequencies": null,
+    "runtime_library_sha256": null,
+    "status": "SSH_AUTHENTICATION_REQUIRED",
+    "storage": null,
+    "target": "reviewer-artifact-no-network-target",
+    "thermals": null
+  },
+  "contract_status": "AUTHORIZED_FOR_ACCESS",
+  "dependencies": {
+    "catalog": {
+      "bytes": 11056,
+      "path": "results/models/sparse_refinement_rknn_v2/catalog.json",
+      "sha256": "b7771078b67541754309341c574e789fe7c54f2d863e6dd68aceb187c77b8d48"
+    },
+    "checkpoint": {
+      "bytes": 40169,
+      "path": "experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth",
+      "sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb"
+    },
+    "contract": {
+      "bytes": 12427,
+      "path": "configs/paper3_rk3576_fragmentation_pairs_v1.yaml",
+      "sha256": "e68b1101b2b4626fa68cf1c66c6827493ba25adf16e9c93d75f5c9b5d3d3b275"
+    },
+    "implementation": [
+      {
+        "bytes": 12427,
+        "path": "configs/paper3_rk3576_fragmentation_pairs_v1.yaml",
+        "sha256": "e68b1101b2b4626fa68cf1c66c6827493ba25adf16e9c93d75f5c9b5d3d3b275"
+      },
+      {
+        "bytes": 12209,
+        "path": "docs/paper3_rk3576_fragmentation_pairs_v1.md",
+        "sha256": "667e089191d4e59054709da9d5094921714bada6268f29d5b8655683b7291add"
+      },
+      {
+        "bytes": 877,
+        "path": "scripts/rk3576/run_paper3_rk3576_fragmentation_pairs_v1.sh",
+        "sha256": "a08ce72f26fcab94bf5f20e2884e2073c75416e2497371901c677effcfacb9d2"
+      },
+      {
+        "bytes": 51939,
+        "path": "src/deployment/benchmark_rk3576_fragmentation_pairs.py",
+        "sha256": "d907b1632644f37ce9a12a8a86ca659ca4f75ab5918e5d40f5c05a0c127e5309"
+      },
+      {
+        "bytes": 2087,
+        "path": "src/deployment/prepare_paper3_rk3576_fragmentation_pairs.py",
+        "sha256": "bd19e6a26676397c710e24cd1bbb9b59e30274816e78be01c43c8e4fb5ad5e8d"
+      },
+      {
+        "bytes": 15914,
+        "path": "src/report/paper3_rk3576_fragmentation_pairs_v1.py",
+        "sha256": "770b437fa36e7f9d442d03cedbdf0ff8d767a0d038ce01aaa5b83d0ed6442295"
+      },
+      {
+        "bytes": 4767,
+        "path": "src/report/paper3_rk3576_fragmentation_pairs_manifest.py",
+        "sha256": "d7ee092bb70299be2c19aa3558cb7419e76142326719da56a91f0a452d64a557"
+      },
+      {
+        "bytes": 14946,
+        "path": "tests/test_paper3_rk3576_fragmentation_pairs_contract.py",
+        "sha256": "4b3c6c0ffa8d281777e2207f4914202f22ba3bf74ec62e9f639eedcdddea6d83"
+      },
+      {
+        "bytes": 14379,
+        "path": "tests/test_benchmark_rk3576_fragmentation_pairs.py",
+        "sha256": "d2aef425b7478751d7903fb173eba9d370399e0eba85612454f8c4b623ccd1ac"
+      },
+      {
+        "bytes": 5763,
+        "path": "tests/test_paper3_rk3576_fragmentation_pairs_analysis.py",
+        "sha256": "d21c6a8fe7cce7044717100d17928960b3b0ee6b0ffb24f56f67ccfd6ac10e43"
+      },
+      {
+        "bytes": 4496,
+        "path": "tests/test_paper3_rk3576_fragmentation_pairs_manifest.py",
+        "sha256": "6fd1517b3d8926ab974d6df3a6596a3fa97ec9212247040275faf22ed4b5f608"
+      },
+      {
+        "bytes": 46174,
+        "path": "src/deployment/benchmark_rk3576_sparse.py",
+        "sha256": "d8f69241cb67bf41675349a5257fc7b263658683e5f226a1c165a8a6ab38de49"
+      },
+      {
+        "bytes": 5433,
+        "path": "src/deployment/board_probe.py",
+        "sha256": "34d6f3b2b7ddfde90f6e70f442d71b83e3b3172dab2e71280a94e1b71ac29947"
+      },
+      {
+        "bytes": 39190,
+        "path": "src/runtime/sparse_refinement.py",
+        "sha256": "805617375014890c1a9e17c9a0a4d391fad4fe522275500a1b6b3ce3f9b16147"
+      }
+    ],
+    "rknn_graphs": [
+      {
+        "bytes": 62875,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0064x0060/student_npu_w24_sparse_core_0064x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "5583858dd0db6c36535f4f65270417e5742c277e485875710f328fb85f17864b",
+        "shape": [
+          64,
+          60
+        ]
+      },
+      {
+        "bytes": 77853,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0060/student_npu_w24_sparse_core_0640x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "7a1d8cdde7c2069255d61e864f973be1c035e0164c5ace2f44fa23a9ee189100",
+        "shape": [
+          640,
+          60
+        ]
+      },
+      {
+        "bytes": 78109,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0576x0060/student_npu_w24_sparse_core_0576x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "4622138e5f731241a809cce588dff7f8b3d74090b6fbb855242d780568d53735",
+        "shape": [
+          576,
+          60
+        ]
+      },
+      {
+        "bytes": 67997,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0256x0060/student_npu_w24_sparse_core_0256x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "295c26aa8f5dae2cb8782a62698ca21186eb934f5373d3c2ab3d69d069b52d44",
+        "shape": [
+          256,
+          60
+        ]
+      },
+      {
+        "bytes": 98783,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0120/student_npu_w24_sparse_core_0640x0120_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "205443cd20701eb5413cf28735821fdd2a9499fdfeb14c729a1213a14eb82b0b",
+        "shape": [
+          640,
+          120
+        ]
+      },
+      {
+        "bytes": 116511,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0180/student_npu_w24_sparse_core_0640x0180_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "f4b82d1eacab56b547a748cd54373991024d90f4dd0400b1ff68811c548c4edf",
+        "shape": [
+          640,
+          180
+        ]
+      },
+      {
+        "bytes": 76573,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0512x0060/student_npu_w24_sparse_core_0512x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "d36923f6e6d0df35f839b94202f65cc5b65564e64f61524be3426ea8bd106ab7",
+        "shape": [
+          512,
+          60
+        ]
+      },
+      {
+        "bytes": 62877,
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0128x0060/student_npu_w24_sparse_core_0128x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "08e5b0f9f1bc9056ee04c95ed0a75d0831005fe4399a179da8d967edf459aedc",
+        "shape": [
+          128,
+          60
+        ]
+      }
+    ],
+    "supported_shapes": [
+      [
+        64,
+        60
+      ],
+      [
+        128,
+        60
+      ],
+      [
+        256,
+        60
+      ],
+      [
+        512,
+        60
+      ],
+      [
+        576,
+        60
+      ],
+      [
+        640,
+        60
+      ],
+      [
+        640,
+        120
+      ],
+      [
+        640,
+        180
+      ]
+    ]
+  },
+  "experiment_id": "paper3_rk3576_fragmentation_pairs_v1",
+  "measured_samples": 0,
+  "next_action": "complete_physical_runtime_gates_then_single_capture",
+  "physical_execution_measured": false,
+  "record_kind": "offline_preflight_candidate",
+  "schedule": {
+    "entries": [
+      {
+        "block_index": 1,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 1,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 2,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 3,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 4,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 5,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 6,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 7,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 8,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 9,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 10,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 11,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 1,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 12,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 1
+      },
+      {
+        "block_index": 2,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 13,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 14,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 15,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 16,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 17,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 18,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 19,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 20,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 21,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 22,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 23,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 2,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 24,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 2
+      },
+      {
+        "block_index": 3,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 25,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 26,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 27,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 28,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 29,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 30,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 31,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 32,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 33,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 34,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 35,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 3,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 36,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 3
+      },
+      {
+        "block_index": 4,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 37,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 38,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 39,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 40,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 41,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 42,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 43,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 44,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 45,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 46,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 47,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 4,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 48,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 4
+      },
+      {
+        "block_index": 5,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 49,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 60,
+        "dispatch_mode": "exact",
+        "execution_order": 50,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 51,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 40,
+        "dispatch_mode": "row_spans",
+        "execution_order": 52,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 53,
+        "geometry": "compact",
+        "mask_id": "p40_compact",
+        "pair_id": "density_40",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 40,
+        "dispatch_mode": "exact",
+        "execution_order": 54,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p40_fragmented",
+        "pair_id": "density_40",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 55,
+        "geometry": "compact",
+        "mask_id": "p60_compact",
+        "pair_id": "density_60",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 60,
+        "dispatch_mode": "row_spans",
+        "execution_order": 56,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p60_fragmented",
+        "pair_id": "density_60",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 57,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 20,
+        "dispatch_mode": "exact",
+        "execution_order": 58,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 59,
+        "geometry": "compact",
+        "mask_id": "p20_compact",
+        "pair_id": "density_20",
+        "repeat_index": 5
+      },
+      {
+        "block_index": 5,
+        "density_percent": 20,
+        "dispatch_mode": "row_spans",
+        "execution_order": 60,
+        "geometry": "maximally_fragmented",
+        "mask_id": "p20_fragmented",
+        "pair_id": "density_20",
+        "repeat_index": 5
+      }
+    ],
+    "entry_count": 60,
+    "sha256": "0f9cb1dbb738e5b8aecd76df472fecf6edb42478f43e1a21f252e3d8bdba9653"
+  },
+  "schema_version": 1,
+  "stimuli": {
+    "canonical_rows_sha256": "b605fd865109eb943e8a7dfb60ed77b469d9c7190bac91ee8a81d66cb86992c0",
+    "fixture": {
+      "bytes": 691200,
+      "id": "synthetic_coordinate_rgb_v1",
+      "sha256": "1ac106cdfffeb3a232f2ff3e5a8ffbdd854ec8f9271be34c9f55d6e6cc93f18b"
+    },
+    "mask_count": 6,
+    "mask_rows": {
+      "p20_compact": [
+        "0000110000",
+        "0000110000",
+        "0000110000",
+        "0000110000",
+        "0000110000",
+        "0000110000"
+      ],
+      "p20_fragmented": [
+        "1000000001",
+        "1000000001",
+        "1000000001",
+        "1000000001",
+        "1000000001",
+        "1000000001"
+      ],
+      "p40_compact": [
+        "0001111000",
+        "0001111000",
+        "0001111000",
+        "0001111000",
+        "0001111000",
+        "0001111000"
+      ],
+      "p40_fragmented": [
+        "1001001001",
+        "1001001001",
+        "1001001001",
+        "1001001001",
+        "1001001001",
+        "1001001001"
+      ],
+      "p60_compact": [
+        "0011111100",
+        "0011111100",
+        "0011111100",
+        "0011111100",
+        "0011111100",
+        "0011111100"
+      ],
+      "p60_fragmented": [
+        "1010101011",
+        "1010101011",
+        "1010101011",
+        "1010101011",
+        "1010101011",
+        "1010101011"
+      ]
+    }
+  },
+  "unresolved_gates": [
+    "ssh_authentication_not_available",
+    "exclusive_session_ac_power_and_reviewer_signoff_not_attested"
+  ],
+  "warmups_executed": 0
+}

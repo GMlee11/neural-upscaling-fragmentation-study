@@ -1,0 +1,20 @@
+{
+  "files": {
+    "build_e002.py": "3b4c45e3e9d3824da4c38c06a096cfa1d77cddb0ebc1b7b5c038913b7a9d0bc3",
+    "exclusion_catalog.json": "03e95f5a91bfa08d05eae0d057f8f2e9d6af54ccf8283463d5c12715e6aa9a96",
+    "frozen.json": "8395e5ea3d4b711842225bf7b6949e8bdaf25902a852c44b0b800fe9dacf2a4a",
+    "headless_e002_template.py": "63301c7c7b810183d7d48937fc0c7450174fc81bcca21ae4c00857353a7accf4",
+    "method_freeze.json": "d378cd4e80d62372e0e450e9e384c7945b0d5670132b4c0c9812c6aa03fd5703",
+    "protocol.md": "779f2fa42f5f7304adf3d91def257db2f611a50141e6ae9ac23071c2f2e5afd9",
+    "run_e001.py": "a0e54cec017f250f1f1252aa214138b06b95ad3e6cc672c4653e183448d2831f",
+    "run_e002.py": "7773477cf099d42f8068bda675893ddf67d7fc0aaf34123006d171d08d2d494e",
+    "strength/__init__.py": "0d85fe608ae1c2ed08aa3e9282ba928949317a3aecaa06b97fdc7e7e0c45c629",
+    "strength/cached.py": "c08d2c734a377e112a2aace8a125a3a5434f7b11a55c3595bc3abd4bac04e029",
+    "strength/confirmation.py": "9afdab31f70cbac0f3e34472469f803b9cf8ac3ec97e62071dc0900d1f1e071c",
+    "strength/core.py": "1262a37f5483dcdba1e852aaa69874af68d1af045bcf01c74036277ae258d8e7",
+    "strength/evaluation.py": "bff573fdc73ad425cacd4f8de05b5a2727b34fde9b32734151c5d1e780597fc8",
+    "strength/ownership.py": "d413088b22feab3bd9bee585f2d340c3f3d4c91d865461c0466157cae3db33c4",
+    "strength/service.py": "d16679f8ba40f31d8bcc2b14b621445c2260d6e44121c448ac2e435c95e41a72"
+  },
+  "purpose": "paper3_strengthening_v2_E002_confirmation"
+}

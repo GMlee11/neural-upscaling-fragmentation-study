@@ -1,0 +1,333 @@
+{
+  "cells": [
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibrated_reduction_percent": 2.7455213672872003,
+      "device": "rk3576",
+      "graph": "width24",
+      "maximum_cross_mode_mae": 0.0008227644339711489,
+      "maximum_psnr_delta_db": 0.011081559198201495,
+      "maximum_reference_mae": null,
+      "mode_choices_over_40_masks": {
+        "always_exact": {
+          "exact": 40,
+          "row_spans": 0
+        },
+        "always_span": {
+          "exact": 0,
+          "row_spans": 40
+        },
+        "calibrated": {
+          "exact": 12,
+          "row_spans": 28
+        },
+        "geometry": {
+          "exact": 24,
+          "row_spans": 16
+        }
+      },
+      "policies": {
+        "always_exact": {
+          "deadline_successes_33p33ms": 5,
+          "delta_best_fixed_ms": 18.496488096875,
+          "maximum_regression_ms": 141.076943,
+          "mean_service_ms": 120.40752784375,
+          "regressions_vs_best_fixed": 208,
+          "session_means_ms": [
+            122.3520486875,
+            118.463007
+          ]
+        },
+        "always_span": {
+          "deadline_successes_33p33ms": 2,
+          "delta_best_fixed_ms": 0.0,
+          "maximum_regression_ms": 0.0,
+          "mean_service_ms": 101.911039746875,
+          "regressions_vs_best_fixed": 0,
+          "session_means_ms": [
+            102.9865070125,
+            100.83557248125
+          ]
+        },
+        "calibrated": {
+          "deadline_successes_33p33ms": 3,
+          "delta_best_fixed_ms": -2.7979893718749995,
+          "maximum_regression_ms": 72.060336,
+          "mean_service_ms": 99.113050375,
+          "regressions_vs_best_fixed": 141,
+          "session_means_ms": [
+            99.4136755375,
+            98.8124252125
+          ]
+        },
+        "geometry": {
+          "deadline_successes_33p33ms": 3,
+          "delta_best_fixed_ms": 1.758996434375,
+          "maximum_regression_ms": 70.86413000000002,
+          "mean_service_ms": 103.67003618125,
+          "regressions_vs_best_fixed": 170,
+          "session_means_ms": [
+            102.810006075,
+            104.5300662875
+          ]
+        }
+      },
+      "policy_mean_overhead_ms": {
+        "always_exact": 0.014441946875,
+        "always_span": 0.014384140625,
+        "calibrated": 0.5010742375,
+        "geometry": 0.1080057
+      },
+      "previously_opened_geometry_replication": false,
+      "requests": 1280
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibrated_reduction_percent": 1.3481566346402132,
+      "device": "rk3576",
+      "graph": "fp16",
+      "maximum_cross_mode_mae": 0.0,
+      "maximum_psnr_delta_db": 0.0,
+      "maximum_reference_mae": 2.6150386339749175e-05,
+      "mode_choices_over_40_masks": {
+        "always_exact": {
+          "exact": 40,
+          "row_spans": 0
+        },
+        "always_span": {
+          "exact": 0,
+          "row_spans": 40
+        },
+        "calibrated": {
+          "exact": 11,
+          "row_spans": 29
+        },
+        "geometry": {
+          "exact": 24,
+          "row_spans": 16
+        }
+      },
+      "policies": {
+        "always_exact": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 24.305533978125002,
+          "maximum_regression_ms": 144.237244,
+          "mean_service_ms": 148.53266318125,
+          "regressions_vs_best_fixed": 238,
+          "session_means_ms": [
+            149.451131075,
+            147.6141952875
+          ]
+        },
+        "always_span": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 0.0,
+          "maximum_regression_ms": 0.0,
+          "mean_service_ms": 124.227129203125,
+          "regressions_vs_best_fixed": 0,
+          "session_means_ms": [
+            123.91727598125,
+            124.536982425
+          ]
+        },
+        "calibrated": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": -1.6747762843749994,
+          "maximum_regression_ms": 42.84543599999999,
+          "mean_service_ms": 122.55235291875,
+          "regressions_vs_best_fixed": 146,
+          "session_means_ms": [
+            124.50879523125,
+            120.59591060625
+          ]
+        },
+        "geometry": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 3.5509268718750002,
+          "maximum_regression_ms": 79.839415,
+          "mean_service_ms": 127.778056075,
+          "regressions_vs_best_fixed": 181,
+          "session_means_ms": [
+            127.95230170625,
+            127.60381044374999
+          ]
+        }
+      },
+      "policy_mean_overhead_ms": {
+        "always_exact": 0.016101025,
+        "always_span": 0.01644131875,
+        "calibrated": 0.551521121875,
+        "geometry": 0.115030753125
+      },
+      "previously_opened_geometry_replication": true,
+      "requests": 1280
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibrated_reduction_percent": 2.9533458236491272,
+      "device": "rk3566",
+      "graph": "width24",
+      "maximum_cross_mode_mae": 0.0008227637360583892,
+      "maximum_psnr_delta_db": 0.011081050868600043,
+      "maximum_reference_mae": null,
+      "mode_choices_over_40_masks": {
+        "always_exact": {
+          "exact": 40,
+          "row_spans": 0
+        },
+        "always_span": {
+          "exact": 0,
+          "row_spans": 40
+        },
+        "calibrated": {
+          "exact": 11,
+          "row_spans": 29
+        },
+        "geometry": {
+          "exact": 24,
+          "row_spans": 16
+        }
+      },
+      "policies": {
+        "always_exact": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 32.772020265625,
+          "maximum_regression_ms": 162.219335,
+          "mean_service_ms": 190.874194378125,
+          "regressions_vs_best_fixed": 218,
+          "session_means_ms": [
+            189.39493245625,
+            192.3534563
+          ]
+        },
+        "always_span": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 0.0,
+          "maximum_regression_ms": 0.0,
+          "mean_service_ms": 158.1021741125,
+          "regressions_vs_best_fixed": 0,
+          "session_means_ms": [
+            155.0957907375,
+            161.1085574875
+          ]
+        },
+        "calibrated": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": -4.66930395625,
+          "maximum_regression_ms": 52.62273000000002,
+          "mean_service_ms": 153.43287015625,
+          "regressions_vs_best_fixed": 157,
+          "session_means_ms": [
+            149.4687783375,
+            157.396961975
+          ]
+        },
+        "geometry": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 0.02188551874999998,
+          "maximum_regression_ms": 57.37085400000001,
+          "mean_service_ms": 158.12405963125,
+          "regressions_vs_best_fixed": 155,
+          "session_means_ms": [
+            156.0910862125,
+            160.15703305
+          ]
+        }
+      },
+      "policy_mean_overhead_ms": {
+        "always_exact": 0.02023433125,
+        "always_span": 0.020791215625,
+        "calibrated": 0.95235738125,
+        "geometry": 0.18212691875
+      },
+      "previously_opened_geometry_replication": true,
+      "requests": 1280
+    },
+    {
+      "best_fixed_posthoc": "always_span",
+      "calibrated_reduction_percent": 3.018835121847183,
+      "device": "rk3566",
+      "graph": "fp16",
+      "maximum_cross_mode_mae": 0.0,
+      "maximum_psnr_delta_db": 0.0,
+      "maximum_reference_mae": 2.6150386339749175e-05,
+      "mode_choices_over_40_masks": {
+        "always_exact": {
+          "exact": 40,
+          "row_spans": 0
+        },
+        "always_span": {
+          "exact": 0,
+          "row_spans": 40
+        },
+        "calibrated": {
+          "exact": 11,
+          "row_spans": 29
+        },
+        "geometry": {
+          "exact": 24,
+          "row_spans": 16
+        }
+      },
+      "policies": {
+        "always_exact": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 47.086959075,
+          "maximum_regression_ms": 225.18124799999998,
+          "mean_service_ms": 246.834063309375,
+          "regressions_vs_best_fixed": 231,
+          "session_means_ms": [
+            247.21221561875,
+            246.45591100000001
+          ]
+        },
+        "always_span": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 0.0,
+          "maximum_regression_ms": 0.0,
+          "mean_service_ms": 199.747104234375,
+          "regressions_vs_best_fixed": 0,
+          "session_means_ms": [
+            199.48542419375,
+            200.008784275
+          ]
+        },
+        "calibrated": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": -6.030035737499999,
+          "maximum_regression_ms": 65.09088300000002,
+          "mean_service_ms": 193.717068496875,
+          "regressions_vs_best_fixed": 165,
+          "session_means_ms": [
+            193.68010948125,
+            193.7540275125
+          ]
+        },
+        "geometry": {
+          "deadline_successes_33p33ms": 0,
+          "delta_best_fixed_ms": 6.040263578125001,
+          "maximum_regression_ms": 86.80596000000003,
+          "mean_service_ms": 205.7873678125,
+          "regressions_vs_best_fixed": 166,
+          "session_means_ms": [
+            205.7964970625,
+            205.7782385625
+          ]
+        }
+      },
+      "policy_mean_overhead_ms": {
+        "always_exact": 0.0195106,
+        "always_span": 0.020162265625000002,
+        "calibrated": 0.900614615625,
+        "geometry": 0.182785634375
+      },
+      "previously_opened_geometry_replication": true,
+      "requests": 1280
+    }
+  ],
+  "failed_fp16_v1_excluded": true,
+  "regression_interpretation": "Paired timing differences include run variability and policy overhead, not wrong-choice counts.",
+  "schema_version": 1,
+  "scope": "Four named graph/device cells; per-target calibration; numerical/raw-control audit outcomes are archived, not re-executed by compact replay.",
+  "status": "COMPACT_TIMING_AND_POLICY_REPLAY_PASS"
+}

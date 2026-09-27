@@ -1,0 +1,152 @@
+{
+  "service": [
+    {
+      "policy": "exact",
+      "label": "Individual tiles",
+      "means_ms": [
+        118.698881578125,
+        112.5168609375,
+        130.332863890625,
+        121.740939296875
+      ]
+    },
+    {
+      "policy": "row_spans",
+      "label": "Row spans",
+      "means_ms": [
+        92.995713203125,
+        86.7939595,
+        107.58559784375001,
+        102.367629890625
+      ]
+    },
+    {
+      "policy": "grouped",
+      "label": "Contiguous groups",
+      "means_ms": [
+        91.6048335625,
+        90.0582920625,
+        103.109867953125,
+        100.810379625
+      ]
+    },
+    {
+      "policy": "per_row",
+      "label": "Per-row choice",
+      "means_ms": [
+        89.411538625,
+        88.638144375,
+        104.5466239375,
+        98.751211234375
+      ]
+    },
+    {
+      "policy": "affine_partition",
+      "label": "Affine partition",
+      "means_ms": [
+        88.644925078125,
+        84.429494671875,
+        102.22824146875,
+        98.766086265625
+      ]
+    },
+    {
+      "policy": "lookup_partition",
+      "label": "Profiled partition",
+      "means_ms": [
+        94.131917875,
+        89.318288140625,
+        106.420053703125,
+        99.323690703125
+      ]
+    }
+  ],
+  "chooser_ms": {
+    "width24": 91.928418484375,
+    "fp16": 100.195360609375
+  },
+  "geometry": [
+    {
+      "graph": "width24",
+      "family": "sparse_all_rows",
+      "label": "$6\\times2$",
+      "whole_penalty_ms": 33.24905875,
+      "selected_penalty_ms": 17.055352875000004,
+      "interaction_ms": 16.193705875,
+      "same_sign": true,
+      "practical_gate": true
+    },
+    {
+      "graph": "width24",
+      "family": "sparse_three_rows",
+      "label": "$3\\times4$",
+      "whole_penalty_ms": 14.794279875,
+      "selected_penalty_ms": 8.888564999999996,
+      "interaction_ms": 5.905714875000005,
+      "same_sign": true,
+      "practical_gate": true
+    },
+    {
+      "graph": "width24",
+      "family": "dense_all_rows",
+      "label": "$6\\times6$",
+      "whole_penalty_ms": -6.057833999999996,
+      "selected_penalty_ms": 2.7844285000000077,
+      "interaction_ms": -8.842262500000004,
+      "same_sign": false,
+      "practical_gate": false
+    },
+    {
+      "graph": "width24",
+      "family": "dense_four_rows",
+      "label": "$4\\times9$",
+      "whole_penalty_ms": -2.4216755000000063,
+      "selected_penalty_ms": -2.6156751250000028,
+      "interaction_ms": 0.19399962499999646,
+      "same_sign": false,
+      "practical_gate": false
+    },
+    {
+      "graph": "fp16",
+      "family": "sparse_all_rows",
+      "label": "$6\\times2$",
+      "whole_penalty_ms": 52.714222750000005,
+      "selected_penalty_ms": 28.1650895,
+      "interaction_ms": 24.549133250000004,
+      "same_sign": true,
+      "practical_gate": true
+    },
+    {
+      "graph": "fp16",
+      "family": "sparse_three_rows",
+      "label": "$3\\times4$",
+      "whole_penalty_ms": 22.58186675,
+      "selected_penalty_ms": 15.111754499999998,
+      "interaction_ms": 7.4701122500000015,
+      "same_sign": true,
+      "practical_gate": true
+    },
+    {
+      "graph": "fp16",
+      "family": "dense_all_rows",
+      "label": "$6\\times6$",
+      "whole_penalty_ms": 10.33905275,
+      "selected_penalty_ms": -0.21874224999999825,
+      "interaction_ms": 10.557794999999999,
+      "same_sign": true,
+      "practical_gate": true
+    },
+    {
+      "graph": "fp16",
+      "family": "dense_four_rows",
+      "label": "$4\\times9$",
+      "whole_penalty_ms": 20.763798,
+      "selected_penalty_ms": 6.552590874999993,
+      "interaction_ms": 14.211207125000008,
+      "same_sign": true,
+      "practical_gate": true
+    }
+  ],
+  "scope": "All 12 fixed configurations plus actual chooser; 16 masks, two sessions, two repeats. Numerical audit is separate.",
+  "saved_record_audit_sha256": "24e09d95bef72cb48376f808e1e439cceef81da1664264bace191e71cb697ea9"
+}

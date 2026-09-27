@@ -1,0 +1,154 @@
+{
+  "experiment_id": "paper3_shared_v2_fp16_rk3566_replication_v24",
+  "interactions": [
+    {
+      "density_percent": 20,
+      "service_interaction_percentage_points": 116.29606500274184
+    },
+    {
+      "density_percent": 40,
+      "service_interaction_percentage_points": 67.93374572357409
+    },
+    {
+      "density_percent": 60,
+      "service_interaction_percentage_points": 7.153992436495719
+    }
+  ],
+  "paired_observation_count": 60,
+  "physical_execution_measured": false,
+  "replication": {
+    "exact_control_within_5_percent_all_densities": true,
+    "row_span_penalty_at_least_5_percent_density_count": 3,
+    "row_span_penalty_positive_all_densities": true
+  },
+  "schema_version": 24,
+  "status": "V24_RK3566_OFFLINE_ANALYSIS_COMPLETE",
+  "summaries": [
+    {
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": -0.3133582531819704,
+      "median_service_penalty_percent": -0.3410691353632327,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        -2.5965603264466544,
+        6.280974399124827,
+        -0.3969002833179063,
+        0.4786191582830692,
+        -2.45629090904537,
+        -0.9915341583545851,
+        0.9538658803422723,
+        -0.8335605682103018,
+        -0.28523798740855916,
+        -0.22314193369431365
+      ]
+    },
+    {
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 336.49283085902806,
+      "median_npu_penalty_percent": 99.10771640192596,
+      "median_service_penalty_percent": 115.95499586737861,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        115.48947888736079,
+        115.4898670331462,
+        109.42073398957255,
+        116.93702553186709,
+        119.29907832502967,
+        106.52038140962597,
+        124.78344179993842,
+        117.06449126049279,
+        116.42012470161102,
+        99.380563613301
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 0.37455443257754756,
+      "median_service_penalty_percent": 0.4259017528976791,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        2.650689868711271,
+        0.7491173105674361,
+        -0.5155072248199117,
+        2.0489649058201183,
+        0.26555635771785446,
+        0.5862471480775038,
+        0.10738398412944901,
+        1.6851297967991214,
+        0.21576320324239742,
+        0.21784682664017285
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 129.5628962295629,
+      "median_npu_penalty_percent": 68.19147584911417,
+      "median_service_penalty_percent": 68.35964747647176,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        74.50862499082535,
+        67.48641503660659,
+        67.28863490060992,
+        70.37838881850008,
+        65.40510817658732,
+        61.23214847714177,
+        71.00657264013604,
+        69.23287991633694,
+        66.36439591255773,
+        69.67968446620111
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 0.1655738506169736,
+      "median_service_penalty_percent": 0.03233216427972283,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        19.78245789838608,
+        -1.6863128416585935,
+        0.7810939114402414,
+        1.0910946668983996,
+        0.36713417391970965,
+        -2.3574772953627257,
+        -0.10333923661560149,
+        -0.14499877413358053,
+        0.060385385024453606,
+        0.004278943534992056
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 17.83646764635358,
+      "median_npu_penalty_percent": 7.5203026220855875,
+      "median_service_penalty_percent": 7.186324600775442,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        6.21967334578824,
+        9.615761155961362,
+        6.365030090829562,
+        5.55968086494762,
+        14.057379116120526,
+        8.007619110721322,
+        -13.275028181768825,
+        9.530441168613812,
+        8.44877266989281,
+        5.237010694943323
+      ]
+    }
+  ]
+}

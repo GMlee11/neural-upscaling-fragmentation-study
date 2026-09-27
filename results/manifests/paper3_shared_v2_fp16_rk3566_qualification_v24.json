@@ -1,0 +1,492 @@
+{
+  "board_end": {
+    "compatible": "rockchip,rk3566-orangepi-3b,rockchip,rk3566,",
+    "hostname": "paper3-opi3b",
+    "kernel": "6.1.115-vendor-rk35xx",
+    "machine": "aarch64",
+    "npu_device": "/dev/dri/renderD129",
+    "npu_device_stat": {
+      "major": 226,
+      "minor": 129,
+      "mode": 432
+    },
+    "npu_driver_binding": "/sys/bus/platform/drivers/RKNPU",
+    "python": "3.12.14",
+    "rknn_toolkit_lite2": "2.3.2",
+    "rknpu_control_driver": "/sys/bus/platform/drivers/RKNPU",
+    "rknpu_control_node": "/dev/dri/card1",
+    "rknpu_render_alias": "/dev/dri/renderD129",
+    "rknpu_render_driver": "/sys/bus/platform/drivers/RKNPU",
+    "target": "rk3566",
+    "temperature_c": 48.333
+  },
+  "board_start": {
+    "compatible": "rockchip,rk3566-orangepi-3b,rockchip,rk3566,",
+    "hostname": "paper3-opi3b",
+    "kernel": "6.1.115-vendor-rk35xx",
+    "machine": "aarch64",
+    "npu_device": "/dev/dri/renderD129",
+    "npu_device_stat": {
+      "major": 226,
+      "minor": 129,
+      "mode": 432
+    },
+    "npu_driver_binding": "/sys/bus/platform/drivers/RKNPU",
+    "python": "3.12.14",
+    "rknn_toolkit_lite2": "2.3.2",
+    "rknpu_control_driver": "/sys/bus/platform/drivers/RKNPU",
+    "rknpu_control_node": "/dev/dri/card1",
+    "rknpu_render_alias": "/dev/dri/renderD129",
+    "rknpu_render_driver": "/sys/bus/platform/drivers/RKNPU",
+    "target": "rk3566",
+    "temperature_c": 44.375
+  },
+  "experiment_id": "paper3_shared_v2_fp16_rk3566_replication_v24",
+  "graph_count": 11,
+  "graphs": [
+    {
+      "bytes": 160065,
+      "graph_id": "core_0064x0060",
+      "input_shape_nhwc": [
+        74,
+        78,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        78
+      ],
+      "sha256": "8eab39686c3fe6538182d412fa6a1bd914220eaf8fe8d16e2dbbe3f25be18434"
+    },
+    {
+      "bytes": 36163,
+      "graph_id": "core_0640x0060",
+      "input_shape_nhwc": [
+        74,
+        654,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        654
+      ],
+      "sha256": "b8fe61fee9259fc94edd7675d6b1bac3d87121cff1b1272f57365ae4284cdad8"
+    },
+    {
+      "bytes": 36163,
+      "graph_id": "core_0576x0060",
+      "input_shape_nhwc": [
+        74,
+        590,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        590
+      ],
+      "sha256": "45852981df7677a18a9aa45fc9344a8f20e1ff350960d2ddb0c36518a72ea7c9"
+    },
+    {
+      "bytes": 31427,
+      "graph_id": "core_0256x0060",
+      "input_shape_nhwc": [
+        74,
+        270,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        270
+      ],
+      "sha256": "2b4af852fb427a61561c637e1a1e026d22b13d283abb1952a7e9f28a2310cd12"
+    },
+    {
+      "bytes": 43013,
+      "graph_id": "core_0640x0120",
+      "input_shape_nhwc": [
+        134,
+        654,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        134,
+        654
+      ],
+      "sha256": "a7c3ed5ec5a88ebefe49d14b272cda676b97bbff2545bb9aed0645f1ea6f1d38"
+    },
+    {
+      "bytes": 50501,
+      "graph_id": "core_0640x0180",
+      "input_shape_nhwc": [
+        194,
+        654,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        194,
+        654
+      ],
+      "sha256": "7669464df87fe62abae955ade296400cc3cd9cfd9fbcc9c5e117a78915a9817a"
+    },
+    {
+      "bytes": 34883,
+      "graph_id": "core_0512x0060",
+      "input_shape_nhwc": [
+        74,
+        526,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        526
+      ],
+      "sha256": "f903d2550546c48a7a2534b7c7d869e3c157eedcfab862484201617d4c5f9e98"
+    },
+    {
+      "bytes": 25347,
+      "graph_id": "core_0128x0060",
+      "input_shape_nhwc": [
+        74,
+        142,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        142
+      ],
+      "sha256": "0752e0c850da9f0142d395d2d49b94defbc6ad059e75d6746500dd0124d30a08"
+    },
+    {
+      "bytes": 36163,
+      "graph_id": "full_width_top",
+      "input_shape_nhwc": [
+        67,
+        640,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        67,
+        640
+      ],
+      "sha256": "a86c48e34f53cb3e4ab64f37c559588c8b0e78ed3c7c4c24d269de93e4489790"
+    },
+    {
+      "bytes": 36163,
+      "graph_id": "full_width_middle",
+      "input_shape_nhwc": [
+        74,
+        640,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        74,
+        640
+      ],
+      "sha256": "2ae39f7bbed6c10ae5acebb1fdff623e6c512bd7349f877542da3b1560cafc5d"
+    },
+    {
+      "bytes": 36163,
+      "graph_id": "full_width_bottom",
+      "input_shape_nhwc": [
+        67,
+        640,
+        3
+      ],
+      "output_shape_nchw": [
+        1,
+        12,
+        67,
+        640
+      ],
+      "sha256": "1e6864e2e1a4727d5d4823f8246b3878e0856aac61ded3201b2860531e296cff"
+    }
+  ],
+  "mask_mode_count": 12,
+  "npu_usage_evidence": [
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 38
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    },
+    {
+      "control_driver": "/sys/bus/platform/drivers/RKNPU",
+      "control_nodes": [
+        "/dev/dri/card1"
+      ],
+      "fd_count_after": 40,
+      "fd_count_before": 40
+    }
+  ],
+  "physical_execution_measured": false,
+  "records": [
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "compact",
+      "mask_id": "p20_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_20",
+      "repeated_selected_sha256": "5f08b800396a9145923f377e0fc0c75ab761632c6780342f741ec4cb584e619d",
+      "selected_output_mae": 2.5805122274496844e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "compact",
+      "mask_id": "p20_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_20",
+      "repeated_selected_sha256": "5f08b800396a9145923f377e0fc0c75ab761632c6780342f741ec4cb584e619d",
+      "selected_output_mae": 2.5805122274496844e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p20_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_20",
+      "repeated_selected_sha256": "53298d41c718fd31569094ff9ead246e2e93cee27b754e4c731a7d341f6c6156",
+      "selected_output_mae": 2.5880390352186724e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p20_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_20",
+      "repeated_selected_sha256": "53298d41c718fd31569094ff9ead246e2e93cee27b754e4c731a7d341f6c6156",
+      "selected_output_mae": 2.5880390352186724e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "compact",
+      "mask_id": "p40_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_40",
+      "repeated_selected_sha256": "b5d53fc5922d273a76685b5b6dd4102c04ff0215fc1d6d6e03b9f9c2e1b27549",
+      "selected_output_mae": 2.5854993398023973e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "compact",
+      "mask_id": "p40_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_40",
+      "repeated_selected_sha256": "b5d53fc5922d273a76685b5b6dd4102c04ff0215fc1d6d6e03b9f9c2e1b27549",
+      "selected_output_mae": 2.5854993398023973e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p40_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_40",
+      "repeated_selected_sha256": "ef4103dd2e49ad088786f5693a987442651f46b0664437d9237773c6b3bbfbc9",
+      "selected_output_mae": 2.5892627436868915e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p40_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_40",
+      "repeated_selected_sha256": "ef4103dd2e49ad088786f5693a987442651f46b0664437d9237773c6b3bbfbc9",
+      "selected_output_mae": 2.5892627436868915e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "compact",
+      "mask_id": "p60_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_60",
+      "repeated_selected_sha256": "4e441de78d2b15377db3c71d092afacff4bf5a8997e1ce8fe58f2aadf1dd99b2",
+      "selected_output_mae": 2.5871617105866353e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "compact",
+      "mask_id": "p60_compact",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_60",
+      "repeated_selected_sha256": "4e441de78d2b15377db3c71d092afacff4bf5a8997e1ce8fe58f2aadf1dd99b2",
+      "selected_output_mae": 2.5871617105866353e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p60_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "exact",
+      "pair_id": "density_60",
+      "repeated_selected_sha256": "5a74ee4b12585bc604cdeeca7c9c5298295338b5ff9a0796bb50c9e4258f9bfe",
+      "selected_output_mae": 2.5800440627150506e-05
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p60_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "mode": "row_spans",
+      "pair_id": "density_60",
+      "repeated_selected_sha256": "5a74ee4b12585bc604cdeeca7c9c5298295338b5ff9a0796bb50c9e4258f9bfe",
+      "selected_output_mae": 2.5800440627150506e-05
+    }
+  ],
+  "schema_version": 24,
+  "status": "V24_RK3566_NUMERICAL_QUALIFICATION_PASS"
+}

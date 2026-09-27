@@ -1,0 +1,18 @@
+{
+  "action_id": "paper3_rk3566_rknpu_execution_witness_v24",
+  "input_shape_nhwc": [
+    74,
+    78,
+    3
+  ],
+  "model_sha256": "8eab39686c3fe6538182d412fa6a1bd914220eaf8fe8d16e2dbbe3f25be18434",
+  "output_shape_nchw": [
+    1,
+    12,
+    74,
+    78
+  ],
+  "schema_version": 24,
+  "status": "VALUE_BLIND_INFERENCE_COMPLETED_TRACE_VALIDATION_PENDING",
+  "target_values_retained": false
+}

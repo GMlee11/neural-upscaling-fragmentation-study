@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Width-24} & \multicolumn{2}{c}{FP16} \\
+Organization & Whole & Selected & Whole & Selected \\
+\midrule
+Individual tiles & 118.699 & 112.517 & 130.333 & 121.741 \\
+Row spans & 92.996 & 86.794 & 107.586 & 102.368 \\
+Contiguous groups & 91.605 & 90.058 & 103.110 & 100.810 \\
+Per-row choice & 89.412 & 88.638 & 104.547 & 98.751 \\
+Affine partition & 88.645 & 84.429 & 102.228 & 98.766 \\
+Profiled partition & 94.132 & 89.318 & 106.420 & 99.324 \\
+\midrule
+Frozen choice & \multicolumn{2}{c}{91.928} & \multicolumn{2}{c}{100.195} \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,1082 @@
+[
+  {
+    "block_index": 1,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 1,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 2,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 3,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 4,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 5,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 6,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 7,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 8,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 9,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 10,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 11,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 1,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 12,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 13,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 14,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 15,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 16,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 17,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 18,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 19,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 20,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 21,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 22,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 23,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 2,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 24,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 25,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 26,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 27,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 28,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 29,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 30,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 31,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 32,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 33,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 34,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 35,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 3,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 36,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 37,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 38,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 39,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 40,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 41,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 42,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 43,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 44,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 45,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 46,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 47,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 4,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 48,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 49,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 50,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 51,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 52,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 53,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 54,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 55,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 56,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 57,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 58,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 59,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 5,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 60,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 61,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 62,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 63,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 64,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 65,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 66,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 67,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 68,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 69,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 70,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 71,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 6,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 72,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 73,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 74,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 75,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 76,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 77,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 78,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 79,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 80,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 81,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 82,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 83,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 7,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 84,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 85,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 86,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 87,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 88,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 89,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 90,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 91,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 92,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 93,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 94,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 95,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 8,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 96,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 97,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 98,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 99,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 100,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 101,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 102,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 103,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 104,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 105,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 106,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 107,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 9,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 108,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 109,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 60,
+    "dispatch_mode": "exact",
+    "execution_order": 110,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 111,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 40,
+    "dispatch_mode": "exact",
+    "execution_order": 112,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 113,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 20,
+    "dispatch_mode": "exact",
+    "execution_order": 114,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 115,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p60_fragmented",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 60,
+    "dispatch_mode": "row_spans",
+    "execution_order": 116,
+    "geometry": "compact",
+    "mask_id": "p60_compact",
+    "pair_id": "density_60"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 117,
+    "geometry": "compact",
+    "mask_id": "p40_compact",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 40,
+    "dispatch_mode": "row_spans",
+    "execution_order": 118,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p40_fragmented",
+    "pair_id": "density_40"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 119,
+    "geometry": "maximally_fragmented",
+    "mask_id": "p20_fragmented",
+    "pair_id": "density_20"
+  },
+  {
+    "block_index": 10,
+    "density_percent": 20,
+    "dispatch_mode": "row_spans",
+    "execution_order": 120,
+    "geometry": "compact",
+    "mask_id": "p20_compact",
+    "pair_id": "density_20"
+  }
+]

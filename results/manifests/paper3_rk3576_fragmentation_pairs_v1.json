@@ -1,0 +1,98 @@
+{
+  "all_primary_gates_passed": true,
+  "analysis_disposition": "PRIMARY_GATES_PASS",
+  "claim_boundary": {
+    "causal_claim_if_all_primary_gates_pass": "For this one RK3576, one model, one synthetic input, and three frozen density pairs, within-row fragmentation causes additional static row-span padding and traffic and has the reported physical service effect.",
+    "cross_platform_bit_identity_claimed": false,
+    "model_family_generalization_claimed": false,
+    "natural_mask_prevalence_claimed": false,
+    "physical_energy_claimed": false,
+    "platform_superiority_claimed": false,
+    "rk3576_720p_realtime_claimed": false,
+    "selector_generalization_claimed": false
+  },
+  "control_files": [
+    {
+      "bytes": 12427,
+      "path": "configs/paper3_rk3576_fragmentation_pairs_v1.yaml",
+      "sha256": "e68b1101b2b4626fa68cf1c66c6827493ba25adf16e9c93d75f5c9b5d3d3b275"
+    },
+    {
+      "bytes": 12888,
+      "path": "docs/paper3_rk3576_fragmentation_pairs_v1.md",
+      "sha256": "7ddd40a48f927b761481ca65d0eda5d212248a0070f6f644612d6c80c90b2d96"
+    },
+    {
+      "bytes": 877,
+      "path": "scripts/rk3576/run_paper3_rk3576_fragmentation_pairs_v1.sh",
+      "sha256": "a08ce72f26fcab94bf5f20e2884e2073c75416e2497371901c677effcfacb9d2"
+    },
+    {
+      "bytes": 51939,
+      "path": "src/deployment/benchmark_rk3576_fragmentation_pairs.py",
+      "sha256": "d907b1632644f37ce9a12a8a86ca659ca4f75ab5918e5d40f5c05a0c127e5309"
+    },
+    {
+      "bytes": 2087,
+      "path": "src/deployment/prepare_paper3_rk3576_fragmentation_pairs.py",
+      "sha256": "bd19e6a26676397c710e24cd1bbb9b59e30274816e78be01c43c8e4fb5ad5e8d"
+    },
+    {
+      "bytes": 21741,
+      "path": "src/report/paper3_rk3576_fragmentation_pairs_v1.py",
+      "sha256": "9fafad0c4796fd880d32f7968061793ceaafbeaf36d8f3f9262399832866e19d"
+    },
+    {
+      "bytes": 4767,
+      "path": "src/report/paper3_rk3576_fragmentation_pairs_manifest.py",
+      "sha256": "d7ee092bb70299be2c19aa3558cb7419e76142326719da56a91f0a452d64a557"
+    },
+    {
+      "bytes": 16943,
+      "path": "tests/test_paper3_rk3576_fragmentation_pairs_contract.py",
+      "sha256": "9235fb924ae5bd723fa73490250bc37f44bd435ee31926e15b780c84e8b24e36"
+    },
+    {
+      "bytes": 14379,
+      "path": "tests/test_benchmark_rk3576_fragmentation_pairs.py",
+      "sha256": "d2aef425b7478751d7903fb173eba9d370399e0eba85612454f8c4b623ccd1ac"
+    },
+    {
+      "bytes": 8251,
+      "path": "tests/test_paper3_rk3576_fragmentation_pairs_analysis.py",
+      "sha256": "d7b1f3f2362f4263d8594e1d4e510f0846465a3430ecd042b8ebfdfc5a5345ac"
+    },
+    {
+      "bytes": 4496,
+      "path": "tests/test_paper3_rk3576_fragmentation_pairs_manifest.py",
+      "sha256": "6fd1517b3d8926ab974d6df3a6596a3fa97ec9212247040275faf22ed4b5f608"
+    }
+  ],
+  "evidence_files": [
+    {
+      "bytes": 114181,
+      "path": "results/rk3576/paper3_fragmentation_pairs_v1/paper3_rk3576_fragmentation_pairs_v1_raw.json",
+      "sha256": "7657b5a5ec0abe62cb693dffab97a832ebd777348cc00aca90b45630b12b535b"
+    },
+    {
+      "bytes": 18114,
+      "path": "results/tables/paper3_rk3576_fragmentation_pairs_v1.json",
+      "sha256": "87d0ee836b796d4ab626c6e38a24d0afd00a6db90db52711ad923e333db45fa5"
+    },
+    {
+      "bytes": 2395,
+      "path": "results/tables/paper3_rk3576_fragmentation_pairs_v1.md",
+      "sha256": "084f96159a176d86704b3ee0e0183b12faa153414d0eacbfe0d01db52ab05063"
+    },
+    {
+      "bytes": 729,
+      "path": "docs/paper/generated/paper3_rk3576_fragmentation_pairs_v1.tex",
+      "sha256": "c74efd02d2aed0553dfada76fa9fbe2e42851741cb9dce51def1d56d2eeb2c34"
+    }
+  ],
+  "experiment_id": "paper3_rk3576_fragmentation_pairs_v1",
+  "manifest_id": "paper3_rk3576_fragmentation_pairs_v1",
+  "physical_execution_measured": true,
+  "schema_version": 1,
+  "status": "evidence_complete"
+}

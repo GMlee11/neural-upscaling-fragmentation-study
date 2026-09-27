@@ -1,0 +1,346 @@
+{
+  "artifact": "sparse_refinement_rknn_shape_catalog",
+  "catalog_content_sha256": "37cd8584b34cc2602e3b903db7ff4c604df010db35e9e5efb8cdf9171c5bd296",
+  "checkpoint": {
+    "path": "experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth",
+    "sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb"
+  },
+  "graph": "subpixel_residual",
+  "precision": "int8",
+  "schema_version": 1,
+  "selector": {
+    "experiment_id": "sparse_refinement_selector_v2",
+    "model_id": "decision_tree_depth5",
+    "path": "results/models/sparse_refinement_selector_v2.json",
+    "sha256": "a1eeacded53e4a441af00beebadb8ce97401f254e14e4b1a26314566c3301588"
+  },
+  "selector_report": {
+    "path": "results/tables/sparse_refinement_selector_v2.json",
+    "quality_claim_authorized": false,
+    "sha256": "30402c4c4f4c44571e917a6e43f517f9936c19a077c86b0643148b7116e97bcd"
+  },
+  "shapes": [
+    {
+      "core_height": 60,
+      "core_width": 64,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 70,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          70
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          70
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0064x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.043081283569336e-07,
+          "mean_abs_error": 1.218771632328941e-08
+        },
+        "sha256": "dfd7c16f8cdba5bfea36b47610f42faf85881b763fb5a1284ef695e93d0df111"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0064x0060/student_npu_w24_sparse_core_0064x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "5583858dd0db6c36535f4f65270417e5742c277e485875710f328fb85f17864b",
+        "size_bytes": 62875,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0064x0060",
+      "shape_id": "core_0064x0060"
+    },
+    {
+      "core_height": 60,
+      "core_width": 640,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 646,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          646
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          646
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0640x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.4156103134155273e-07,
+          "mean_abs_error": 1.3815592364285375e-08
+        },
+        "sha256": "12e23f19322e94cedade42bee6bef1599f61432f03cbfb9044307efc34cd65cd"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0060/student_npu_w24_sparse_core_0640x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "7a1d8cdde7c2069255d61e864f973be1c035e0164c5ace2f44fa23a9ee189100",
+        "size_bytes": 77853,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0060",
+      "shape_id": "core_0640x0060"
+    },
+    {
+      "core_height": 60,
+      "core_width": 576,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 582,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          582
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          582
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0576x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.2665987014770508e-07,
+          "mean_abs_error": 1.3841027254920402e-08
+        },
+        "sha256": "1a3e75a113829712810d0794199b50e0cd15aeacd685313ba79e5a8f48eccaf2"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0576x0060/student_npu_w24_sparse_core_0576x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "4622138e5f731241a809cce588dff7f8b3d74090b6fbb855242d780568d53735",
+        "size_bytes": 78109,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0576x0060",
+      "shape_id": "core_0576x0060"
+    },
+    {
+      "core_height": 60,
+      "core_width": 256,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 262,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          262
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          262
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0256x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.4156103134155273e-07,
+          "mean_abs_error": 1.3713906306321415e-08
+        },
+        "sha256": "a502ce64c3d7d2dcba3a86f0b043a9867b69c6de3685f7805dba69ef8ffc2282"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0256x0060/student_npu_w24_sparse_core_0256x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "295c26aa8f5dae2cb8782a62698ca21186eb934f5373d3c2ab3d69d069b52d44",
+        "size_bytes": 67997,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0256x0060",
+      "shape_id": "core_0256x0060"
+    },
+    {
+      "core_height": 120,
+      "core_width": 640,
+      "halo": 3,
+      "input_height": 126,
+      "input_width": 646,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          126,
+          646
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          126,
+          646
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0640x0120.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.341104507446289e-07,
+          "mean_abs_error": 1.3841460622949565e-08
+        },
+        "sha256": "f544a2728759bbd649c44ac22562444e0747ad50db35fd1029f116957c6773d4"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0120/student_npu_w24_sparse_core_0640x0120_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "205443cd20701eb5413cf28735821fdd2a9499fdfeb14c729a1213a14eb82b0b",
+        "size_bytes": 98783,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0120",
+      "shape_id": "core_0640x0120"
+    },
+    {
+      "core_height": 180,
+      "core_width": 640,
+      "halo": 3,
+      "input_height": 186,
+      "input_width": 646,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          186,
+          646
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          186,
+          646
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0640x0180.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.4901161193847656e-07,
+          "mean_abs_error": 1.394755765899815e-08
+        },
+        "sha256": "bd6ca555ea6e338f0dfb8d344126f80e6cd227636975b29408462b0a9c18dc7e"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0180/student_npu_w24_sparse_core_0640x0180_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "f4b82d1eacab56b547a748cd54373991024d90f4dd0400b1ff68811c548c4edf",
+        "size_bytes": 116511,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0640x0180",
+      "shape_id": "core_0640x0180"
+    },
+    {
+      "core_height": 60,
+      "core_width": 512,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 518,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          518
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          518
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0512x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 1.1920928955078125e-07,
+          "mean_abs_error": 1.3825040450205833e-08
+        },
+        "sha256": "f4db9894c3f7a798d2918e713cfdf06b2761a0abe0f74171169fb8ae3bfb7ec9"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0512x0060/student_npu_w24_sparse_core_0512x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "d36923f6e6d0df35f839b94202f65cc5b65564e64f61524be3426ea8bd106ab7",
+        "size_bytes": 76573,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0512x0060",
+      "shape_id": "core_0512x0060"
+    },
+    {
+      "core_height": 60,
+      "core_width": 128,
+      "halo": 3,
+      "input_height": 66,
+      "input_width": 134,
+      "onnx": {
+        "input_shape_nchw": [
+          1,
+          3,
+          66,
+          134
+        ],
+        "operators": [
+          "Conv",
+          "Relu"
+        ],
+        "output_shape_nchw": [
+          1,
+          12,
+          66,
+          134
+        ],
+        "path": "results/models/sparse_refinement_rknn_v2/onnx/core_0128x0060.onnx",
+        "pytorch_agreement": {
+          "allclose": true,
+          "max_abs_error": 9.685754776000977e-08,
+          "mean_abs_error": 1.3635224807658232e-08
+        },
+        "sha256": "5ce0d9b1b3e52316d6547e1fe0d9e12361bcd77c382e232f48dd73674257fbb1"
+      },
+      "rknn": {
+        "path": "results/models/sparse_refinement_rknn_v2/rknn/core_0128x0060/student_npu_w24_sparse_core_0128x0060_subpixel_residual_int8_rk3576.rknn",
+        "sha256": "08e5b0f9f1bc9056ee04c95ed0a75d0831005fe4399a179da8d967edf459aedc",
+        "size_bytes": 62877,
+        "toolkit_version": "2.3.2"
+      },
+      "rknn_output_directory": "results/models/sparse_refinement_rknn_v2/rknn/core_0128x0060",
+      "shape_id": "core_0128x0060"
+    }
+  ],
+  "status": "board_ready",
+  "target_platform": "rk3576"
+}

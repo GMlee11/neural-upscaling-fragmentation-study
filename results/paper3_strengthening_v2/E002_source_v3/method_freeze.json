@@ -1,0 +1,501 @@
+{
+  "bootstrap": {
+    "best_fixed_reselected_each_draw": true,
+    "draws": 5000,
+    "interpretation": "Descriptive sensitivity interval, not validated population 95% coverage; only two pairs per family.",
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "seed": 20260925,
+    "unit": "matched pair within family; preserve both members/sessions/repeats"
+  },
+  "calibration_bindings": {
+    "fp16": {
+      "journal_path": "results/paper3_strengthening_v2/E001_fp16_v5/journal.jsonl",
+      "journal_sha256": "7d744da35c188839e318dd80a90332527ee2309bac92cf84378a92303a331c7c",
+      "model_path": "results/paper3_strengthening_v2/E001_fp16_v5_materialization_model.json",
+      "model_sha256": "9d64ea56f07d49422fe2776288098cb50f5cfd97badab7f723ca9821ae799506"
+    },
+    "width24": {
+      "journal_path": "results/paper3_strengthening_v2/E001_width24_v5/journal.jsonl",
+      "journal_sha256": "d100cf11b2571053e799b32aa17728d657239df88ab211d409b42a9ee2046a64",
+      "model_path": "results/paper3_strengthening_v2/E001_width24_v5_materialization_model.json",
+      "model_sha256": "cd6012d2b46bd5f409fadc5bac109ae3e35a0509802ff94881a79779fe94d85b"
+    }
+  },
+  "candidate_order": [
+    "exact:whole",
+    "exact:selected",
+    "row_spans:whole",
+    "row_spans:selected",
+    "grouped:whole",
+    "grouped:selected",
+    "per_row:whole",
+    "per_row:selected",
+    "affine_partition:whole",
+    "affine_partition:selected",
+    "lookup_partition:whole",
+    "lookup_partition:selected"
+  ],
+  "chooser_objective": "Frozen calibrated additive job costs; common fallback cancels; no obsolete online DP penalty. Actual decision/planning is measured.",
+  "compiled": {
+    "fp16": {
+      "score_sha256": "a48c3834775864f16fcd21a676ea0bec1b19010ee33849ec40b70443311b3024",
+      "serialized_score_bytes": 1879053,
+      "tables": {
+        "affine_partition:selected": {
+          "cost_sha256": "55000e857d394d33bc283477fdfaafb17005c571cfea32f23e74aeb39cebe119",
+          "serialized_table_bytes": 204409,
+          "table_sha256": "23c8c97dbde45cb61056b6de8008509df6fb262fff3646b77e6bac2569e0c2d6"
+        },
+        "affine_partition:whole": {
+          "cost_sha256": "47d0df7f72a1a44f9c714f1df6591fa524c5021b3fa585497c5c07be00cf0dc9",
+          "serialized_table_bytes": 204409,
+          "table_sha256": "23c8c97dbde45cb61056b6de8008509df6fb262fff3646b77e6bac2569e0c2d6"
+        },
+        "lookup_partition:selected": {
+          "cost_sha256": "464ba6c3e19abbed51fd2d186752b587a0deffdd188a8eba79e79305408d805f",
+          "serialized_table_bytes": 218932,
+          "table_sha256": "b91108b637cde220bb1905f883b32152334007fee24da3f26655e0e1d3b0ef6a"
+        },
+        "lookup_partition:whole": {
+          "cost_sha256": "8b865b04723e72c63a028f031bc6d00d1c8975b92f3fac2589fbddf5c71ccdbc",
+          "serialized_table_bytes": 210759,
+          "table_sha256": "7da5409218cf9f2031e809c200ba011dfff69d170955834f1f8cde7df3f90743"
+        },
+        "per_row:selected": {
+          "cost_sha256": "464ba6c3e19abbed51fd2d186752b587a0deffdd188a8eba79e79305408d805f",
+          "serialized_table_bytes": 218944,
+          "table_sha256": "89a39e1edf14140eb7e0cf4b60894feb0a3fe08cd6e26fdc99ecaeae07a7b6dc"
+        },
+        "per_row:whole": {
+          "cost_sha256": "8b865b04723e72c63a028f031bc6d00d1c8975b92f3fac2589fbddf5c71ccdbc",
+          "serialized_table_bytes": 213732,
+          "table_sha256": "ae1cd2e17bc22d7e8ef359b5dae0118d7e398ffee217f2bc71302927080261b0"
+        }
+      }
+    },
+    "width24": {
+      "score_sha256": "fc96db2807085c5573c6541215c607c391449d5860dd5a212b4637835f2a316b",
+      "serialized_score_bytes": 1829604,
+      "tables": {
+        "affine_partition:selected": {
+          "cost_sha256": "39f0438974a5e808107f179c2ed9582dfc2d5b899195ac44fd6dc43e2de9d87c",
+          "serialized_table_bytes": 203329,
+          "table_sha256": "b76cc4adfe65017d9b8569b0f21d65f30dce87afb12a9f30b98b530386a4941b"
+        },
+        "affine_partition:whole": {
+          "cost_sha256": "1ebfd44e45abf8d853810fc1048f79ef855fd94eba16dd3ee720795b4b0c35fe",
+          "serialized_table_bytes": 224539,
+          "table_sha256": "efb9ccc3b2f370960da708d286a871eb4dfdc88b0d5422f3990c46406d08fcb6"
+        },
+        "lookup_partition:selected": {
+          "cost_sha256": "071f764919662b23e59386156989adefee5f009620f26120dbc878f305e6e674",
+          "serialized_table_bytes": 200309,
+          "table_sha256": "110f61eff96f7eacd76c7eb8989dc7ddb7c7eb38551955595e27108fdc50a257"
+        },
+        "lookup_partition:whole": {
+          "cost_sha256": "981675f28f03f4347186dcd1957400c20ea538e0aa7340b8ec7ffa2e31580e0d",
+          "serialized_table_bytes": 224374,
+          "table_sha256": "5262cb99f4aa2fa7f8953c3cc93a9df5d56c99ba690f5277d56f20a89a239cc4"
+        },
+        "per_row:selected": {
+          "cost_sha256": "071f764919662b23e59386156989adefee5f009620f26120dbc878f305e6e674",
+          "serialized_table_bytes": 224816,
+          "table_sha256": "28ce92588e9511efb4a79afccda63129658639c687565fb221e88987f4fcedab"
+        },
+        "per_row:whole": {
+          "cost_sha256": "981675f28f03f4347186dcd1957400c20ea538e0aa7340b8ec7ffa2e31580e0d",
+          "serialized_table_bytes": 226364,
+          "table_sha256": "6fa4605bafdb5ac1fa8cb86182b4f02143afbf38b9bb9486c3a64cb1d2624329"
+        }
+      }
+    }
+  },
+  "exclusion_catalog_sha256": "03e95f5a91bfa08d05eae0d057f8f2e9d6af54ccf8283463d5c12715e6aa9a96",
+  "files": {
+    "build_e002.py": "3b4c45e3e9d3824da4c38c06a096cfa1d77cddb0ebc1b7b5c038913b7a9d0bc3",
+    "headless_e002_template.py": "63301c7c7b810183d7d48937fc0c7450174fc81bcca21ae4c00857353a7accf4",
+    "protocol.md": "779f2fa42f5f7304adf3d91def257db2f611a50141e6ae9ac23071c2f2e5afd9",
+    "run_e001.py": "a0e54cec017f250f1f1252aa214138b06b95ad3e6cc672c4653e183448d2831f",
+    "run_e002.py": "7773477cf099d42f8068bda675893ddf67d7fc0aaf34123006d171d08d2d494e",
+    "strength/__init__.py": "0d85fe608ae1c2ed08aa3e9282ba928949317a3aecaa06b97fdc7e7e0c45c629",
+    "strength/cached.py": "c08d2c734a377e112a2aace8a125a3a5434f7b11a55c3595bc3abd4bac04e029",
+    "strength/confirmation.py": "9afdab31f70cbac0f3e34472469f803b9cf8ac3ec97e62071dc0900d1f1e071c",
+    "strength/core.py": "1262a37f5483dcdba1e852aaa69874af68d1af045bcf01c74036277ae258d8e7",
+    "strength/evaluation.py": "bff573fdc73ad425cacd4f8de05b5a2727b34fde9b32734151c5d1e780597fc8",
+    "strength/ownership.py": "d413088b22feab3bd9bee585f2d340c3f3d4c91d865461c0466157cae3db33c4",
+    "strength/service.py": "d16679f8ba40f31d8bcc2b14b621445c2260d6e44121c448ac2e435c95e41a72"
+  },
+  "identity": "E002_source_v3",
+  "mask_seed": 20260925031,
+  "materialization_models": {
+    "fp16": {
+      "call_ms": 0.3136356653874123,
+      "million_elements_ms": 14.081349001010748
+    },
+    "width24": {
+      "call_ms": 0.20738520247490885,
+      "million_elements_ms": 13.962699110140385
+    }
+  },
+  "order_seed": 20260925032,
+  "practical_gates": {
+    "chooser_mean_gain_fraction": 0.05,
+    "chooser_positive_each_session": true,
+    "geometry_fraction_whole_compact": 0.05,
+    "geometry_minimum_families_per_graph": 2,
+    "geometry_minimum_ms": 2.0,
+    "maximum_pooled_mask_regression_fraction": 0.1,
+    "primary_geometry_policy": "row_spans"
+  },
+  "profiles": {
+    "fp16": {
+      "selected": {
+        "approximation": "row class and width only; origin-dependent extraction and request interference omitted",
+        "coefficients": [
+          2.5853140848484815,
+          1.0757531909090903,
+          1.7679919444444445
+        ],
+        "costs": {
+          "bottom:128": {
+            "base_ms": 6.324598,
+            "commit_tile_ms": 1.718716
+          },
+          "bottom:256": {
+            "base_ms": 8.486531,
+            "commit_tile_ms": 1.8496875
+          },
+          "bottom:512": {
+            "base_ms": 12.619273,
+            "commit_tile_ms": 1.75474925
+          },
+          "bottom:576": {
+            "base_ms": 13.625902,
+            "commit_tile_ms": 2.0590695555555554
+          },
+          "bottom:64": {
+            "base_ms": 3.670802,
+            "commit_tile_ms": 1.48202
+          },
+          "bottom:640": {
+            "base_ms": 13.453681,
+            "commit_tile_ms": 1.7365278
+          },
+          "middle:128": {
+            "base_ms": 4.046369,
+            "commit_tile_ms": 1.919624
+          },
+          "middle:256": {
+            "base_ms": 6.001255,
+            "commit_tile_ms": 1.52416375
+          },
+          "middle:512": {
+            "base_ms": 10.260845,
+            "commit_tile_ms": 2.089470375
+          },
+          "middle:576": {
+            "base_ms": 11.368448,
+            "commit_tile_ms": 1.78347
+          },
+          "middle:64": {
+            "base_ms": 3.029415,
+            "commit_tile_ms": 1.632343
+          },
+          "middle:640": {
+            "base_ms": 14.201417,
+            "commit_tile_ms": 1.765922
+          },
+          "top:128": {
+            "base_ms": 4.079369,
+            "commit_tile_ms": 1.5490695
+          },
+          "top:256": {
+            "base_ms": 7.087534,
+            "commit_tile_ms": 1.86486275
+          },
+          "top:512": {
+            "base_ms": 12.618097,
+            "commit_tile_ms": 2.050680625
+          },
+          "top:576": {
+            "base_ms": 11.322799,
+            "commit_tile_ms": 1.770061888888889
+          },
+          "top:64": {
+            "base_ms": 3.089063,
+            "commit_tile_ms": 1.527696
+          },
+          "top:640": {
+            "base_ms": 10.977081,
+            "commit_tile_ms": 1.9770831
+          }
+        },
+        "shared_fallback": "excluded from additive jobs; charged once in actual service",
+        "training": "same per-job extraction/inference/normalization/scatter observations"
+      },
+      "whole": {
+        "approximation": "row class and width only; origin-dependent extraction and request interference omitted",
+        "coefficients": [
+          4.002066022727267,
+          1.6860511136363636,
+          1.0124499999999999
+        ],
+        "costs": {
+          "bottom:128": {
+            "base_ms": 6.966136,
+            "commit_tile_ms": 1.077578
+          },
+          "bottom:256": {
+            "base_ms": 9.091251,
+            "commit_tile_ms": 0.99378675
+          },
+          "bottom:512": {
+            "base_ms": 15.968855,
+            "commit_tile_ms": 0.996183375
+          },
+          "bottom:576": {
+            "base_ms": 16.680692,
+            "commit_tile_ms": 0.5196481111111111
+          },
+          "bottom:64": {
+            "base_ms": 3.949647,
+            "commit_tile_ms": 1.082678
+          },
+          "bottom:640": {
+            "base_ms": 17.507449,
+            "commit_tile_ms": 0.9961251999999999
+          },
+          "middle:128": {
+            "base_ms": 8.364607,
+            "commit_tile_ms": 1.0464165
+          },
+          "middle:256": {
+            "base_ms": 12.275904,
+            "commit_tile_ms": 1.022386
+          },
+          "middle:512": {
+            "base_ms": 19.546959,
+            "commit_tile_ms": 0.9915365
+          },
+          "middle:576": {
+            "base_ms": 22.901292,
+            "commit_tile_ms": 0.9986192222222222
+          },
+          "middle:64": {
+            "base_ms": 6.398722,
+            "commit_tile_ms": 1.016105
+          },
+          "middle:640": {
+            "base_ms": 18.695352,
+            "commit_tile_ms": 0.99503
+          },
+          "top:128": {
+            "base_ms": 8.148362,
+            "commit_tile_ms": 1.025704
+          },
+          "top:256": {
+            "base_ms": 12.176581,
+            "commit_tile_ms": 1.0394105
+          },
+          "top:512": {
+            "base_ms": 18.847074,
+            "commit_tile_ms": 1.016916875
+          },
+          "top:576": {
+            "base_ms": 19.70413,
+            "commit_tile_ms": 1.0041855555555554
+          },
+          "top:64": {
+            "base_ms": 4.02467,
+            "commit_tile_ms": 1.01243
+          },
+          "top:640": {
+            "base_ms": 22.766719,
+            "commit_tile_ms": 1.01247
+          }
+        },
+        "shared_fallback": "excluded from additive jobs; charged once in actual service",
+        "training": "same per-job extraction/inference/normalization/scatter observations"
+      }
+    },
+    "width24": {
+      "selected": {
+        "approximation": "row class and width only; origin-dependent extraction and request interference omitted",
+        "coefficients": [
+          2.426436489393938,
+          0.9487834136363635,
+          1.7455776875
+        ],
+        "costs": {
+          "bottom:128": {
+            "base_ms": 5.731486,
+            "commit_tile_ms": 1.623993
+          },
+          "bottom:256": {
+            "base_ms": 5.49154,
+            "commit_tile_ms": 1.754652
+          },
+          "bottom:512": {
+            "base_ms": 12.499674,
+            "commit_tile_ms": 1.776761625
+          },
+          "bottom:576": {
+            "base_ms": 15.857258,
+            "commit_tile_ms": 1.804022111111111
+          },
+          "bottom:64": {
+            "base_ms": 2.849143,
+            "commit_tile_ms": 1.53142
+          },
+          "bottom:640": {
+            "base_ms": 8.324159,
+            "commit_tile_ms": 1.7716347
+          },
+          "middle:128": {
+            "base_ms": 3.402656,
+            "commit_tile_ms": 1.610993
+          },
+          "middle:256": {
+            "base_ms": 7.327178,
+            "commit_tile_ms": 1.787746
+          },
+          "middle:512": {
+            "base_ms": 12.367428,
+            "commit_tile_ms": 1.12534625
+          },
+          "middle:576": {
+            "base_ms": 9.623858,
+            "commit_tile_ms": 1.806735888888889
+          },
+          "middle:64": {
+            "base_ms": 2.860518,
+            "commit_tile_ms": 1.620667
+          },
+          "middle:640": {
+            "base_ms": 8.122112,
+            "commit_tile_ms": 1.7689899
+          },
+          "top:128": {
+            "base_ms": 3.426031,
+            "commit_tile_ms": 1.570768
+          },
+          "top:256": {
+            "base_ms": 5.350342,
+            "commit_tile_ms": 1.768552
+          },
+          "top:512": {
+            "base_ms": 12.316079,
+            "commit_tile_ms": 1.739237125
+          },
+          "top:576": {
+            "base_ms": 13.934847,
+            "commit_tile_ms": 1.8225187777777778
+          },
+          "top:64": {
+            "base_ms": 2.802994,
+            "commit_tile_ms": 1.562893
+          },
+          "top:640": {
+            "base_ms": 8.164462,
+            "commit_tile_ms": 1.774717
+          }
+        },
+        "shared_fallback": "excluded from additive jobs; charged once in actual service",
+        "training": "same per-job extraction/inference/normalization/scatter observations"
+      },
+      "whole": {
+        "approximation": "row class and width only; origin-dependent extraction and request interference omitted",
+        "coefficients": [
+          2.7676442545454525,
+          1.937489572727272,
+          1.0157174000000002
+        ],
+        "costs": {
+          "bottom:128": {
+            "base_ms": 4.659906,
+            "commit_tile_ms": 1.1297025
+          },
+          "bottom:256": {
+            "base_ms": 7.342604,
+            "commit_tile_ms": 1.02984775
+          },
+          "bottom:512": {
+            "base_ms": 19.777005,
+            "commit_tile_ms": 1.000096125
+          },
+          "bottom:576": {
+            "base_ms": 19.778979,
+            "commit_tile_ms": 1.0099273333333334
+          },
+          "bottom:64": {
+            "base_ms": 5.799234,
+            "commit_tile_ms": 0.998705
+          },
+          "bottom:640": {
+            "base_ms": 21.307577,
+            "commit_tile_ms": 1.0115646
+          },
+          "middle:128": {
+            "base_ms": 7.080459,
+            "commit_tile_ms": 1.0465915
+          },
+          "middle:256": {
+            "base_ms": 11.207927,
+            "commit_tile_ms": 1.0398915
+          },
+          "middle:512": {
+            "base_ms": 22.020485,
+            "commit_tile_ms": 0.986520875
+          },
+          "middle:576": {
+            "base_ms": 19.933876,
+            "commit_tile_ms": 0.9994661111111112
+          },
+          "middle:64": {
+            "base_ms": 3.751824,
+            "commit_tile_ms": 1.015905
+          },
+          "middle:640": {
+            "base_ms": 16.75059,
+            "commit_tile_ms": 1.0155298000000001
+          },
+          "top:128": {
+            "base_ms": 7.279629,
+            "commit_tile_ms": 1.094666
+          },
+          "top:256": {
+            "base_ms": 9.541434,
+            "commit_tile_ms": 1.02082925
+          },
+          "top:512": {
+            "base_ms": 20.401944,
+            "commit_tile_ms": 1.007982875
+          },
+          "top:576": {
+            "base_ms": 22.391728,
+            "commit_tile_ms": 0.9979826666666666
+          },
+          "top:64": {
+            "base_ms": 5.869358,
+            "commit_tile_ms": 1.042979
+          },
+          "top:640": {
+            "base_ms": 22.546974,
+            "commit_tile_ms": 0.9951755
+          }
+        },
+        "shared_fallback": "excluded from additive jobs; charged once in actual service",
+        "training": "same per-job extraction/inference/normalization/scatter observations"
+      }
+    }
+  },
+  "reservation_inherited_from": {
+    "frozen_sha256": "9c46d32fb01631e255c55b795b06a56c1828fd63d0c4c65e5f2d3e194b3176e4",
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper3_strengthening_v2\\E002_source_v1",
+    "reason": "Zero-sample E002 v1 preparation failure; explicit float accumulation portability correction only."
+  },
+  "unix_time": 1790354993.5414178
+}

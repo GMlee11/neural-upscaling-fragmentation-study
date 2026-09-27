@@ -1,0 +1,120 @@
+{
+  "artifact": "paper3_shared_v2_fp16_offline_reference_v22",
+  "catalog_sha256": "8f5855b74d939f63bb8be7c2edb328cac0cd0e821ef314a5b7b2a240d10e8d90",
+  "checkpoint_sha256": "f78730284e8199ca93348a5486f059eb7b2bd6e6b6389c96f135ff0daec7ef5a",
+  "fixture_sha256": "88854a9e2b5b670aa89ab09548b4d11b43a4f1c9c628b4f21a3f16177fe3a66f",
+  "halo": 7,
+  "mask_rows_sha256": "b605fd865109eb943e8a7dfb60ed77b469d9c7190bac91ee8a81d66cb86992c0",
+  "payload": {
+    "array_count": 12,
+    "bytes": 46504288,
+    "path": "results/manifests/paper3_shared_v2_fp16_selected_reference_v22.npz",
+    "sha256": "09de83517d0e71cacde13556c30cc0c6cc06185c7060d0f78bc892af2cf363cb"
+  },
+  "physical_execution_measured": false,
+  "records": [
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "compact",
+      "mask_id": "p20_compact",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_20",
+      "selected_output_mae": {
+        "exact": 1.3545745450419081e-08,
+        "row_spans": 1.3545745450419081e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.08631506752806,
+        "row_spans": 152.08631506752806
+      }
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 20,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p20_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_20",
+      "selected_output_mae": {
+        "exact": 1.3466126347339014e-08,
+        "row_spans": 1.3466126347339014e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.11405579943093,
+        "row_spans": 152.11405579943093
+      }
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "compact",
+      "mask_id": "p40_compact",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_40",
+      "selected_output_mae": {
+        "exact": 1.3538891397291552e-08,
+        "row_spans": 1.3538891397291552e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.0895768235955,
+        "row_spans": 152.0895768235955
+      }
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 40,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p40_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_40",
+      "selected_output_mae": {
+        "exact": 1.3499081845751519e-08,
+        "row_spans": 1.3499081845751519e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.1034354613947,
+        "row_spans": 152.1034354613947
+      }
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "compact",
+      "mask_id": "p60_compact",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_60",
+      "selected_output_mae": {
+        "exact": 1.353660671291571e-08,
+        "row_spans": 1.353660671291571e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.0906646202302,
+        "row_spans": 152.0906646202302
+      }
+    },
+    {
+      "cross_mode_psnr_delta_db": 0.0,
+      "density_percent": 60,
+      "geometry": "maximally_fragmented",
+      "mask_id": "p60_fragmented",
+      "maximum_unselected_output_change": 0.0,
+      "pair_id": "density_60",
+      "selected_output_mae": {
+        "exact": 1.3460245860569333e-08,
+        "row_spans": 1.3460245860569333e-08
+      },
+      "selected_output_psnr_db": {
+        "exact": 152.13892687003587,
+        "row_spans": 152.13892687003587
+      }
+    }
+  ],
+  "schema_version": 22,
+  "status": "OFFLINE_FP32_REFERENCE_PASS_RKNN_QUALIFICATION_PENDING",
+  "thresholds": {
+    "cross_mode_psnr_delta_db_max": 0.02,
+    "selected_output_mae_max": 0.001,
+    "unselected_output_change": 0.0
+  }
+}

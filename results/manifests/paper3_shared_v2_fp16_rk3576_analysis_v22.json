@@ -1,0 +1,155 @@
+{
+  "checkpoint_sha256": "f78730284e8199ca93348a5486f059eb7b2bd6e6b6389c96f135ff0daec7ef5a",
+  "experiment_id": "paper3_shared_v2_fp16_rk3576_fragmentation_v22",
+  "interactions": [
+    {
+      "density_percent": 20,
+      "service_interaction_percentage_points": 156.98177473423266
+    },
+    {
+      "density_percent": 40,
+      "service_interaction_percentage_points": 72.43360799395771
+    },
+    {
+      "density_percent": 60,
+      "service_interaction_percentage_points": 11.370135253046966
+    }
+  ],
+  "paired_observation_count": 60,
+  "physical_execution_measured": false,
+  "replication": {
+    "exact_control_within_5_percent_all_densities": true,
+    "row_span_penalty_at_least_5_percent_density_count": 3,
+    "row_span_penalty_positive_all_densities": true
+  },
+  "schema_version": 22,
+  "status": "V22_RK3576_OFFLINE_ANALYSIS_COMPLETE",
+  "summaries": [
+    {
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 0.9116543924343862,
+      "median_service_penalty_percent": -0.12503174192112992,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        -0.36729094185744565,
+        0.11722745801518578,
+        1.5000894561940425,
+        -0.6111825726968674,
+        -3.7378922974546525,
+        1.8851177555478713,
+        -2.32798799268171,
+        -1.0489731432459712,
+        0.2372571194934775,
+        1.6778414485258426
+      ]
+    },
+    {
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 336.49283085902806,
+      "median_npu_penalty_percent": 212.8318242353102,
+      "median_service_penalty_percent": 156.85674299231152,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        149.9242179091978,
+        148.5322678827438,
+        156.60510962419397,
+        160.45710637992036,
+        152.22168118958098,
+        161.0889735505839,
+        157.1083763604291,
+        165.5783814494382,
+        159.1740799656419,
+        155.36879488313315
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": -0.531018220683817,
+      "median_service_penalty_percent": 0.9056997334962269,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        8.337556698016177,
+        0.5129722138393076,
+        1.0931560782179277,
+        1.113841609941895,
+        0.7569221654216487,
+        0.21100431459464672,
+        0.9868416828212057,
+        0.824557784171248,
+        1.0564614238194119,
+        -0.30933140600142295
+      ]
+    },
+    {
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 129.5628962295629,
+      "median_npu_penalty_percent": 99.59594210139245,
+      "median_service_penalty_percent": 73.33930772745393,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        98.79581289151264,
+        103.74285099266685,
+        71.9957181372327,
+        72.37818995309394,
+        73.26177720407112,
+        76.73933385614274,
+        71.37271101049414,
+        72.91464247162068,
+        73.41683825083673,
+        88.50365467531167
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "input_bytes_equal_within_pair": true,
+      "median_input_byte_inflation_percent": 0.0,
+      "median_npu_penalty_percent": 0.46414535978787647,
+      "median_service_penalty_percent": 0.8815030070728679,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        1360.0851365177953,
+        6.094462070505359,
+        -0.2829889869786717,
+        -0.14104756207596725,
+        2.4974223909781976,
+        0.22911970591736866,
+        -1.1478662708892913,
+        2.232532621526492,
+        1.5338863082283671,
+        -1.690001278042695
+      ]
+    },
+    {
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "input_bytes_equal_within_pair": false,
+      "median_input_byte_inflation_percent": 17.83646764635358,
+      "median_npu_penalty_percent": 15.438662472746284,
+      "median_service_penalty_percent": 12.251638260119833,
+      "paired_blocks": 10,
+      "service_penalties_percent": [
+        18.635726050163484,
+        15.35415177797393,
+        12.552603661417551,
+        12.37806777759846,
+        11.291063903640742,
+        12.125208742641206,
+        21.156218610995413,
+        12.118143454889418,
+        11.696504792934787,
+        10.350534674487378
+      ]
+    }
+  ]
+}

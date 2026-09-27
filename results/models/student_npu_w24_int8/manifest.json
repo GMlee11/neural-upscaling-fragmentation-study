@@ -1,0 +1,107 @@
+{
+  "artifact": "qat_student_deployment_bundle",
+  "checkpoint": {
+    "epoch": 0,
+    "path": "experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth",
+    "sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb"
+  },
+  "fixed_point_policy": {
+    "path": "configs/fixed_point.yaml",
+    "sha256": "4db085f6d66dc54f8a5b9179b03a340ac3689a3c90a6d3eeef366235e8c53f04"
+  },
+  "fp32_vs_qat": {
+    "max_abs_error": 0.22937250137329102,
+    "mean_abs_error": 0.004828134308396862,
+    "psnr_db": 41.562416028157756,
+    "rmse": 0.008353706229608621
+  },
+  "input_shape": [
+    1,
+    3,
+    360,
+    640
+  ],
+  "onnx": {
+    "clean": {
+      "operators": [
+        "Add",
+        "Constant",
+        "Conv",
+        "DepthToSpace",
+        "Relu",
+        "Resize"
+      ],
+      "path": "student_npu_w24_int8_clean.onnx",
+      "sha256": "b5bb3a480b7e120b60c46573158738bbf8f51731a329473a7ec076839cfcf456",
+      "verification": {
+        "allclose": true,
+        "max_abs_error": 1.7881393432617188e-07,
+        "mean_abs_error": 1.3912708256898272e-08
+      }
+    },
+    "qat_reference": {
+      "operators": [
+        "Abs",
+        "Add",
+        "Clip",
+        "Constant",
+        "Conv",
+        "DepthToSpace",
+        "Div",
+        "Floor",
+        "Mul",
+        "Relu",
+        "Resize",
+        "Sign",
+        "Sub"
+      ],
+      "path": "student_npu_w24_int8_qat_reference.onnx",
+      "sha256": "303bc7122172d4d51ce613390372cbdb6a5463f0b1ee5fecaa539bc7d4be6e5d",
+      "verification": {
+        "allclose": true,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0
+      }
+    }
+  },
+  "output_shape": [
+    1,
+    3,
+    720,
+    1280
+  ],
+  "rknn": {
+    "command": "python src/deployment/convert_rknn.py --onnx student_npu_w24_int8_clean.onnx --calibration-dir <development-val-lr> --output-dir <output> --graph full --precision int8 --recursive",
+    "conversion_status": "pending_linux_rknn_toolkit2",
+    "runtime_agreement_status": "pending_physical_rk3576",
+    "source_graph": "student_npu_w24_int8_clean.onnx",
+    "static_operator_review_pass": true
+  },
+  "rtl": {
+    "element_count": 840,
+    "exact_match": true,
+    "input_shape": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "output_shape": [
+      1,
+      24,
+      5,
+      7
+    ],
+    "requantization_right_shift_bits": 8,
+    "rounding": "nearest_ties_away_from_zero",
+    "status": "first_layer_bit_exact_against_python_golden",
+    "weight_shape": [
+      24,
+      3,
+      3,
+      3
+    ]
+  },
+  "schema_version": 1,
+  "student_id": "student_npu_w24_int8"
+}

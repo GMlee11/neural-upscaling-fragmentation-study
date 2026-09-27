@@ -1,0 +1,91 @@
+schema_version: 24
+experiment_id: paper3_shared_v2_fp16_rk3566_fragmentation_v24
+status: FROZEN_INSTRUMENTATION_CORRECTION_NO_NUMERICAL_VALUES_RETAINED
+frozen_on: 2026-09-07
+
+research_question: >-
+  Does the already observed within-backend compact-versus-fragmented service
+  effect replicate on a second Rockchip NPU when the graph, masks, selected
+  work, precision, and host protocol are held fixed?
+
+predecessor:
+  protocol: configs/paper3_shared_v2_fp16_rk3566_fragmentation_v23.yaml
+  outcome: V23_QUALIFY_TERMINAL_FAILURE
+  reason: >-
+    V23 required a persistent renderD129 descriptor, but a value-blind syscall
+    witness proved RKNN Lite 2.3.2 uses /dev/dri/card1 for the RKNPU driver.
+  numerical_values_retained_or_inspected: false
+  performance_values_collected: false
+  candidate_or_workload_changed: false
+
+frozen_source:
+  compiled_catalog_path: results/models/paper3_shared_v2_fp16_rk3566_v23/catalog.json
+  compiled_catalog_sha256: d62c8f63836a87561efc005f15dd119ccaae1689be75eea50f958b4e030fac96
+  offline_payload_path: results/manifests/paper3_shared_v2_fp16_selected_reference_v22.npz
+  offline_payload_sha256: 09de83517d0e71cacde13556c30cc0c6cc06185c7060d0f78bc892af2cf363cb
+  schedule_path: results/manifests/paper3_shared_v2_fp16_schedule_v22.json
+  schedule_sha256: d7447924e7e4ac14c8be7a83bc0f714b57d8cddcb1573e7f35e6a0a94efae607
+  mask_rows_sha256: b605fd865109eb943e8a7dfb60ed77b469d9c7190bac91ee8a81d66cb86992c0
+  fixture_sha256: 88854a9e2b5b670aa89ab09548b4d11b43a4f1c9c628b4f21a3f16177fe3a66f
+
+compiler_and_runtime:
+  compile_target: rk3566
+  precision: fp16
+  graph_count: 11
+  rknn_toolkit2_version: 2.3.2
+  rknn_toolkit_lite2_version: 2.3.2
+  rknn_runtime_sha256: d31fc19c85b85f6091b2bd0f6af9d962d5264a4e410bfb536402ec92bac738e8
+  rknpu_driver_version: 0.9.8
+  private_library_namespace: scripts/deployment/run_paper3_rk3566_v23_rootless.sh
+
+board_gate:
+  board_revision: Orange Pi 3B V2.1
+  compatible_must_include: [rk3566, rk3568]
+  kernel: 6.1.115-vendor-rk35xx
+  rknpu_control_node: /dev/dri/card1
+  rknpu_render_alias: /dev/dri/renderD129
+  both_nodes_must_resolve_to_driver: /sys/bus/platform/drivers/RKNPU
+  inference_must_retain_control_node_fd: true
+  value_blind_witness_model_sha256: 8eab39686c3fe6538182d412fa6a1bd914220eaf8fe8d16e2dbbe3f25be18434
+  trace_must_show_successful_rknpu_ioctls: true
+  cpu_or_silent_fallback: terminal_failure
+
+workload:
+  anchor_mask_contract: configs/paper3_rk3576_fragmentation_pairs_v1.yaml
+  dispatch_modes: [exact, row_spans]
+  density_percent: [20, 40, 60]
+  pair_members: [compact, maximally_fragmented]
+  warmups_per_graph: 2
+  qualification_repetitions_per_mask_mode: 2
+  measured_blocks: 10
+  measured_samples: 120
+  randomization_seed: 357622
+  replacement_samples: forbidden
+  outlier_removal: forbidden
+
+qualification_gates:
+  all_eleven_static_graphs_load: true
+  all_six_masks_both_modes_pass: true
+  selected_output_mae_max_each_mask_mode: 0.001
+  cross_mode_psnr_delta_db_max: 0.02
+  unselected_output_change_exactly_zero: true
+  repeated_selected_checksums_must_match: true
+  timing_forbidden_until_qualification_passes: true
+
+iteration_boundary:
+  instrumentation_change_from_v23: rknpu_fd_path_only
+  model_mask_input_precision_or_schedule_change: forbidden
+  target_graph_load_or_numerical_failure: terminal_for_this_candidate
+  performance_tuning_after_target_output: forbidden
+
+claims:
+  permitted: >-
+    Same-graph, same-runtime-family replication of the within-backend
+    fragmentation effect on this named RK3566/RKNN target.
+  prohibited:
+    - universal_graph_generality
+    - universal_npu_or_rknn_causality
+    - fp16_int8_raw_latency_comparison
+    - quality_superiority
+    - realtime_720p
+    - energy_efficiency

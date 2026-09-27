@@ -1,0 +1,249 @@
+{
+  "graphs": {
+    "fp16": {
+      "all_planner_jobs_unchanged": true,
+      "changed_reserved_candidate_decisions": [],
+      "changed_score_entries": 2037,
+      "first_ten_differences": [
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            63
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            95
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            111
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            119
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            123
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            125
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            126
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -7.105427357601002e-15,
+          "explicit_left_fold": 32.632306,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            127
+          ],
+          "original_laptop": 32.63230600000001
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            159
+          ],
+          "original_laptop": 27.970548000000004
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.970548,
+          "key": [
+            "exact",
+            "selected",
+            "middle",
+            175
+          ],
+          "original_laptop": 27.970548000000004
+        }
+      ],
+      "maximum_absolute_difference_ms": 7.105427357601002e-15,
+      "original_score_sha256": "04b09d3292b6ecea18d733476ca82391e94bd38c5049ab6458f19811ffa0bbd0",
+      "portable_score_sha256": "a48c3834775864f16fcd21a676ea0bec1b19010ee33849ec40b70443311b3024",
+      "score_entries": 36864
+    },
+    "width24": {
+      "all_planner_jobs_unchanged": true,
+      "changed_reserved_candidate_decisions": [],
+      "changed_score_entries": 1830,
+      "first_ten_differences": [
+        {
+          "difference_ms": 1.7763568394002505e-15,
+          "explicit_left_fold": 15.299341000000002,
+          "key": [
+            "affine_partition",
+            "selected",
+            "top",
+            537
+          ],
+          "original_laptop": 15.299341
+        },
+        {
+          "difference_ms": 1.7763568394002505e-15,
+          "explicit_left_fold": 15.299341000000002,
+          "key": [
+            "affine_partition",
+            "selected",
+            "top",
+            561
+          ],
+          "original_laptop": 15.299341
+        },
+        {
+          "difference_ms": 1.7763568394002505e-15,
+          "explicit_left_fold": 15.299341000000002,
+          "key": [
+            "affine_partition",
+            "selected",
+            "top",
+            609
+          ],
+          "original_laptop": 15.299341
+        },
+        {
+          "difference_ms": 1.7763568394002505e-15,
+          "explicit_left_fold": 15.299341000000002,
+          "key": [
+            "affine_partition",
+            "selected",
+            "top",
+            785
+          ],
+          "original_laptop": 15.299341
+        },
+        {
+          "difference_ms": 1.7763568394002505e-15,
+          "explicit_left_fold": 15.299341000000002,
+          "key": [
+            "affine_partition",
+            "selected",
+            "top",
+            801
+          ],
+          "original_laptop": 15.299341
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.313128,
+          "key": [
+            "affine_partition",
+            "whole",
+            "bottom",
+            613
+          ],
+          "original_laptop": 27.313128000000003
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.313128,
+          "key": [
+            "affine_partition",
+            "whole",
+            "bottom",
+            665
+          ],
+          "original_laptop": 27.313128000000003
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.313128,
+          "key": [
+            "affine_partition",
+            "whole",
+            "bottom",
+            789
+          ],
+          "original_laptop": 27.313128000000003
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.313128,
+          "key": [
+            "affine_partition",
+            "whole",
+            "bottom",
+            805
+          ],
+          "original_laptop": 27.313128000000003
+        },
+        {
+          "difference_ms": -3.552713678800501e-15,
+          "explicit_left_fold": 27.313128,
+          "key": [
+            "affine_partition",
+            "whole",
+            "bottom",
+            809
+          ],
+          "original_laptop": 27.313128000000003
+        }
+      ],
+      "maximum_absolute_difference_ms": 7.105427357601002e-15,
+      "original_score_sha256": "23bdf34c448e7b5d4ec423043fc4a783caeead212d2320604bc3af3ddd93674f",
+      "portable_score_sha256": "fc96db2807085c5573c6541215c607c391449d5860dd5a212b4637835f2a316b",
+      "score_entries": 36864
+    }
+  },
+  "original_frozen_sha256": "9c46d32fb01631e255c55b795b06a56c1828fd63d0c4c65e5f2d3e194b3176e4",
+  "purpose": "preparation-only numerical portability audit; no evaluation outcomes",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]"
+}

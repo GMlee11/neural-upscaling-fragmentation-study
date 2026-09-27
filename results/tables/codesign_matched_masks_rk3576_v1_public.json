@@ -1,0 +1,2360 @@
+{
+  "all_gates_passed": true,
+  "experiment": "codesign_matched_masks_rk3576_v1",
+  "mode_summary": {
+    "exact": {
+      "deadline_ms": 33.333,
+      "deadline_success_percent": 12.0,
+      "patterns": 15,
+      "samples": 75,
+      "shape_calls": {
+        "64x60": 1500
+      },
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.439667266666667,
+          "fps": 155.2875262944486,
+          "median_ms": 6.354523,
+          "p95_ms": 6.4498628,
+          "p99_ms": 9.429835960000013,
+          "samples": 75
+        },
+        "extraction_ms": {
+          "average_ms": 6.370873226666666,
+          "fps": 156.96435393099395,
+          "median_ms": 6.592766000000001,
+          "p95_ms": 15.3430553,
+          "p99_ms": 16.063080840000005,
+          "samples": 75
+        },
+        "npu_ms": {
+          "average_ms": 22.332510266666667,
+          "fps": 44.7777696308772,
+          "median_ms": 23.247962,
+          "p95_ms": 54.6223528,
+          "p99_ms": 55.211446419999994,
+          "samples": 75
+        },
+        "planning_ms": {
+          "average_ms": 0.5179213866666666,
+          "fps": 1930.794954106806,
+          "median_ms": 0.456407,
+          "p95_ms": 1.178863,
+          "p99_ms": 1.5091304800000003,
+          "samples": 75
+        },
+        "reconstruction_ms": {
+          "average_ms": 27.515009120000002,
+          "fps": 36.3438004195726,
+          "median_ms": 28.92206,
+          "p95_ms": 67.45747410000001,
+          "p99_ms": 68.27648439999999,
+          "samples": 75
+        },
+        "service_ms": {
+          "average_ms": 71.98305576,
+          "fps": 13.892158223097919,
+          "median_ms": 72.514386,
+          "p95_ms": 152.7499773,
+          "p99_ms": 154.80362118000002,
+          "samples": 75
+        }
+      }
+    },
+    "row_spans": {
+      "deadline_ms": 33.333,
+      "deadline_success_percent": 12.0,
+      "patterns": 15,
+      "samples": 75,
+      "shape_calls": {
+        "128x60": 20,
+        "256x60": 40,
+        "512x60": 110,
+        "576x60": 45,
+        "640x60": 50,
+        "64x60": 30
+      },
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.523355946666666,
+          "fps": 153.29532960883185,
+          "median_ms": 6.338624,
+          "p95_ms": 8.324418199999998,
+          "p99_ms": 8.75658596,
+          "samples": 75
+        },
+        "extraction_ms": {
+          "average_ms": 1.5711700133333333,
+          "fps": 636.4683589387241,
+          "median_ms": 1.65266,
+          "p95_ms": 2.4530816,
+          "p99_ms": 2.5460714800000006,
+          "samples": 75
+        },
+        "npu_ms": {
+          "average_ms": 14.256533573333332,
+          "fps": 70.14327815777655,
+          "median_ms": 14.367812,
+          "p95_ms": 27.015976699999978,
+          "p99_ms": 34.98140192000004,
+          "samples": 75
+        },
+        "planning_ms": {
+          "average_ms": 0.48243670666666666,
+          "fps": 2072.8107670524682,
+          "median_ms": 0.493105,
+          "p95_ms": 0.8702785999999998,
+          "p99_ms": 0.9520799800000004,
+          "samples": 75
+        },
+        "reconstruction_ms": {
+          "average_ms": 32.74379988,
+          "fps": 30.540132900421334,
+          "median_ms": 35.869889,
+          "p95_ms": 51.7034393,
+          "p99_ms": 54.60283814,
+          "samples": 75
+        },
+        "service_ms": {
+          "average_ms": 64.09523312,
+          "fps": 15.60178427197208,
+          "median_ms": 68.53501,
+          "p95_ms": 92.06990079999997,
+          "p99_ms": 105.61793862000005,
+          "samples": 75
+        }
+      }
+    }
+  },
+  "pattern_rows": [
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 88320,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 4,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q10",
+      "mask_hex": "0x010417FE1FF04000",
+      "npu_calls": 23,
+      "npu_input_bytes": 318780,
+      "npu_output_bytes": 5100480,
+      "pattern_id": 1,
+      "quality": {
+        "bicubic_psnr_db": 25.590092938539442,
+        "output_sha256": "5526c1706d7401d03f17aa6a2d99cba0ae4c149a2aed5012034e9b80512132dd",
+        "psnr_db": 25.834422745199323
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 88320,
+      "selected_fraction": 0.38333333333333336,
+      "selected_tiles": 23,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 7.2789144,
+          "fps": 137.3831240548728,
+          "median_ms": 6.202597,
+          "p95_ms": 10.4149798,
+          "p99_ms": 11.21614556,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 7.5555888,
+          "fps": 132.35235882609174,
+          "median_ms": 7.292860999999999,
+          "p95_ms": 8.701435399999998,
+          "p99_ms": 8.954865479999999,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 25.003651400000003,
+          "fps": 39.99415861316959,
+          "median_ms": 25.732413,
+          "p95_ms": 25.99840079999999,
+          "p99_ms": 26.03917775999999,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.666469,
+          "fps": 1500.4448819074855,
+          "median_ms": 0.620451,
+          "p95_ms": 0.8101733999999999,
+          "p99_ms": 0.84236828,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 30.7382496,
+          "fps": 32.532756842471606,
+          "median_ms": 31.036002000000003,
+          "p95_ms": 31.891204399999996,
+          "p99_ms": 31.942613679999997,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 80.85347959999999,
+          "fps": 12.368051504365932,
+          "median_ms": 78.705018,
+          "p95_ms": 89.9078416,
+          "p99_ms": 91.07611952,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 130560,
+      "extra_compute_ratio": 0.4782608695652173,
+      "frame_id": 4,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q10",
+      "mask_hex": "0x010417FE1FF04000",
+      "npu_calls": 5,
+      "npu_input_bytes": 436788,
+      "npu_output_bytes": 6988608,
+      "pattern_id": 1,
+      "quality": {
+        "bicubic_psnr_db": 25.590092938539442,
+        "output_sha256": "c5a56cf877970dc25c8638b2f84f348fe851d0f76400a339b8d11e34e16a2f9b",
+        "psnr_db": 25.83299207931529
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 88320,
+      "selected_fraction": 0.38333333333333336,
+      "selected_tiles": 23,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.8714034,
+          "fps": 145.53067863836955,
+          "median_ms": 6.31677,
+          "p95_ms": 8.382637599999999,
+          "p99_ms": 8.666259519999999,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.0340052,
+          "fps": 491.6408276635674,
+          "median_ms": 2.0339460000000003,
+          "p95_ms": 2.3647576,
+          "p99_ms": 2.42679552,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 21.0066994,
+          "fps": 47.60386108062269,
+          "median_ms": 20.517542,
+          "p95_ms": 24.950006199999997,
+          "p99_ms": 24.992836439999998,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.556453,
+          "fps": 1797.0969695553804,
+          "median_ms": 0.557828,
+          "p95_ms": 0.582582,
+          "p99_ms": 0.5833780000000001,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 43.096952,
+          "fps": 23.203497082577904,
+          "median_ms": 42.84088800000001,
+          "p95_ms": 44.028880400000006,
+          "p99_ms": 44.03844808,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 79.2814388,
+          "fps": 12.61329278499421,
+          "median_ms": 77.765915,
+          "p95_ms": 84.8588954,
+          "p99_ms": 85.42827428,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 126720,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 59,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q50",
+      "mask_hex": "0x000CFFFFDFF74000",
+      "npu_calls": 33,
+      "npu_input_bytes": 457380,
+      "npu_output_bytes": 7318080,
+      "pattern_id": 2,
+      "quality": {
+        "bicubic_psnr_db": 25.547371401379245,
+        "output_sha256": "846d9a5e631c7416cb057dd56c605b427e3aecf0e2c2570ac1e6091c707f09ba",
+        "psnr_db": 25.90221926234745
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 126720,
+      "selected_fraction": 0.55,
+      "selected_tiles": 33,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3093806,
+          "fps": 158.49416343658203,
+          "median_ms": 6.335917,
+          "p95_ms": 6.3432070000000005,
+          "p99_ms": 6.344060600000001,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 10.431827600000002,
+          "fps": 95.86047990286954,
+          "median_ms": 10.450061999999999,
+          "p95_ms": 10.635108400000002,
+          "p99_ms": 10.654963280000002,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 37.580461199999995,
+          "fps": 26.609572316797436,
+          "median_ms": 37.194087999999994,
+          "p95_ms": 39.4154108,
+          "p99_ms": 39.80380776,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.8463419999999999,
+          "fps": 1181.5554468524545,
+          "median_ms": 0.867216,
+          "p95_ms": 0.926504,
+          "p99_ms": 0.927252,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 45.658527400000004,
+          "fps": 21.901713807791356,
+          "median_ms": 45.995787,
+          "p95_ms": 46.40157160000001,
+          "p99_ms": 46.430395120000014,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 109.71822119999999,
+          "fps": 9.114256402107985,
+          "median_ms": 108.299449,
+          "p95_ms": 114.0127546,
+          "p99_ms": 114.76303332,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 142080,
+      "extra_compute_ratio": 0.1212121212121211,
+      "frame_id": 59,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q50",
+      "mask_hex": "0x000CFFFFDFF74000",
+      "npu_calls": 5,
+      "npu_input_bytes": 474804,
+      "npu_output_bytes": 7596864,
+      "pattern_id": 2,
+      "quality": {
+        "bicubic_psnr_db": 25.547371401379245,
+        "output_sha256": "b80b6ec70dc5eda6f2a02aa38f99429bf18d158cf4503c66827dffcb85b95af8",
+        "psnr_db": 25.90319885803854
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 126720,
+      "selected_fraction": 0.55,
+      "selected_tiles": 33,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.4266706,
+          "fps": 155.60156451771468,
+          "median_ms": 6.307414,
+          "p95_ms": 6.8160266,
+          "p99_ms": 6.88111332,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.012711,
+          "fps": 496.84231864385896,
+          "median_ms": 2.06622,
+          "p95_ms": 2.1299170000000003,
+          "p99_ms": 2.134377,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 19.344139,
+          "fps": 51.69524474570825,
+          "median_ms": 19.773196999999996,
+          "p95_ms": 24.346492199999997,
+          "p99_ms": 24.846452039999996,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.6899879999999999,
+          "fps": 1449.3005675461025,
+          "median_ms": 0.698372,
+          "p95_ms": 0.707328,
+          "p99_ms": 0.708564,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 36.2399538,
+          "fps": 27.593854162142996,
+          "median_ms": 36.205425,
+          "p95_ms": 37.60015,
+          "p99_ms": 37.8226372,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 70.44506120000001,
+          "fps": 14.19545931205749,
+          "median_ms": 70.396719,
+          "p95_ms": 76.6598522,
+          "p99_ms": 77.72011924,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 188160,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 91,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q90",
+      "mask_hex": "0x0FFFFFFFFFFFE050",
+      "npu_calls": 49,
+      "npu_input_bytes": 679140,
+      "npu_output_bytes": 10866240,
+      "pattern_id": 3,
+      "quality": {
+        "bicubic_psnr_db": 25.45907294591654,
+        "output_sha256": "6730eee180c3bf7a1daa815de9a59f07e8d3bedc21df893473ce87249de1dd46",
+        "psnr_db": 25.97025576224941
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 188160,
+      "selected_fraction": 0.8166666666666667,
+      "selected_tiles": 49,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3559928,
+          "fps": 157.33183335261174,
+          "median_ms": 6.355393,
+          "p95_ms": 6.4006258,
+          "p99_ms": 6.40782996,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 15.725168,
+          "fps": 63.59232537293083,
+          "median_ms": 15.380694999999998,
+          "p95_ms": 16.5375972,
+          "p99_ms": 16.67819464,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 55.0104732,
+          "fps": 18.178356626097884,
+          "median_ms": 54.995165000000014,
+          "p95_ms": 55.5834886,
+          "p99_ms": 55.693723320000004,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 1.3788254,
+          "fps": 725.2549887752285,
+          "median_ms": 1.498441,
+          "p95_ms": 1.5295144,
+          "p99_ms": 1.53555408,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 67.9272906,
+          "fps": 14.721623535504298,
+          "median_ms": 67.88457800000002,
+          "p95_ms": 68.427004,
+          "p99_ms": 68.47160240000001,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 153.9062416,
+          "fps": 6.497462283556927,
+          "median_ms": 153.968198,
+          "p95_ms": 155.1647694,
+          "p99_ms": 155.27177628,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 199680,
+      "extra_compute_ratio": 0.061224489795918435,
+      "frame_id": 91,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q90",
+      "mask_hex": "0x0FFFFFFFFFFFE050",
+      "npu_calls": 6,
+      "npu_input_bytes": 666072,
+      "npu_output_bytes": 10657152,
+      "pattern_id": 3,
+      "quality": {
+        "bicubic_psnr_db": 25.45907294591654,
+        "output_sha256": "6e4f60b60ae65495b15648b974f4a332e3cf3f4825d3728c54744198ff7ff3c1",
+        "psnr_db": 25.970025911444182
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 188160,
+      "selected_fraction": 0.8166666666666667,
+      "selected_tiles": 49,
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.7869298,
+          "fps": 147.34202790781777,
+          "median_ms": 6.311905,
+          "p95_ms": 8.2195692,
+          "p99_ms": 8.59444904,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.4673724,
+          "fps": 405.2894488079708,
+          "median_ms": 2.478227,
+          "p95_ms": 2.5125352,
+          "p99_ms": 2.51836704,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 31.648400199999998,
+          "fps": 31.597173749085748,
+          "median_ms": 32.133437,
+          "p95_ms": 38.584628599999995,
+          "p99_ms": 39.65225132,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.9271786000000001,
+          "fps": 1078.540855019734,
+          "median_ms": 0.930788,
+          "p95_ms": 0.9891364,
+          "p99_ms": 1.00011608,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 53.0746774,
+          "fps": 18.841376886070343,
+          "median_ms": 52.018952999999996,
+          "p95_ms": 55.410645200000005,
+          "p99_ms": 55.649995440000005,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 100.91504760000001,
+          "fps": 9.909324959779337,
+          "median_ms": 100.418905,
+          "p95_ms": 111.38151359999999,
+          "p99_ms": 113.08923951999999,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 3840,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 132,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q10",
+      "mask_hex": "0x0008000000000000",
+      "npu_calls": 1,
+      "npu_input_bytes": 13860,
+      "npu_output_bytes": 221760,
+      "pattern_id": 4,
+      "quality": {
+        "bicubic_psnr_db": 33.977307992205226,
+        "output_sha256": "3884e6110dde688155a15de30d12b578c03d80e8567d34f25d93ba9e517244bb",
+        "psnr_db": 33.977171139431526
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 3840,
+      "selected_fraction": 0.016666666666666666,
+      "selected_tiles": 1,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3569752,
+          "fps": 157.30751946303016,
+          "median_ms": 6.354337,
+          "p95_ms": 6.4077168,
+          "p99_ms": 6.41597296,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 0.3555306,
+          "fps": 2812.6974161998996,
+          "median_ms": 0.356261,
+          "p95_ms": 0.359975,
+          "p99_ms": 0.360543,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 1.175564,
+          "fps": 850.6555151399668,
+          "median_ms": 1.177304,
+          "p95_ms": 1.1867489999999998,
+          "p99_ms": 1.1885729999999999,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.0699172,
+          "fps": 14302.632256440476,
+          "median_ms": 0.069523,
+          "p95_ms": 0.0902862,
+          "p99_ms": 0.09443404,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 1.300349,
+          "fps": 769.0243157798407,
+          "median_ms": 1.295649,
+          "p95_ms": 1.3286482,
+          "p99_ms": 1.33254804,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 19.045735200000003,
+          "fps": 52.505192868585084,
+          "median_ms": 15.079621,
+          "p95_ms": 25.3834518,
+          "p99_ms": 25.54943356,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 3840,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 132,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q10",
+      "mask_hex": "0x0008000000000000",
+      "npu_calls": 1,
+      "npu_input_bytes": 13860,
+      "npu_output_bytes": 221760,
+      "pattern_id": 4,
+      "quality": {
+        "bicubic_psnr_db": 33.977307992205226,
+        "output_sha256": "3884e6110dde688155a15de30d12b578c03d80e8567d34f25d93ba9e517244bb",
+        "psnr_db": 33.977171139431526
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 3840,
+      "selected_fraction": 0.016666666666666666,
+      "selected_tiles": 1,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.533915400000001,
+          "fps": 153.04758919896636,
+          "median_ms": 6.400842,
+          "p95_ms": 7.0193784,
+          "p99_ms": 7.14223488,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 0.3507762,
+          "fps": 2850.82055167939,
+          "median_ms": 0.350461,
+          "p95_ms": 0.355581,
+          "p99_ms": 0.355805,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 1.1764684,
+          "fps": 850.0015810029406,
+          "median_ms": 1.177878,
+          "p95_ms": 1.223332,
+          "p99_ms": 1.2283680000000001,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.12996000000000002,
+          "fps": 7694.675284702985,
+          "median_ms": 0.13022,
+          "p95_ms": 0.1456792,
+          "p99_ms": 0.14817104,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 1.3518916,
+          "fps": 739.7042780648981,
+          "median_ms": 1.333972,
+          "p95_ms": 1.4584422000000001,
+          "p99_ms": 1.4831412400000001,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 17.304631,
+          "fps": 57.78799906221635,
+          "median_ms": 15.128577,
+          "p95_ms": 23.9221516,
+          "p99_ms": 25.67211272,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 19200,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 190,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q50",
+      "mask_hex": "0x0002080320000000",
+      "npu_calls": 5,
+      "npu_input_bytes": 69300,
+      "npu_output_bytes": 1108800,
+      "pattern_id": 5,
+      "quality": {
+        "bicubic_psnr_db": 32.65238058587103,
+        "output_sha256": "cc2381ba27929be86722a4bc0a91e31f5b587d0a982ce8dd434f7f8d5c9657be",
+        "psnr_db": 32.797793661741295
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 19200,
+      "selected_fraction": 0.08333333333333333,
+      "selected_tiles": 5,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.385792,
+          "fps": 156.59764677584235,
+          "median_ms": 6.386048,
+          "p95_ms": 6.4149392,
+          "p99_ms": 6.4195382400000005,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.6480348,
+          "fps": 606.7833033622834,
+          "median_ms": 1.648284,
+          "p95_ms": 1.6739681999999998,
+          "p99_ms": 1.6775000399999997,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 5.6812308,
+          "fps": 176.01819662035206,
+          "median_ms": 5.552281,
+          "p95_ms": 6.0985996,
+          "p99_ms": 6.20624312,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.1472542,
+          "fps": 6790.977778562513,
+          "median_ms": 0.147795,
+          "p95_ms": 0.1661482,
+          "p99_ms": 0.16962404,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 6.9604951999999995,
+          "fps": 143.66793902824617,
+          "median_ms": 6.95275,
+          "p95_ms": 7.1910664,
+          "p99_ms": 7.227405280000001,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 28.6322412,
+          "fps": 34.9256627525197,
+          "median_ms": 26.590393,
+          "p95_ms": 34.8606896,
+          "p99_ms": 36.47069392,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 42240,
+      "extra_compute_ratio": 1.2000000000000002,
+      "frame_id": 190,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q50",
+      "mask_hex": "0x0002080320000000",
+      "npu_calls": 3,
+      "npu_input_bytes": 142956,
+      "npu_output_bytes": 2287296,
+      "pattern_id": 5,
+      "quality": {
+        "bicubic_psnr_db": 32.65238058587103,
+        "output_sha256": "5aef1e350efe08c055a5822e05320498c427ec568e94f4f63f77e40fca6054f6",
+        "psnr_db": 32.796966518477504
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 19200,
+      "selected_fraction": 0.08333333333333333,
+      "selected_tiles": 5,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.2227008,
+          "fps": 160.70192544047754,
+          "median_ms": 6.175554,
+          "p95_ms": 6.3445444,
+          "p99_ms": 6.348323280000001,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.0716426000000001,
+          "fps": 933.1469279030154,
+          "median_ms": 1.018559,
+          "p95_ms": 1.2771249999999998,
+          "p99_ms": 1.3251633999999999,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 5.3680732,
+          "fps": 186.2865804437987,
+          "median_ms": 5.226444000000001,
+          "p95_ms": 5.8117404,
+          "p99_ms": 5.9273400800000005,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.248585,
+          "fps": 4022.76887181447,
+          "median_ms": 0.24644,
+          "p95_ms": 0.2876234,
+          "p99_ms": 0.29505507999999997,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 13.405453,
+          "fps": 74.59650934586098,
+          "median_ms": 13.45722,
+          "p95_ms": 13.5460472,
+          "p99_ms": 13.54814304,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 33.923145,
+          "fps": 29.47839889255551,
+          "median_ms": 31.894519,
+          "p95_ms": 39.7789504,
+          "p99_ms": 41.14600128,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 69120,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 232,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q90",
+      "mask_hex": "0x00180611E0B47820",
+      "npu_calls": 18,
+      "npu_input_bytes": 249480,
+      "npu_output_bytes": 3991680,
+      "pattern_id": 6,
+      "quality": {
+        "bicubic_psnr_db": 33.132191084925836,
+        "output_sha256": "cf4cd32e23b6020b3e6395c78acbb9c82e4533ca1fb52957436cb5578a0a92d2",
+        "psnr_db": 33.43178337149101
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 69120,
+      "selected_fraction": 0.3,
+      "selected_tiles": 18,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.819198399999999,
+          "fps": 146.64480212219667,
+          "median_ms": 6.359799,
+          "p95_ms": 8.258967599999998,
+          "p99_ms": 8.637266319999998,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 5.7665442,
+          "fps": 173.41408741824955,
+          "median_ms": 5.728925,
+          "p95_ms": 5.9715164000000005,
+          "p99_ms": 5.975636080000001,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 19.9784684,
+          "fps": 50.05388701368119,
+          "median_ms": 19.870993,
+          "p95_ms": 20.286376999999998,
+          "p99_ms": 20.304636199999997,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.4201236,
+          "fps": 2380.2519068198026,
+          "median_ms": 0.429683,
+          "p95_ms": 0.4384172,
+          "p99_ms": 0.43882904,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 24.4281458,
+          "fps": 40.93638576530847,
+          "median_ms": 24.431234000000003,
+          "p95_ms": 24.8842342,
+          "p99_ms": 24.906521240000004,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 67.8304914,
+          "fps": 14.742632396733603,
+          "median_ms": 63.583253,
+          "p95_ms": 75.828766,
+          "p99_ms": 76.3169132,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 119040,
+      "extra_compute_ratio": 0.7222222222222223,
+      "frame_id": 232,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q90",
+      "mask_hex": "0x00180611E0B47820",
+      "npu_calls": 6,
+      "npu_input_bytes": 399960,
+      "npu_output_bytes": 6399360,
+      "pattern_id": 6,
+      "quality": {
+        "bicubic_psnr_db": 33.132191084925836,
+        "output_sha256": "89f33ee37f74f7457033b109c4d6527a4f04b8123ce2c660d9d1d65101ed2649",
+        "psnr_db": 33.42123220511234
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 69120,
+      "selected_fraction": 0.3,
+      "selected_tiles": 18,
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.865281,
+          "fps": 145.6604616766597,
+          "median_ms": 6.380939,
+          "p95_ms": 8.3372956,
+          "p99_ms": 8.71694792,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.3424924000000003,
+          "fps": 426.895728669173,
+          "median_ms": 2.260785,
+          "p95_ms": 2.5670048000000003,
+          "p99_ms": 2.6100193600000003,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 19.6681456,
+          "fps": 50.843634185827874,
+          "median_ms": 20.17268,
+          "p95_ms": 21.5730464,
+          "p99_ms": 21.84839968,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5084502,
+          "fps": 1966.7609531867627,
+          "median_ms": 0.514805,
+          "p95_ms": 0.5287392,
+          "p99_ms": 0.53067104,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 40.8901836,
+          "fps": 24.45574736915586,
+          "median_ms": 41.189854000000004,
+          "p95_ms": 42.3422062,
+          "p99_ms": 42.38102924,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 81.5541344,
+          "fps": 12.261794050750174,
+          "median_ms": 82.799178,
+          "p95_ms": 86.6608674,
+          "p99_ms": 86.86340788000001,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 42240,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 58,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q10",
+      "mask_hex": "0x000000C32C403800",
+      "npu_calls": 11,
+      "npu_input_bytes": 152460,
+      "npu_output_bytes": 2439360,
+      "pattern_id": 7,
+      "quality": {
+        "bicubic_psnr_db": 33.29552955923854,
+        "output_sha256": "235fdc3dadbfcd2ee2c4578686dafd22e58893fc4234af35538371d1b9d9b9ef",
+        "psnr_db": 33.632658559978175
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 42240,
+      "selected_fraction": 0.18333333333333332,
+      "selected_tiles": 11,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.247899,
+          "fps": 160.05380368664729,
+          "median_ms": 6.226006,
+          "p95_ms": 6.3065456,
+          "p99_ms": 6.31047072,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 3.509312,
+          "fps": 284.9561395510003,
+          "median_ms": 3.5506360000000003,
+          "p95_ms": 3.8049444,
+          "p99_ms": 3.84294648,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 11.9697232,
+          "fps": 83.54412071951671,
+          "median_ms": 12.235568,
+          "p95_ms": 12.506607200000001,
+          "p99_ms": 12.518307040000002,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.2643044,
+          "fps": 3783.516278957142,
+          "median_ms": 0.264539,
+          "p95_ms": 0.2970182,
+          "p99_ms": 0.30235404,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 14.8044534,
+          "fps": 67.54724223725815,
+          "median_ms": 14.954563000000004,
+          "p95_ms": 15.3107436,
+          "p99_ms": 15.36054632,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 44.5505462,
+          "fps": 22.446413911755812,
+          "median_ms": 43.627224,
+          "p95_ms": 49.2853302,
+          "p99_ms": 50.35993164,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 76800,
+      "extra_compute_ratio": 0.8181818181818181,
+      "frame_id": 58,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q10",
+      "mask_hex": "0x000000C32C403800",
+      "npu_calls": 3,
+      "npu_input_bytes": 257004,
+      "npu_output_bytes": 4112064,
+      "pattern_id": 7,
+      "quality": {
+        "bicubic_psnr_db": 33.29552955923854,
+        "output_sha256": "f0dcaadad595b314e4c06ac533df91e8022c7dd7c92d58b2dbb4428ca21ac1c9",
+        "psnr_db": 33.633774171566905
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 42240,
+      "selected_fraction": 0.18333333333333332,
+      "selected_tiles": 11,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.405924000000001,
+          "fps": 156.10550484208053,
+          "median_ms": 6.434104,
+          "p95_ms": 6.4747934,
+          "p99_ms": 6.48118348,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.2364162,
+          "fps": 808.7891439791875,
+          "median_ms": 1.242476,
+          "p95_ms": 1.2553349999999999,
+          "p99_ms": 1.256427,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 10.3325332,
+          "fps": 96.78168757299517,
+          "median_ms": 10.559235000000001,
+          "p95_ms": 11.9447206,
+          "p99_ms": 11.98100732,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.3293068,
+          "fps": 3036.6819027119996,
+          "median_ms": 0.325162,
+          "p95_ms": 0.3546754,
+          "p99_ms": 0.35850308,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 27.816375599999997,
+          "fps": 35.950046633681495,
+          "median_ms": 27.788209000000002,
+          "p95_ms": 28.4210072,
+          "p99_ms": 28.46006624,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 56.61506899999999,
+          "fps": 17.663141945477452,
+          "median_ms": 56.096444,
+          "p95_ms": 60.538697,
+          "p99_ms": 60.7064818,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 61440,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 17,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q50",
+      "mask_hex": "0x000000639D643C00",
+      "npu_calls": 16,
+      "npu_input_bytes": 221760,
+      "npu_output_bytes": 3548160,
+      "pattern_id": 8,
+      "quality": {
+        "bicubic_psnr_db": 33.313754968911965,
+        "output_sha256": "5162d8cadbcc49516d72aa33f3ea445e1513c9a0aec8274c62743ae8de2f8624",
+        "psnr_db": 34.09877200345914
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 61440,
+      "selected_fraction": 0.26666666666666666,
+      "selected_tiles": 16,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.4122708,
+          "fps": 155.9509932113285,
+          "median_ms": 6.391739,
+          "p95_ms": 6.479446,
+          "p99_ms": 6.4903828,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 5.036315800000001,
+          "fps": 198.55784261979755,
+          "median_ms": 5.011278000000001,
+          "p95_ms": 5.111773800000001,
+          "p99_ms": 5.116573960000001,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 18.0495696,
+          "fps": 55.402983127087964,
+          "median_ms": 18.120461,
+          "p95_ms": 18.499386400000002,
+          "p99_ms": 18.56455168,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.3754902,
+          "fps": 2663.185350776132,
+          "median_ms": 0.38771,
+          "p95_ms": 0.4067642,
+          "p99_ms": 0.40988004,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 22.389074599999997,
+          "fps": 44.66464192316373,
+          "median_ms": 22.288100000000004,
+          "p95_ms": 23.370646999999998,
+          "p99_ms": 23.577427,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 60.1887942,
+          "fps": 16.614388330776695,
+          "median_ms": 58.916765,
+          "p95_ms": 65.40949839999999,
+          "p99_ms": 66.52046847999999,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 96000,
+      "extra_compute_ratio": 0.5625,
+      "frame_id": 17,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q50",
+      "mask_hex": "0x000000639D643C00",
+      "npu_calls": 3,
+      "npu_input_bytes": 320364,
+      "npu_output_bytes": 5125824,
+      "pattern_id": 8,
+      "quality": {
+        "bicubic_psnr_db": 33.313754968911965,
+        "output_sha256": "748aa38f5896807eec95c7fc69952ab1a994acc9b9ee8ea96730fa6b01824619",
+        "psnr_db": 34.099345656335714
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 61440,
+      "selected_fraction": 0.26666666666666666,
+      "selected_tiles": 16,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.8834736,
+          "fps": 145.27548997936157,
+          "median_ms": 6.430854,
+          "p95_ms": 8.2644826,
+          "p99_ms": 8.62570292,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.2281065999999998,
+          "fps": 814.2615632877473,
+          "median_ms": 1.234877,
+          "p95_ms": 1.248971,
+          "p99_ms": 1.2495150000000002,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 11.8647284,
+          "fps": 84.28342953050657,
+          "median_ms": 10.328069,
+          "p95_ms": 14.7856436,
+          "p99_ms": 15.08079192,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.400169,
+          "fps": 2498.9441960771574,
+          "median_ms": 0.398484,
+          "p95_ms": 0.42823799999999995,
+          "p99_ms": 0.431874,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 34.752653599999995,
+          "fps": 28.774781100456746,
+          "median_ms": 34.616587,
+          "p95_ms": 35.8945204,
+          "p99_ms": 35.89733688,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 65.1535568,
+          "fps": 15.34835623893368,
+          "median_ms": 62.904961,
+          "p95_ms": 71.561188,
+          "p99_ms": 71.916752,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 80640,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 3,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q90",
+      "mask_hex": "0x00010363DD743C00",
+      "npu_calls": 21,
+      "npu_input_bytes": 291060,
+      "npu_output_bytes": 4656960,
+      "pattern_id": 9,
+      "quality": {
+        "bicubic_psnr_db": 33.31260916707008,
+        "output_sha256": "227101fed111971d7f505df183ff3d1a5ffa0c0d921231df14ca4d27eb64394d",
+        "psnr_db": 34.17885321602998
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 80640,
+      "selected_fraction": 0.35,
+      "selected_tiles": 21,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3950097999999995,
+          "fps": 156.37192612277155,
+          "median_ms": 6.37388,
+          "p95_ms": 6.4402026,
+          "p99_ms": 6.44434372,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 6.751159400000001,
+          "fps": 148.12270615325716,
+          "median_ms": 6.686461999999999,
+          "p95_ms": 6.9634664,
+          "p99_ms": 6.97723408,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 23.5535078,
+          "fps": 42.45652106222582,
+          "median_ms": 23.583123999999998,
+          "p95_ms": 23.945855599999998,
+          "p99_ms": 23.980813519999998,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5011053999999999,
+          "fps": 1995.5881537097787,
+          "median_ms": 0.504205,
+          "p95_ms": 0.5725626,
+          "p99_ms": 0.58403412,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 29.4418054,
+          "fps": 33.96530839104045,
+          "median_ms": 29.438766,
+          "p95_ms": 29.7000278,
+          "p99_ms": 29.737751160000002,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 75.2035364,
+          "fps": 13.297247016165585,
+          "median_ms": 73.001627,
+          "p95_ms": 81.9558958,
+          "p99_ms": 83.64363276,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 138240,
+      "extra_compute_ratio": 0.7142857142857142,
+      "frame_id": 3,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q90",
+      "mask_hex": "0x00010363DD743C00",
+      "npu_calls": 4,
+      "npu_input_bytes": 460944,
+      "npu_output_bytes": 7375104,
+      "pattern_id": 9,
+      "quality": {
+        "bicubic_psnr_db": 33.31260916707008,
+        "output_sha256": "63af128b8c937b6ba454832904c4a836fdaa949bb48e97aff268d68d8a25d4f6",
+        "psnr_db": 34.18058920045388
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 80640,
+      "selected_fraction": 0.35,
+      "selected_tiles": 21,
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.669682400000001,
+          "fps": 149.93217668055675,
+          "median_ms": 6.364029,
+          "p95_ms": 7.8077056,
+          "p99_ms": 8.096361120000001,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.646975,
+          "fps": 607.1737579501813,
+          "median_ms": 1.660785,
+          "p95_ms": 1.7102016,
+          "p99_ms": 1.71306512,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 19.1028284,
+          "fps": 52.34826901339908,
+          "median_ms": 21.149693,
+          "p95_ms": 21.3631998,
+          "p99_ms": 21.38578716,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5007550000000001,
+          "fps": 1996.9845533244797,
+          "median_ms": 0.497605,
+          "p95_ms": 0.511915,
+          "p99_ms": 0.512107,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 48.355782,
+          "fps": 20.68005021612514,
+          "median_ms": 48.610783999999995,
+          "p95_ms": 49.1377966,
+          "p99_ms": 49.184911320000005,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 83.3395554,
+          "fps": 11.999104089292995,
+          "median_ms": 83.458795,
+          "p95_ms": 88.11782480000001,
+          "p99_ms": 88.93404096,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 34560,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 12,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q10",
+      "mask_hex": "0x00000017C0001C00",
+      "npu_calls": 9,
+      "npu_input_bytes": 124740,
+      "npu_output_bytes": 1995840,
+      "pattern_id": 10,
+      "quality": {
+        "bicubic_psnr_db": 27.01001932672498,
+        "output_sha256": "e438d8dee4a4465c2a3faf7071a05f990675a50d0b21757019e76c49b44213b3",
+        "psnr_db": 27.13919915640127
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 34560,
+      "selected_fraction": 0.15,
+      "selected_tiles": 9,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.2767114,
+          "fps": 159.31909821439297,
+          "median_ms": 6.240857,
+          "p95_ms": 6.383983,
+          "p99_ms": 6.3844158,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.7839204,
+          "fps": 359.20567269092896,
+          "median_ms": 2.737041,
+          "p95_ms": 2.9878982,
+          "p99_ms": 3.01010604,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 9.394675799999998,
+          "fps": 106.44326864371415,
+          "median_ms": 9.154814,
+          "p95_ms": 10.1360824,
+          "p99_ms": 10.289712479999999,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.22893120000000003,
+          "fps": 4368.124571923791,
+          "median_ms": 0.218816,
+          "p95_ms": 0.2755146,
+          "p99_ms": 0.28655412,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 11.8740336,
+          "fps": 84.21738001482495,
+          "median_ms": 11.924259000000001,
+          "p95_ms": 12.156638200000002,
+          "p99_ms": 12.165386040000001,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 38.5073128,
+          "fps": 25.969093330241417,
+          "median_ms": 36.179786,
+          "p95_ms": 45.5843606,
+          "p99_ms": 47.14525612,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 46080,
+      "extra_compute_ratio": 0.33333333333333326,
+      "frame_id": 12,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q10",
+      "mask_hex": "0x00000017C0001C00",
+      "npu_calls": 2,
+      "npu_input_bytes": 154440,
+      "npu_output_bytes": 2471040,
+      "pattern_id": 10,
+      "quality": {
+        "bicubic_psnr_db": 27.01001932672498,
+        "output_sha256": "ef9ae99d8565d263948e51791696a72f3fd9dd48d5c0d66679b8d4c016d50005",
+        "psnr_db": 27.14088794521321
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 34560,
+      "selected_fraction": 0.15,
+      "selected_tiles": 9,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.297287,
+          "fps": 158.79854292808952,
+          "median_ms": 6.306761,
+          "p95_ms": 6.3248682,
+          "p99_ms": 6.32712884,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 0.8287122,
+          "fps": 1206.6915389926683,
+          "median_ms": 0.829117,
+          "p95_ms": 0.845342,
+          "p99_ms": 0.848322,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 5.2010646000000005,
+          "fps": 192.26832906478415,
+          "median_ms": 5.19037,
+          "p95_ms": 5.299245600000001,
+          "p99_ms": 5.309761120000001,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.2910334,
+          "fps": 3436.031740686808,
+          "median_ms": 0.287039,
+          "p95_ms": 0.3102322,
+          "p99_ms": 0.31165604,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 17.7847874,
+          "fps": 56.22782985868024,
+          "median_ms": 17.61901,
+          "p95_ms": 18.7214252,
+          "p99_ms": 18.93338904,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 40.07130479999999,
+          "fps": 24.955513801986307,
+          "median_ms": 35.778178,
+          "p95_ms": 47.0439176,
+          "p99_ms": 47.25478992,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 65280,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 110,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q50",
+      "mask_hex": "0x0001007F84307C00",
+      "npu_calls": 17,
+      "npu_input_bytes": 235620,
+      "npu_output_bytes": 3769920,
+      "pattern_id": 11,
+      "quality": {
+        "bicubic_psnr_db": 26.533682630290997,
+        "output_sha256": "84c901a90a69fc871a79a5566b9277ae29e5e5650ba9dd042da1d2b82d3f240b",
+        "psnr_db": 26.695215546406786
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 65280,
+      "selected_fraction": 0.2833333333333333,
+      "selected_tiles": 17,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.314220000000001,
+          "fps": 158.37268894653653,
+          "median_ms": 6.317762,
+          "p95_ms": 6.3463908,
+          "p99_ms": 6.34921896,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 5.502477999999999,
+          "fps": 181.73630135368106,
+          "median_ms": 5.527430999999999,
+          "p95_ms": 5.733834400000001,
+          "p99_ms": 5.764945280000001,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 19.1209764,
+          "fps": 52.298584501155496,
+          "median_ms": 18.997477,
+          "p95_ms": 19.4494134,
+          "p99_ms": 19.460569080000003,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.41090400000000005,
+          "fps": 2433.658470104939,
+          "median_ms": 0.411509,
+          "p95_ms": 0.4519322,
+          "p99_ms": 0.45303204,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 23.8341126,
+          "fps": 41.95667012163062,
+          "median_ms": 23.884708999999997,
+          "p95_ms": 23.9598086,
+          "p99_ms": 23.96546812,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 65.40678940000001,
+          "fps": 15.288932680740936,
+          "median_ms": 61.738321,
+          "p95_ms": 71.9000646,
+          "p99_ms": 71.94675932,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 96000,
+      "extra_compute_ratio": 0.47058823529411775,
+      "frame_id": 110,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q50",
+      "mask_hex": "0x0001007F84307C00",
+      "npu_calls": 4,
+      "npu_input_bytes": 321552,
+      "npu_output_bytes": 5144832,
+      "pattern_id": 11,
+      "quality": {
+        "bicubic_psnr_db": 26.533682630290997,
+        "output_sha256": "d4a093af5fb268e7af31cb713c1244244aa7a7921b549631c26dfcaa96d1979a",
+        "psnr_db": 26.696011334398754
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 65280,
+      "selected_fraction": 0.2833333333333333,
+      "selected_tiles": 17,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3042844,
+          "fps": 158.62228550475928,
+          "median_ms": 6.275447,
+          "p95_ms": 6.565776,
+          "p99_ms": 6.62014,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.6054466,
+          "fps": 622.8796398460091,
+          "median_ms": 1.674359,
+          "p95_ms": 1.701398,
+          "p99_ms": 1.706086,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 12.163856,
+          "fps": 82.21077263657183,
+          "median_ms": 10.739002999999999,
+          "p95_ms": 15.2934818,
+          "p99_ms": 15.301133160000001,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.438138,
+          "fps": 2282.3859149400414,
+          "median_ms": 0.437808,
+          "p95_ms": 0.456862,
+          "p99_ms": 0.457198,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 30.051859,
+          "fps": 33.27581165611086,
+          "median_ms": 29.907950000000003,
+          "p95_ms": 30.622325200000002,
+          "p99_ms": 30.70065784,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 60.0459466,
+          "fps": 16.653913488308635,
+          "median_ms": 59.339038,
+          "p95_ms": 63.1234576,
+          "p99_ms": 63.16383952,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 88320,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 111,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q90",
+      "mask_hex": "0x000000FFFC387C10",
+      "npu_calls": 23,
+      "npu_input_bytes": 318780,
+      "npu_output_bytes": 5100480,
+      "pattern_id": 12,
+      "quality": {
+        "bicubic_psnr_db": 26.543762940322402,
+        "output_sha256": "79cf8bdfd286cebcf9d1590e9fe5df19459ef10e160cf7f7e5cd67867cb00bee",
+        "psnr_db": 26.70193942166957
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 88320,
+      "selected_fraction": 0.38333333333333336,
+      "selected_tiles": 23,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.360905600000001,
+          "fps": 157.21031923504728,
+          "median_ms": 6.354523,
+          "p95_ms": 6.4449892,
+          "p99_ms": 6.4572578400000005,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 7.2576932,
+          "fps": 137.78482672703774,
+          "median_ms": 7.181016,
+          "p95_ms": 7.514379,
+          "p99_ms": 7.5746566,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 25.655724599999996,
+          "fps": 38.977655692484326,
+          "median_ms": 25.831984,
+          "p95_ms": 25.965951999999994,
+          "p99_ms": 25.985751199999996,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.6415002000000001,
+          "fps": 1558.845967624016,
+          "median_ms": 0.603102,
+          "p95_ms": 0.8810106,
+          "p99_ms": 0.9328325199999999,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 31.4887652,
+          "fps": 31.7573583355374,
+          "median_ms": 31.457635999999997,
+          "p95_ms": 32.052035,
+          "p99_ms": 32.106677399999995,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 79.994277,
+          "fps": 12.500894282724751,
+          "median_ms": 77.908102,
+          "p95_ms": 86.904333,
+          "p99_ms": 88.56927379999999,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 119040,
+      "extra_compute_ratio": 0.34782608695652173,
+      "frame_id": 111,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q90",
+      "mask_hex": "0x000000FFFC387C10",
+      "npu_calls": 4,
+      "npu_input_bytes": 397584,
+      "npu_output_bytes": 6361344,
+      "pattern_id": 12,
+      "quality": {
+        "bicubic_psnr_db": 26.543762940322402,
+        "output_sha256": "9c5165caddec1b4f47c038e385ce908015c2184806e8d61e4eeca690375d56cc",
+        "psnr_db": 26.701707153007057
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 88320,
+      "selected_fraction": 0.38333333333333336,
+      "selected_tiles": 23,
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3045789999999995,
+          "fps": 158.61487341184878,
+          "median_ms": 6.258404,
+          "p95_ms": 6.415687,
+          "p99_ms": 6.4254014,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.5376591999999998,
+          "fps": 650.339164881269,
+          "median_ms": 1.477892,
+          "p95_ms": 1.645775,
+          "p99_ms": 1.651283,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 16.7512814,
+          "fps": 59.696925633402586,
+          "median_ms": 16.702369,
+          "p95_ms": 20.565871599999998,
+          "p99_ms": 21.048048719999997,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5351138,
+          "fps": 1868.7613737489112,
+          "median_ms": 0.542579,
+          "p95_ms": 0.558578,
+          "p99_ms": 0.559458,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 35.7781332,
+          "fps": 27.950032898865725,
+          "median_ms": 35.725249000000005,
+          "p95_ms": 37.0116504,
+          "p99_ms": 37.15743648,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 68.99114879999999,
+          "fps": 14.494612966931783,
+          "median_ms": 70.471531,
+          "p95_ms": 73.250406,
+          "p99_ms": 73.78969959999999,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 80640,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 217,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q10",
+      "mask_hex": "0x0FFFEE0000001C00",
+      "npu_calls": 21,
+      "npu_input_bytes": 291060,
+      "npu_output_bytes": 4656960,
+      "pattern_id": 13,
+      "quality": {
+        "bicubic_psnr_db": 27.338190153435747,
+        "output_sha256": "ccc74df45e0097992ffb32d45c22d92a55c2bc0bdaf1fbea9d6d818c74605a8c",
+        "psnr_db": 28.114066227224
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 80640,
+      "selected_fraction": 0.35,
+      "selected_tiles": 21,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3283732,
+          "fps": 158.01849359958734,
+          "median_ms": 6.343541,
+          "p95_ms": 6.382186600000001,
+          "p99_ms": 6.388436520000001,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 6.639813199999999,
+          "fps": 150.60664658457563,
+          "median_ms": 6.614464000000001,
+          "p95_ms": 6.836800999999998,
+          "p99_ms": 6.872303399999998,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 23.506560399999998,
+          "fps": 42.54131540231637,
+          "median_ms": 23.465027000000006,
+          "p95_ms": 23.916739799999995,
+          "p99_ms": 23.979593559999998,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5330492,
+          "fps": 1875.9994387009679,
+          "median_ms": 0.522104,
+          "p95_ms": 0.5693626,
+          "p99_ms": 0.5774541200000001,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 28.873562400000004,
+          "fps": 34.63375894344093,
+          "median_ms": 28.986034999999998,
+          "p95_ms": 29.3662264,
+          "p99_ms": 29.420456480000002,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 74.371205,
+          "fps": 13.446064239513127,
+          "median_ms": 72.438909,
+          "p95_ms": 81.21567639999999,
+          "p99_ms": 82.95593448,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 88320,
+      "extra_compute_ratio": 0.09523809523809534,
+      "frame_id": 217,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q10",
+      "mask_hex": "0x0FFFEE0000001C00",
+      "npu_calls": 3,
+      "npu_input_bytes": 295020,
+      "npu_output_bytes": 4720320,
+      "pattern_id": 13,
+      "quality": {
+        "bicubic_psnr_db": 27.338190153435747,
+        "output_sha256": "983262f13970642c1ada81a3acdd0b6e38058ec8dbd5b8c62b17c6f34cb97fd5",
+        "psnr_db": 28.115846556349112
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 80640,
+      "selected_fraction": 0.35,
+      "selected_tiles": 21,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.586873399999999,
+          "fps": 151.8170973196479,
+          "median_ms": 6.187948,
+          "p95_ms": 7.7526329999999986,
+          "p99_ms": 8.037330599999999,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 1.1692491999999999,
+          "fps": 855.2496764590475,
+          "median_ms": 1.15558,
+          "p95_ms": 1.2379267999999999,
+          "p99_ms": 1.24758616,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 8.663634,
+          "fps": 115.42500525760899,
+          "median_ms": 8.479465000000001,
+          "p95_ms": 9.183859199999999,
+          "p99_ms": 9.25428064,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.47937139999999995,
+          "fps": 2086.0652095640253,
+          "median_ms": 0.469632,
+          "p95_ms": 0.5024652,
+          "p99_ms": 0.5046770399999999,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 27.1659,
+          "fps": 36.81085478485896,
+          "median_ms": 27.044134,
+          "p95_ms": 27.7873556,
+          "p99_ms": 27.92299032,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 51.6336454,
+          "fps": 19.367216710211206,
+          "median_ms": 48.979319,
+          "p95_ms": 57.4319736,
+          "p99_ms": 58.35548912,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 96000,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 18,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q50",
+      "mask_hex": "0x007FFCFC00701C00",
+      "npu_calls": 25,
+      "npu_input_bytes": 346500,
+      "npu_output_bytes": 5544000,
+      "pattern_id": 14,
+      "quality": {
+        "bicubic_psnr_db": 25.696797193175808,
+        "output_sha256": "eab8e36a966ae44d49485b774d2f75d321f0e1f39546031db016f8b4fb0085a0",
+        "psnr_db": 26.189484604025786
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 96000,
+      "selected_fraction": 0.4166666666666667,
+      "selected_tiles": 25,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.365277600000001,
+          "fps": 157.102339103011,
+          "median_ms": 6.357756,
+          "p95_ms": 6.401764200000001,
+          "p99_ms": 6.40197444,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 7.9356934,
+          "fps": 126.01293290892514,
+          "median_ms": 7.8738160000000015,
+          "p95_ms": 8.199156799999999,
+          "p99_ms": 8.20447216,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 28.0034782,
+          "fps": 35.70984978573126,
+          "median_ms": 28.061292999999996,
+          "p95_ms": 28.494265000000002,
+          "p99_ms": 28.5694538,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.6475646,
+          "fps": 1544.2474773945332,
+          "median_ms": 0.635175,
+          "p95_ms": 0.6859026,
+          "p99_ms": 0.69511812,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 34.2821152,
+          "fps": 29.16972871032182,
+          "median_ms": 34.252226,
+          "p95_ms": 34.88579440000001,
+          "p99_ms": 34.976734080000014,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 87.813838,
+          "fps": 11.387726840956432,
+          "median_ms": 84.485144,
+          "p95_ms": 94.46696940000001,
+          "p99_ms": 94.81746428000001,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 122880,
+      "extra_compute_ratio": 0.28,
+      "frame_id": 18,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q50",
+      "mask_hex": "0x007FFCFC00701C00",
+      "npu_calls": 5,
+      "npu_input_bytes": 411444,
+      "npu_output_bytes": 6583104,
+      "pattern_id": 14,
+      "quality": {
+        "bicubic_psnr_db": 25.696797193175808,
+        "output_sha256": "c632d9e475f8971fa379fa3c0559b8aaa586bc5f7cf111290a8e33cbceb9360c",
+        "psnr_db": 26.18719540910888
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 96000,
+      "selected_fraction": 0.4166666666666667,
+      "selected_tiles": 25,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3370476,
+          "fps": 157.8021916704555,
+          "median_ms": 6.346531,
+          "p95_ms": 6.457237999999999,
+          "p99_ms": 6.474761999999999,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.0198504,
+          "fps": 495.0861707381893,
+          "median_ms": 2.03542,
+          "p95_ms": 2.0910332,
+          "p99_ms": 2.09702104,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 15.847660200000002,
+          "fps": 63.10079768116179,
+          "median_ms": 16.944107,
+          "p95_ms": 18.6193122,
+          "p99_ms": 18.871586439999998,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.5776076,
+          "fps": 1731.2791590692366,
+          "median_ms": 0.572054,
+          "p95_ms": 0.6311002,
+          "p99_ms": 0.63562004,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 42.5520402,
+          "fps": 23.50063581675221,
+          "median_ms": 42.641647,
+          "p95_ms": 42.9801704,
+          "p99_ms": 43.02038128,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 78.0644554,
+          "fps": 12.809927320648418,
+          "median_ms": 78.595825,
+          "p95_ms": 80.2109358,
+          "p99_ms": 80.24389356,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "exact",
+      "dispatched_core_pixels": 107520,
+      "extra_compute_ratio": 0.0,
+      "frame_id": 60,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q90",
+      "mask_hex": "0x03FFFE7C00701C00",
+      "npu_calls": 28,
+      "npu_input_bytes": 388080,
+      "npu_output_bytes": 6209280,
+      "pattern_id": 15,
+      "quality": {
+        "bicubic_psnr_db": 25.488249404030615,
+        "output_sha256": "8fe847fd59cecc3e5b4eb318686188e749fe3fb294ad9e9bd0550a22634efb1d",
+        "psnr_db": 26.187545787876736
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 107520,
+      "selected_fraction": 0.4666666666666667,
+      "selected_tiles": 28,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3880882,
+          "fps": 156.54135771012054,
+          "median_ms": 6.408461,
+          "p95_ms": 6.4224036,
+          "p99_ms": 6.42332312,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 8.664019,
+          "fps": 115.41987615678129,
+          "median_ms": 8.636785999999999,
+          "p95_ms": 8.7519566,
+          "p99_ms": 8.76257692,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 31.303589,
+          "fps": 31.945218805421963,
+          "median_ms": 31.104874000000006,
+          "p95_ms": 31.740550600000002,
+          "p99_ms": 31.768188520000002,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.6370402000000001,
+          "fps": 1569.7596478212834,
+          "median_ms": 0.638376,
+          "p95_ms": 0.7033274,
+          "p99_ms": 0.71346308,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 38.7241568,
+          "fps": 25.823673970868747,
+          "median_ms": 38.972615999999995,
+          "p95_ms": 39.7254608,
+          "p99_ms": 39.83207615999999,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 93.7231272,
+          "fps": 10.669725070804082,
+          "median_ms": 93.193894,
+          "p95_ms": 97.063121,
+          "p99_ms": 97.6506386,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "dispatch_mode": "row_spans",
+      "dispatched_core_pixels": 126720,
+      "extra_compute_ratio": 0.1785714285714286,
+      "frame_id": 60,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q90",
+      "mask_hex": "0x03FFFE7C00701C00",
+      "npu_calls": 5,
+      "npu_input_bytes": 424116,
+      "npu_output_bytes": 6785856,
+      "pattern_id": 15,
+      "quality": {
+        "bicubic_psnr_db": 25.488249404030615,
+        "output_sha256": "d947d1f62a72a93f0a4ad0288d29dadce4ad91879e8dbd8bc25db6af3878b400",
+        "psnr_db": 26.18514980191101
+      },
+      "repetitions": 5,
+      "selected_core_pixels": 107520,
+      "selected_fraction": 0.4666666666666667,
+      "selected_tiles": 28,
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "timing": {
+        "bicubic_ms": {
+          "average_ms": 6.3542868,
+          "fps": 157.3740738299694,
+          "median_ms": 6.353984,
+          "p95_ms": 6.3828734,
+          "p99_ms": 6.38500348,
+          "samples": 5
+        },
+        "extraction_ms": {
+          "average_ms": 2.016135,
+          "fps": 495.9985318443458,
+          "median_ms": 2.012545,
+          "p95_ms": 2.02941,
+          "p99_ms": 2.029778,
+          "samples": 5
+        },
+        "npu_ms": {
+          "average_ms": 15.708491600000002,
+          "fps": 63.65983605962522,
+          "median_ms": 14.418505000000001,
+          "p95_ms": 19.6571858,
+          "p99_ms": 20.692457160000004,
+          "samples": 5
+        },
+        "planning_ms": {
+          "average_ms": 0.6244408,
+          "fps": 1601.4328339852232,
+          "median_ms": 0.6246,
+          "p95_ms": 0.665169,
+          "p99_ms": 0.6667730000000001,
+          "samples": 5
+        },
+        "reconstruction_ms": {
+          "average_ms": 38.8403558,
+          "fps": 25.746417080968143,
+          "median_ms": 38.450537000000004,
+          "p95_ms": 40.0788604,
+          "p99_ms": 40.29923928,
+          "samples": 5
+        },
+        "service_ms": {
+          "average_ms": 74.09035659999999,
+          "fps": 13.49703316180287,
+          "median_ms": 74.817448,
+          "p95_ms": 79.3176172,
+          "p99_ms": 79.34452343999999,
+          "samples": 5
+        }
+      }
+    }
+  ],
+  "publication_projection": {
+    "excluded_nonclaim_sections": [
+      "board_environment_capture",
+      "thermal_snapshot",
+      "duplicate_cross_mode_output_error",
+      "distribution_details_not_used_by_paper",
+      "cross_platform_evidence_boundary",
+      "external_artifact_paths_and_hashes",
+      "historical_preflight_manifest_hashes"
+    ],
+    "original_sha256": "6d1225cdcd8e50c00a163ca36b42d863990fd021417fad417888dd49a59eca82",
+    "original_size_bytes": 81144,
+    "path_sanitization_only_within_provenance_fields": true,
+    "retained_measurement_sections": [
+      "mode_summary",
+      "pattern_rows",
+      "validation"
+    ],
+    "retained_measurement_values_modified": false,
+    "schema_version": 1
+  },
+  "schema_version": 1,
+  "status": "physical_complete",
+  "validation": {
+    "all_passed": true,
+    "checks": {
+      "complete_pattern_mode_matrix": true,
+      "cross_mode_mean_abs_within_0_001": true,
+      "cross_mode_psnr_within_0_02_db": true,
+      "finite_reference_quality": true,
+      "positive_finite_timings": true,
+      "selected_work_preserved": true
+    },
+    "expected_pattern_mode_pairs": 30,
+    "max_cross_mode_mean_abs_float": 0.0004564095288515091,
+    "max_cross_mode_psnr_delta_db": 0.010551166378668597,
+    "observed_pattern_mode_pairs": 30,
+    "scope": "artifact_integrity_not_realtime_performance",
+    "tolerances": {
+      "max_cross_mode_mean_abs_float": 0.001,
+      "max_cross_mode_psnr_delta_db": 0.02
+    }
+  },
+  "workload": {
+    "checkpoint_sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb",
+    "deadline_ms": 33.333,
+    "dispatch_modes": [
+      "exact",
+      "row_spans"
+    ],
+    "halo": 3,
+    "input_resolution": [
+      640,
+      360
+    ],
+    "macro_tile": [
+      64,
+      60
+    ],
+    "npu_core": "both",
+    "output_resolution": [
+      1280,
+      720
+    ],
+    "patterns": 15,
+    "repetitions": 5,
+    "sequences": 5,
+    "warmup_iterations_per_shape": 2
+  }
+}

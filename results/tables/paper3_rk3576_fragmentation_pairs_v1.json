@@ -1,0 +1,469 @@
+{
+  "all_primary_gates_passed": true,
+  "authorized_claim": "For this one RK3576, one model, one synthetic input, and three frozen density pairs, within-row fragmentation causes additional static row-span padding and traffic and has the reported physical service effect.",
+  "causal_checks": {
+    "exact_service_negative_control": true,
+    "exact_structural_negative_control": true,
+    "row_span_positive_service_all_densities": true,
+    "row_span_service_penalty_ge_5_percent_at_two_densities": true,
+    "row_span_structural_padding_all_densities": true
+  },
+  "descriptive_sensitivity": {
+    "both_pair_orientations_present_at_each_density_in_row_span_mode": true,
+    "maximum_paired_start_temperature_difference_c": 1.8459999999999965,
+    "order_or_temperature_causality_claimed": false,
+    "physical_capture_sessions_observed": 1,
+    "row_span_positive_pairs": 15,
+    "row_span_total_pairs": 15,
+    "thermal_end_max_c": 50.846,
+    "thermal_end_min_c": 46.23,
+    "thermal_start_max_c": 50.846,
+    "thermal_start_min_c": 45.307,
+    "timestamps_available": false,
+    "uncontrolled": [
+      "sample order was frozen rather than randomized after capture",
+      "temperature was observed rather than independently manipulated",
+      "the records contain no per-sample wall-clock timestamps",
+      "all samples come from one physical capture session"
+    ]
+  },
+  "disposition": "PRIMARY_GATES_PASS",
+  "experiment_id": "paper3_rk3576_fragmentation_pairs_v1",
+  "integrity": {
+    "all_passed": true,
+    "checks": {
+      "complete_pair_cells": true,
+      "complete_unique_matrix": true,
+      "cross_mode_matrix": true,
+      "cross_mode_mean_abs": true,
+      "cross_mode_psnr_delta": true,
+      "no_unselected_commit": true,
+      "paired_counts_and_commits_match": true,
+      "positive_finite_timings": true,
+      "required_metrics_present": true,
+      "sample_count": true
+    },
+    "max_cross_mode_mean_abs_float": 0.0008422390092164278,
+    "max_cross_mode_psnr_delta_db": 0.01145629705288087
+  },
+  "mode_interaction_percentage_points": {
+    "20": 201.50251183475547,
+    "40": 128.17033945633537,
+    "60": 12.928090570035584
+  },
+  "nonclaims": {
+    "cross_platform_bit_identity_claimed": false,
+    "model_family_generalization_claimed": false,
+    "natural_mask_prevalence_claimed": false,
+    "physical_energy_claimed": false,
+    "platform_superiority_claimed": false,
+    "rk3576_720p_realtime_claimed": false,
+    "selector_generalization_claimed": false
+  },
+  "pair_summaries": [
+    {
+      "compact_executed_gmac": 0.46702656,
+      "compact_npu_calls": 12.0,
+      "compact_tensor_bytes_per_pixel": 15.33984375,
+      "density_percent": 20,
+      "dispatch_mode": "exact",
+      "fragmented_executed_gmac": 0.46702656,
+      "fragmented_executed_second_count": 2,
+      "fragmented_npu_calls": 12.0,
+      "fragmented_tensor_bytes_per_pixel": 15.33984375,
+      "maximum_paired_start_temperature_difference_c": 0.9239999999999995,
+      "maximum_service_penalty_percent": 6.802333453884682,
+      "median_service_penalty_percent": -1.8377817194370525,
+      "minimum_service_penalty_percent": -3.084531687460691,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 48.076,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 1,
+          "service_penalty_percent": -3.084531687460691
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 2,
+          "service_penalty_percent": -1.8377817194370525
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.9239999999999995,
+          "repeat_index": 3,
+          "service_penalty_percent": 2.0511789983004283
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 4,
+          "service_penalty_percent": 6.802333453884682
+        },
+        {
+          "compact_thermal_start_c": 50.846,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.9229999999999947,
+          "repeat_index": 5,
+          "service_penalty_percent": -2.5593764633713305
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        -0.030845316874606912,
+        -0.018377817194370524,
+        0.020511789983004285,
+        0.06802333453884682,
+        -0.025593764633713306
+      ]
+    },
+    {
+      "compact_executed_gmac": 0.447011136,
+      "compact_npu_calls": 6.0,
+      "compact_tensor_bytes_per_pixel": 14.682421875,
+      "density_percent": 20,
+      "dispatch_mode": "row_spans",
+      "fragmented_executed_gmac": 2.154993984,
+      "fragmented_executed_second_count": 3,
+      "fragmented_npu_calls": 6.0,
+      "fragmented_tensor_bytes_per_pixel": 70.782421875,
+      "maximum_paired_start_temperature_difference_c": 1.8459999999999965,
+      "maximum_service_penalty_percent": 231.91367765109274,
+      "median_service_penalty_percent": 199.6647301153184,
+      "minimum_service_penalty_percent": 187.16541239895298,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 47.153,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 45.307,
+          "paired_start_temperature_difference_c": 1.8459999999999965,
+          "repeat_index": 1,
+          "service_penalty_percent": 202.39655833323965
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.9230000000000018,
+          "repeat_index": 2,
+          "service_penalty_percent": 231.91367765109274
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.9239999999999995,
+          "repeat_index": 3,
+          "service_penalty_percent": 189.0733976773334
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 4,
+          "service_penalty_percent": 187.16541239895298
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 5,
+          "service_penalty_percent": 199.6647301153184
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        2.0239655833323966,
+        2.3191367765109274,
+        1.8907339767733338,
+        1.87165412398953,
+        1.996647301153184
+      ]
+    },
+    {
+      "compact_executed_gmac": 0.93405312,
+      "compact_npu_calls": 24.0,
+      "compact_tensor_bytes_per_pixel": 15.33984375,
+      "density_percent": 40,
+      "dispatch_mode": "exact",
+      "fragmented_executed_gmac": 0.93405312,
+      "fragmented_executed_second_count": 2,
+      "fragmented_npu_calls": 24.0,
+      "fragmented_tensor_bytes_per_pixel": 15.33984375,
+      "maximum_paired_start_temperature_difference_c": 0.0,
+      "maximum_service_penalty_percent": 10.893895146530486,
+      "median_service_penalty_percent": 1.960050294878573,
+      "minimum_service_penalty_percent": -3.855132766268011,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 47.153,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 47.153,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 1,
+          "service_penalty_percent": 3.984124411391205
+        },
+        {
+          "compact_thermal_start_c": 48.076,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 2,
+          "service_penalty_percent": 0.7036254747530989
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 3,
+          "service_penalty_percent": 1.960050294878573
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 4,
+          "service_penalty_percent": 10.893895146530486
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 5,
+          "service_penalty_percent": -3.855132766268011
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        0.03984124411391205,
+        0.007036254747530989,
+        0.01960050294878573,
+        0.10893895146530486,
+        -0.03855132766268011
+      ]
+    },
+    {
+      "compact_executed_gmac": 0.874006848,
+      "compact_npu_calls": 6.0,
+      "compact_tensor_bytes_per_pixel": 14.3537109375,
+      "density_percent": 40,
+      "dispatch_mode": "row_spans",
+      "fragmented_executed_gmac": 2.154993984,
+      "fragmented_executed_second_count": 4,
+      "fragmented_npu_calls": 6.0,
+      "fragmented_tensor_bytes_per_pixel": 35.3912109375,
+      "maximum_paired_start_temperature_difference_c": 0.9239999999999995,
+      "maximum_service_penalty_percent": 157.24763930689136,
+      "median_service_penalty_percent": 130.13038975121395,
+      "minimum_service_penalty_percent": 108.47610466751885,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 47.153,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.9230000000000018,
+          "repeat_index": 1,
+          "service_penalty_percent": 108.47610466751885
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 2,
+          "service_penalty_percent": 147.69615962379424
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 3,
+          "service_penalty_percent": 123.62542103820708
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.9239999999999995,
+          "repeat_index": 4,
+          "service_penalty_percent": 130.13038975121395
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 5,
+          "service_penalty_percent": 157.24763930689136
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        1.0847610466751885,
+        1.4769615962379425,
+        1.2362542103820708,
+        1.3013038975121396,
+        1.5724763930689136
+      ]
+    },
+    {
+      "compact_executed_gmac": 1.40107968,
+      "compact_npu_calls": 36.0,
+      "compact_tensor_bytes_per_pixel": 15.33984375,
+      "density_percent": 60,
+      "dispatch_mode": "exact",
+      "fragmented_executed_gmac": 1.40107968,
+      "fragmented_executed_second_count": 2,
+      "fragmented_npu_calls": 36.0,
+      "fragmented_tensor_bytes_per_pixel": 15.33984375,
+      "maximum_paired_start_temperature_difference_c": 0.9239999999999995,
+      "maximum_service_penalty_percent": 8.221549071369402,
+      "median_service_penalty_percent": -0.3733598851882275,
+      "minimum_service_penalty_percent": -10.750583618304068,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 47.153,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.9230000000000018,
+          "repeat_index": 1,
+          "service_penalty_percent": 8.221549071369402
+        },
+        {
+          "compact_thermal_start_c": 48.076,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.076,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 2,
+          "service_penalty_percent": -7.073422796040911
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 3,
+          "service_penalty_percent": 3.307249429095211
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.9239999999999995,
+          "repeat_index": 4,
+          "service_penalty_percent": -10.750583618304068
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 5,
+          "service_penalty_percent": -0.3733598851882275
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        0.08221549071369402,
+        -0.07073422796040911,
+        0.03307249429095211,
+        -0.10750583618304067,
+        -0.003733598851882275
+      ]
+    },
+    {
+      "compact_executed_gmac": 1.727998272,
+      "compact_npu_calls": 6.0,
+      "compact_tensor_bytes_per_pixel": 18.919140625,
+      "density_percent": 60,
+      "dispatch_mode": "row_spans",
+      "fragmented_executed_gmac": 2.154993984,
+      "fragmented_executed_second_count": 1,
+      "fragmented_npu_calls": 6.0,
+      "fragmented_tensor_bytes_per_pixel": 23.594140625,
+      "maximum_paired_start_temperature_difference_c": 0.0,
+      "maximum_service_penalty_percent": 26.291418134021434,
+      "median_service_penalty_percent": 12.554730684847357,
+      "minimum_service_penalty_percent": 6.635052466921359,
+      "paired_repeat_details": [
+        {
+          "compact_thermal_start_c": 47.153,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 47.153,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 1,
+          "service_penalty_percent": 22.94833240265443
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 2,
+          "service_penalty_percent": 12.554730684847357
+        },
+        {
+          "compact_thermal_start_c": 48.999,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 48.999,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 3,
+          "service_penalty_percent": 6.635052466921359
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": false,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 4,
+          "service_penalty_percent": 9.79463234026856
+        },
+        {
+          "compact_thermal_start_c": 49.923,
+          "fragmented_executed_second": true,
+          "fragmented_thermal_start_c": 49.923,
+          "paired_start_temperature_difference_c": 0.0,
+          "repeat_index": 5,
+          "service_penalty_percent": 26.291418134021434
+        }
+      ],
+      "paired_repeats": 5,
+      "service_fractional_differences": [
+        0.22948332402654428,
+        0.12554730684847357,
+        0.0663505246692136,
+        0.09794632340268561,
+        0.2629141813402143
+      ]
+    }
+  ],
+  "raw_capture_sha256": "7657b5a5ec0abe62cb693dffab97a832ebd777348cc00aca90b45630b12b535b",
+  "schema_version": 1,
+  "secondary_interaction_checks": {
+    "ge_5_percentage_points_at_two_densities": true,
+    "positive_all_densities": true
+  },
+  "statistical_scope": {
+    "confidence_interval_claimed": false,
+    "deadline_descriptive_only": true,
+    "p_value_claimed": false,
+    "paired_statistic": "median_of_five_within_block_fractional_differences",
+    "regression_used": false
+  },
+  "status": "analysis_complete"
+}
