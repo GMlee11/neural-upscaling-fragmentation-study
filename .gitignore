@@ -3,3 +3,10 @@ __pycache__/
 .pytest_cache/
 .venv/
 tmp/
+
+# Frozen E002 provenance bytes, not newly generated interpreter caches.
+!/results/paper3_strengthening_v2/public_v1/retained_context/lineage/E002_source_v1/strength/__pycache__/
+!/results/paper3_strengthening_v2/public_v1/retained_context/lineage/E002_source_v1/strength/__pycache__/__init__.cpython-312.pyc
+!/results/paper3_strengthening_v2/public_v1/retained_context/lineage/E002_source_v1/strength/__pycache__/cached.cpython-312.pyc
+!/results/paper3_strengthening_v2/public_v1/retained_context/lineage/E002_source_v1/strength/__pycache__/confirmation.cpython-312.pyc
+!/results/paper3_strengthening_v2/public_v1/retained_context/lineage/E002_source_v1/strength/__pycache__/core.cpython-312.pyc

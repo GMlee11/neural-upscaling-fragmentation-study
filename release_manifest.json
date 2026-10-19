@@ -1,12 +1,12 @@
 {
-  "release": "review-v1",
-  "date": "2026-09-25",
+  "release": "review-v1-packaging-20261015",
+  "date": "2026-10-15",
   "scope": "artifact-only; no manuscript; no new measurements",
   "source_commit": "ba310c222c4480dc9d790925656451f220ce694b",
   "source_note": "Publication edits and packaging may postdate this base commit; exact included bytes are authoritative.",
   "files": {
     ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-    ".gitignore": "08003fe79343514278ba4f7b084c44a4c2b83b7e1e40bf0b03d6b3ac2d1e65ca",
+    ".gitignore": "4a9198b2d17e33692822bf8547c1602648c1228ff5fe9bf6ec048522c1a33b17",
     "EVIDENCE_GUIDE.md": "fb2ea84bb9f5a5d524c82143cc8171f2b4c40afa264356ed3aa31062e1a41c0c",
     "FILES.txt": "da000e3e4bbfdbec57d16a32d14d4eccf0edad485e498b1508ca9d782246a841",
     "LICENSE": "7d3b2fc5ed28739dd55421899288d0629cfa8856d7dd60afd46998948808c81b",
@@ -209,5 +209,6 @@
     "tests/test_paper3_transfer_publication_v1.py": "ed793b035b2215046b46b30e8ada054f49e32d19d9a4a92217263325db777edd",
     "tests/test_paper3_width24_rk3566_analysis_v32.py": "89e52a4176d7d3217154bce81a29664ab0f371761d7cafe73def42dbc7404bf3",
     "verify_release.py": "c0dd17ee7fdd9edb913bdb95b045364af2dfe7773a7c300cafa9a4d35fda8c30"
-  }
+  },
+  "packaging_note": "Restores export visibility of four existing hash-bound E002 bytecode provenance files. Only Git ignore rules and release metadata change; experimental evidence, replay code and frozen lineage bytes are unchanged."
 }
