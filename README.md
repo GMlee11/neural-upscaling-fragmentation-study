@@ -41,12 +41,3 @@ Only original code is Apache-2.0; original data/documentation is CC BY 4.0.
 See LICENSE and THIRD_PARTY_NOTICES.md. `release_manifest.json` hashes every
 distributed file other than itself. FILES.txt includes the manifest. Extra files
 other than root `.git` metadata cause verification failure deliberately.
-
-## Publishing this repository
-
-Initialize Git HERE, not in the parent Paper 3 folder. Push this folder's
-contents, retain its manifest, and create a `review-v1` tag or release. Send the
-public repository URL and commit identifier back for verification and insertion
-into the journal's data-repository field. The companion ZIP supplied for journal
-upload contains the same files, so reviewers can replay without relying on GitHub.
-No repository has been created or uploaded by this preparation script.
